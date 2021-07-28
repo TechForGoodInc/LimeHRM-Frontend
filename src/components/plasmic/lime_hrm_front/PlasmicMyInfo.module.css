@@ -1,0 +1,595 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: unset;
+  min-width: 0;
+  min-height: 0;
+}
+.sidebar:global(.__wab_instance) {
+  position: relative;
+  width: 305px;
+  flex-shrink: 0;
+}
+.divider {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  align-content: unset;
+  min-width: 0;
+  min-height: 0;
+}
+.mainContent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  width: 1132px;
+  height: 672px;
+  background: #ffffff;
+  box-shadow: 2px 4px 4px 2px #00000021;
+  flex-shrink: 0;
+}
+.personalInfo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1132px;
+  height: 336px;
+  align-content: unset;
+  align-self: center;
+  flex-shrink: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.freeBox__n7IdM {
+  position: relative;
+  align-self: flex-start;
+  width: 1132px;
+  font-size: 28px;
+  text-align: center;
+  border-width: 1px;
+  border-style: solid;
+}
+.pValuesRow1 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.pValuesRow1 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 8%);
+  width: calc(100% + 8%);
+}
+.pValuesRow1 > :global(.__wab_flex-container) > *,
+.pValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8%;
+}
+.freeBox__u1Zkk {
+  position: relative;
+  height: 24px;
+  width: 74px;
+  flex-shrink: 0;
+}
+.firstName {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.middleName {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.lastName {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.pValuesRow2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1129px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.pValuesRow2 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 6.5%);
+  width: calc(100% + 6.5%);
+}
+.pValuesRow2 > :global(.__wab_flex-container) > *,
+.pValuesRow2 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6.5%;
+}
+.freeBox__ofAl0 {
+  position: relative;
+  width: 96px;
+  flex-shrink: 0;
+}
+.workerId {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.genderBox {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  height: 52px;
+  width: 250px;
+  flex-shrink: 0;
+}
+.genderBox > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  margin-left: calc(0px - 2%);
+  width: calc(100% + 2%);
+}
+.genderBox > :global(.__wab_flex-container) > *,
+.genderBox > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 2%;
+}
+.freeBox__f6Ahn {
+  position: relative;
+  width: 81px;
+  flex-shrink: 0;
+}
+.male:global(.__wab_instance) {
+  position: relative;
+}
+.female:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox__vXv2Q {
+  position: relative;
+}
+.nationality:global(.__wab_instance) {
+  position: relative;
+  width: 170px;
+  flex-shrink: 0;
+}
+.option__la1Qs:global(.__wab_instance) {
+  position: relative;
+}
+.option__buIxr:global(.__wab_instance) {
+  position: relative;
+}
+.pValuesRow3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1131px;
+  height: 60px;
+  align-self: auto;
+  flex-shrink: 0;
+}
+.pValuesRow3 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 1%);
+  width: calc(100% + 1%);
+}
+.pValuesRow3 > :global(.__wab_flex-container) > *,
+.pValuesRow3 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 1%;
+}
+.freeBox__k0RjP {
+  position: relative;
+  width: 168px;
+  text-align: right;
+  flex-shrink: 0;
+}
+.socialSecurity {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.spacer {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  height: 21px;
+  width: 61px;
+  flex-shrink: 0;
+}
+.freeBox__h9Ovs {
+  position: relative;
+}
+.maritalStatus:global(.__wab_instance) {
+  position: relative;
+  width: 132px;
+  flex-shrink: 0;
+}
+.option__i3N4Y:global(.__wab_instance) {
+  position: relative;
+}
+.option__s16W2:global(.__wab_instance) {
+  position: relative;
+}
+.pValuesRow4 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1131px;
+  height: 60px;
+  flex-shrink: 0;
+}
+.pValuesRow4 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 7%);
+  width: calc(100% + 7%);
+}
+.pValuesRow4 > :global(.__wab_flex-container) > *,
+.pValuesRow4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 7%;
+}
+.freeBox__fjLb7 {
+  position: relative;
+}
+.driversLicense {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox___0Ggm5 {
+  position: relative;
+}
+.licenseExpDate {
+  position: relative;
+  width: 180px;
+  text-align: center;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.buttonPrimary__odcZj:global(.__wab_instance) {
+  position: relative;
+  width: 96px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin: 0px 0px 0px 30px;
+}
+.contactInfo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  height: 336px;
+  width: 1132px;
+  flex-shrink: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.freeBox___6RBrt {
+  position: relative;
+  width: 1132px;
+  height: 44px;
+  font-size: 28px;
+  text-align: center;
+  flex-shrink: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.inputValuesRow12 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow12 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 6%);
+  width: calc(100% + 6%);
+}
+.inputValuesRow12 > :global(.__wab_flex-container) > *,
+.inputValuesRow12 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6%;
+}
+.freeBox__byLv5 {
+  position: relative;
+  height: 33px;
+  width: 135px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.street1 {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.inputValuesRow1 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow1 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 6%);
+  width: calc(100% + 6%);
+}
+.inputValuesRow1 > :global(.__wab_flex-container) > *,
+.inputValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6%;
+}
+.freeBox__zAsDz {
+  position: relative;
+  height: 33px;
+  width: 135px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.street2 {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox__fb2YN {
+  position: relative;
+  height: 33px;
+  width: 165px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.homeTelephone {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.inputValuesRow13 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow13 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 6%);
+  width: calc(100% + 6%);
+}
+.inputValuesRow13 > :global(.__wab_flex-container) > *,
+.inputValuesRow13 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6%;
+}
+.freeBox___3OWgx {
+  position: relative;
+  height: 33px;
+  width: 135px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.city {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox__rLtoH {
+  position: relative;
+  height: 33px;
+  width: 166px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.mobile {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.inputValuesRow14 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow14 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 8%);
+  width: calc(100% + 8%);
+}
+.inputValuesRow14 > :global(.__wab_flex-container) > *,
+.inputValuesRow14 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8%;
+}
+.freeBox___7Gc2Y {
+  position: relative;
+  height: 33px;
+  width: 106px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.stateProvince {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox__gOlIk {
+  position: relative;
+  height: 33px;
+  width: 116px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.workTelephone {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.inputValuesRow15 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow15 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 7%);
+  width: calc(100% + 7%);
+}
+.inputValuesRow15 > :global(.__wab_flex-container) > *,
+.inputValuesRow15 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 7%;
+}
+.freeBox__u7H6 {
+  position: relative;
+  height: 33px;
+  width: 119px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.zip {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox__mmEhm {
+  position: relative;
+  height: 26px;
+  width: 143px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.workEmail {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.inputValuesRow16 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 1130px;
+  height: 38px;
+  flex-shrink: 0;
+}
+.inputValuesRow16 > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-left: calc(0px - 8%);
+  width: calc(100% + 8%);
+}
+.inputValuesRow16 > :global(.__wab_flex-container) > *,
+.inputValuesRow16 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 8%;
+}
+.freeBox__fsIrE {
+  position: relative;
+  height: 33px;
+  width: 102px;
+  font-size: 16px;
+  flex-shrink: 0;
+}
+.country {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.buttonPrimary__krhJh:global(.__wab_instance) {
+  position: relative;
+  width: 96px;
+  align-self: flex-start;
+  flex-shrink: 0;
+  margin: 0px 0px 0px 30px;
+}

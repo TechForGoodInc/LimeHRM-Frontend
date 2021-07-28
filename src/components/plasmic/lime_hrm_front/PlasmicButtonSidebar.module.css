@@ -1,0 +1,25 @@
+.root {
+  width: 100%;
+  background: #ffffff;
+  position: relative;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+  border-top-color: #d7d7d7;
+  border-top-style: solid;
+  border-right-color: transparent;
+  border-right-style: none;
+  border-bottom-color: #d7d7d7;
+  border-bottom-style: solid;
+  border-left-color: transparent;
+  border-left-style: none;
+  cursor: pointer;
+  min-width: 0;
+  border-width: 1px;
+}
+.root:hover {
+  background: #d7d7d7;
+}

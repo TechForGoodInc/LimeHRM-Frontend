@@ -1,0 +1,211 @@
+.root {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #f4f4f4;
+  min-width: 0;
+  min-height: 0;
+}
+.sidebar:global(.__wab_instance) {
+  position: relative;
+}
+.primaryDiv {
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  align-self: auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: unset;
+  min-width: 0;
+  min-height: 0;
+}
+.pageContent {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  width: 75%;
+  height: 75%;
+  left: auto;
+  top: auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 8px 4px #0000001f;
+}
+.timeLeaveTiles {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.timeTile {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  border-right-width: 1px;
+  border-bottom-width: 1px;
+  min-height: 0;
+  padding: 2.5%;
+  border-style: solid;
+  border-color: #c3c3c3;
+}
+.timeTile > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: unset;
+  margin-top: calc(0px - 3%);
+  height: calc(100% + 3%);
+}
+.timeTile > :global(.__wab_flex-container) > *,
+.timeTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 3%;
+}
+.h1__l8PZ {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+}
+.h1___1SP1U {
+  position: relative;
+  text-align: center;
+  font-size: 300%;
+}
+.clockButtons {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  max-width: 80%;
+  min-width: 0;
+  min-height: 0;
+}
+.clockButtons > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  margin-left: calc(0px - 5%);
+  width: calc(100% + 5%);
+}
+.clockButtons > :global(.__wab_flex-container) > *,
+.clockButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 5%;
+}
+.buttonPrimary__zDwiO:global(.__wab_instance) {
+  position: relative;
+}
+.buttonPrimary__qacnZ:global(.__wab_instance) {
+  position: relative;
+}
+.freeBox {
+  position: relative;
+  height: auto;
+}
+.leaveTile {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  min-height: 0;
+  padding: 2.5%;
+  border-bottom: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+}
+.leaveTile > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 3%);
+  height: calc(100% + 3%);
+}
+.leaveTile > :global(.__wab_flex-container) > *,
+.leaveTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 3%;
+}
+.h1__vD0Dq {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+}
+.payPerformanceTiles {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+}
+.payTile {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  min-height: 0;
+  padding: 2.5%;
+  border-top: 1px solid #c3c3c3;
+  border-right: 1px solid #c3c3c3;
+}
+.payTile > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 3%);
+  height: calc(100% + 3%);
+}
+.payTile > :global(.__wab_flex-container) > *,
+.payTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 3%;
+}
+.h1__pyoHy {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+  height: auto;
+}
+.performanceTile {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  min-height: 0;
+  padding: 2.5%;
+  border-top: 1px solid #c3c3c3;
+  border-left: 1px solid #c3c3c3;
+}
+.performanceTile > :global(.__wab_flex-container) {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  margin-top: calc(0px - 3%);
+  height: calc(100% + 3%);
+}
+.performanceTile > :global(.__wab_flex-container) > *,
+.performanceTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 3%;
+}
+.h1__lFMuc {
+  position: relative;
+  text-align: center;
+  font-size: 150%;
+}

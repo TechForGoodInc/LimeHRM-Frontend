@@ -1,0 +1,69 @@
+{
+  "props": [
+    {
+      "name": "Background",
+      "type": "color",
+      "value": "#FFFFFF",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "aIvfp6F0FfEuu"
+      }
+    },
+    {
+      "name": "Background Color",
+      "type": "color",
+      "value": "#F4F4F4",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "2d91O4xW9"
+      }
+    },
+    {
+      "name": "Button Color",
+      "type": "color",
+      "value": "#ECE5E5",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "vwQGpbG-l"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken",
+      "type": "color",
+      "value": "#F4F4F4",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "q6KTIJmSV"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 2",
+      "type": "color",
+      "value": "#0051CC",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "certlmI0Y"
+      }
+    },
+    {
+      "name": "UnnamedStyleToken 3",
+      "type": "color",
+      "value": "#000000EB",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "soY86JAOW"
+      }
+    }
+  ],
+  "global": {
+    "meta": {
+      "source": "plasmic.app"
+    }
+  }
+}

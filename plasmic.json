@@ -1,0 +1,393 @@
+{
+  "platform": "react",
+  "code": {
+    "lang": "ts",
+    "scheme": "blackbox",
+    "reactRuntime": "classic"
+  },
+  "style": {
+    "scheme": "css-modules",
+    "defaultStyleCssFilePath": "plasmic/plasmic__default_style.module.css"
+  },
+  "images": {
+    "scheme": "files",
+    "publicDir": "../../public",
+    "publicUrlPrefix": "/static/"
+  },
+  "tokens": {
+    "scheme": "theo",
+    "tokensFilePath": "plasmic-tokens.theo.json"
+  },
+  "srcDir": "src/components",
+  "defaultPlasmicDir": "./plasmic",
+  "projects": [
+    {
+      "projectId": "vQU939GjUi82K5u1iSBKF3",
+      "projectName": "LimeHRM Front",
+      "version": "latest",
+      "cssFilePath": "plasmic/lime_hrm_front/plasmic_lime_hrm_front.module.css",
+      "components": [
+        {
+          "id": "eh95XJ3y5T5T9",
+          "name": "Login",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicLogin.tsx",
+          "importSpec": {
+            "modulePath": "Login.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicLogin.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "K9QvgezLGC5re",
+          "name": "Textbox",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicTextbox.tsx",
+          "importSpec": {
+            "modulePath": "Textbox.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicTextbox.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "sE8WQB1xWR",
+          "name": "Dashboard",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicDashboard.tsx",
+          "importSpec": {
+            "modulePath": "Dashboard.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicDashboard.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "6n6tk7S80o",
+          "name": "MyInfo",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicMyInfo.tsx",
+          "importSpec": {
+            "modulePath": "MyInfo.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicMyInfo.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "eWqFv7MHWi",
+          "name": "Leave",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicLeave.tsx",
+          "importSpec": {
+            "modulePath": "Leave.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicLeave.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "1jmgeIBpVm",
+          "name": "Time",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicTime.tsx",
+          "importSpec": {
+            "modulePath": "Time.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicTime.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "QnldjWBrCI",
+          "name": "Performance",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicPerformance.tsx",
+          "importSpec": {
+            "modulePath": "Performance.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicPerformance.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "0E1RH0w_jR",
+          "name": "Pay",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicPay.tsx",
+          "importSpec": {
+            "modulePath": "Pay.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicPay.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "_5SxwkcgXu",
+          "name": "Recruitment",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicRecruitment.tsx",
+          "importSpec": {
+            "modulePath": "Recruitment.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicRecruitment.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "-pgjNYrnST",
+          "name": "Administration",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicAdministration.tsx",
+          "importSpec": {
+            "modulePath": "Administration.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicAdministration.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "RDbTl75Xg4",
+          "name": "Maintenance",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicMaintenance.tsx",
+          "importSpec": {
+            "modulePath": "Maintenance.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicMaintenance.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "EIYCxcJrep",
+          "name": "ButtonSidebar",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicButtonSidebar.tsx",
+          "importSpec": {
+            "modulePath": "ButtonSidebar.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicButtonSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "yoRVhunlI-d",
+          "name": "Sidebar",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicSidebar.tsx",
+          "importSpec": {
+            "modulePath": "Sidebar.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicSidebar.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "3HWfNZURm7l",
+          "name": "SelectBoxPrimary",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary.tsx",
+          "importSpec": {
+            "modulePath": "SelectBoxPrimary.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select"
+        },
+        {
+          "id": "dmwcrBXAMAY",
+          "name": "SelectBoxPrimary__Option",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__Option.tsx",
+          "importSpec": {
+            "modulePath": "SelectBoxPrimary__Option.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__Option.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option"
+        },
+        {
+          "id": "XomSqMHtbQj",
+          "name": "SelectBoxPrimary__OptionGroup",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__OptionGroup.tsx",
+          "importSpec": {
+            "modulePath": "SelectBoxPrimary__OptionGroup.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__OptionGroup.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "select-option-group"
+        },
+        {
+          "id": "2So9Rk1rQd8",
+          "name": "SelectBoxPrimary__Overlay",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__Overlay.tsx",
+          "importSpec": {
+            "modulePath": "SelectBoxPrimary__Overlay.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicSelectBoxPrimary__Overlay.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "triggered-overlay"
+        },
+        {
+          "id": "txP424hXELb",
+          "name": "CheckboxPrimary",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicCheckboxPrimary.tsx",
+          "importSpec": {
+            "modulePath": "CheckboxPrimary.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicCheckboxPrimary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component",
+          "plumeType": "checkbox"
+        },
+        {
+          "id": "9olutGEh6q",
+          "name": "InputValues",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicInputValues.tsx",
+          "importSpec": {
+            "modulePath": "InputValues.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicInputValues.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "06awOUIVXL",
+          "name": "RecruitmentTable",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicRecruitmentTable.tsx",
+          "importSpec": {
+            "modulePath": "RecruitmentTable.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicRecruitmentTable.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "puPU6pgA-z",
+          "name": "ButtonPrimary",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicButtonPrimary.tsx",
+          "importSpec": {
+            "modulePath": "ButtonPrimary.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicButtonPrimary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "exv2JUik8JK",
+          "name": "ApplyLeave",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicApplyLeave.tsx",
+          "importSpec": {
+            "modulePath": "ApplyLeave.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicApplyLeave.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        }
+      ],
+      "icons": [
+        {
+          "id": "x0_EBXfLQg7MA",
+          "name": "LogoGradientBlueLimesvgIcon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__LogoGradientBlueLimesvg.tsx"
+        },
+        {
+          "id": "aQwNVAvIoHl",
+          "name": "Icon4Icon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Icon4.tsx"
+        },
+        {
+          "id": "66VWCPv-g18",
+          "name": "Icon5Icon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Icon5.tsx"
+        },
+        {
+          "id": "1z3p3b8hYQZ",
+          "name": "CheckIcon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Check.tsx"
+        },
+        {
+          "id": "TLp6Cr14LvU",
+          "name": "IndeterminateIcon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Indeterminate.tsx"
+        },
+        {
+          "id": "WBwh6SdVOZ",
+          "name": "Icon6Icon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Icon6.tsx"
+        },
+        {
+          "id": "3oRmKwC1Tg",
+          "name": "Icon7Icon",
+          "moduleFilePath": "plasmic/lime_hrm_front/icons/PlasmicIcon__Icon7.tsx"
+        }
+      ],
+      "images": [
+        {
+          "id": "KlYc0eD8Tz8qV",
+          "name": "logo-gradient-blue-lime-256w 1",
+          "filePath": "plasmic/lime_hrm_front/images/logoGradientBlueLime256W1.png"
+        },
+        {
+          "id": "ppxYH2f3h",
+          "name": "image",
+          "filePath": "plasmic/lime_hrm_front/images/image.png"
+        }
+      ],
+      "codeComponents": [],
+      "projectApiToken": "4uiaGekhLUgtwczoQeIMsQfv5Rs4s1okgwwfQqbQSUy62MYgrYmNqSwB19dhTtxo6yGpfahzg61YxPwKbdw"
+    }
+  ],
+  "globalVariants": {
+    "variantGroups": [
+      {
+        "id": "i40k2JCs7r",
+        "name": "UnnamedGlobalGroupOfVariants",
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "contextFilePath": "plasmic/lime_hrm_front/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants.tsx"
+      },
+      {
+        "id": "dtAd5lvYk_",
+        "name": "UnnamedGlobalGroupOfVariants2",
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "contextFilePath": "plasmic/lime_hrm_front/PlasmicGlobalVariant__UnnamedGlobalGroupOfVariants2.tsx"
+      }
+    ]
+  },
+  "cliVersion": "0.1.157",
+  "$schema": "https://unpkg.com/@plasmicapp/cli@0.1.157/dist/plasmic.schema.json"
+}
