@@ -62,18 +62,12 @@ export type PlasmicMyInfo__OverridesType = {
   middleName?: p.Flex<"input">;
   lastName?: p.Flex<"input">;
   pValuesRow2?: p.Flex<"div">;
-  workerId?: p.Flex<"input">;
   genderBox?: p.Flex<"div">;
   male?: p.Flex<typeof CheckboxPrimary>;
   female?: p.Flex<typeof CheckboxPrimary>;
-  nationality?: p.Flex<typeof SelectBoxPrimary>;
   pValuesRow3?: p.Flex<"div">;
-  socialSecurity?: p.Flex<"input">;
-  spacer?: p.Flex<"div">;
   maritalStatus?: p.Flex<typeof SelectBoxPrimary>;
   pValuesRow4?: p.Flex<"div">;
-  driversLicense?: p.Flex<"input">;
-  licenseExpDate?: p.Flex<"input">;
   contactInfo?: p.Flex<"div">;
   inputValuesRow12?: p.Flex<"div">;
   street1?: p.Flex<"input">;
@@ -209,26 +203,6 @@ function PlasmicMyInfo__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.pValuesRow2)}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__ofAl0
-                    )}
-                  >
-                    {"Worker ID"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"workerId"}
-                    data-plasmic-override={overrides.workerId}
-                    className={classNames(defaultcss.input, sty.workerId)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some value" as const}
-                  />
-
                   <p.Stack
                     as={"div"}
                     data-plasmic-name={"genderBox"}
@@ -262,22 +236,6 @@ function PlasmicMyInfo__RenderFunc(props: {
                       {"Female"}
                     </CheckboxPrimary>
                   </p.Stack>
-
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__vXv2Q
-                    )}
-                  >
-                    {"Nationality"}
-                  </div>
-
-                  <SelectBoxPrimary
-                    data-plasmic-name={"nationality"}
-                    data-plasmic-override={overrides.nationality}
-                    className={classNames("__wab_instance", sty.nationality)}
-                  />
                 </p.Stack>
 
                 <p.Stack
@@ -287,32 +245,6 @@ function PlasmicMyInfo__RenderFunc(props: {
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.pValuesRow3)}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__k0RjP
-                    )}
-                  >
-                    {"Social Security Number"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"socialSecurity"}
-                    data-plasmic-override={overrides.socialSecurity}
-                    className={classNames(defaultcss.input, sty.socialSecurity)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some value" as const}
-                  />
-
-                  <div
-                    data-plasmic-name={"spacer"}
-                    data-plasmic-override={overrides.spacer}
-                    className={classNames(defaultcss.all, sty.spacer)}
-                  />
-
                   <div
                     className={classNames(
                       defaultcss.all,
@@ -336,47 +268,7 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-override={overrides.pValuesRow4}
                   hasGap={true}
                   className={classNames(defaultcss.all, sty.pValuesRow4)}
-                >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__fjLb7
-                    )}
-                  >
-                    {"Driver's License #"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"driversLicense"}
-                    data-plasmic-override={overrides.driversLicense}
-                    className={classNames(defaultcss.input, sty.driversLicense)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some value" as const}
-                  />
-
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox___0Ggm5
-                    )}
-                  >
-                    {"License Expiration Date"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"licenseExpDate"}
-                    data-plasmic-override={overrides.licenseExpDate}
-                    className={classNames(defaultcss.input, sty.licenseExpDate)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some value" as const}
-                  />
-                </p.Stack>
+                />
 
                 <ButtonPrimary
                   className={classNames(
@@ -678,18 +570,12 @@ const PlasmicDescendants = {
     "middleName",
     "lastName",
     "pValuesRow2",
-    "workerId",
     "genderBox",
     "male",
     "female",
-    "nationality",
     "pValuesRow3",
-    "socialSecurity",
-    "spacer",
     "maritalStatus",
     "pValuesRow4",
-    "driversLicense",
-    "licenseExpDate",
     "contactInfo",
     "inputValuesRow12",
     "street1",
@@ -718,18 +604,12 @@ const PlasmicDescendants = {
     "middleName",
     "lastName",
     "pValuesRow2",
-    "workerId",
     "genderBox",
     "male",
     "female",
-    "nationality",
     "pValuesRow3",
-    "socialSecurity",
-    "spacer",
     "maritalStatus",
     "pValuesRow4",
-    "driversLicense",
-    "licenseExpDate",
     "contactInfo",
     "inputValuesRow12",
     "street1",
@@ -756,18 +636,12 @@ const PlasmicDescendants = {
     "middleName",
     "lastName",
     "pValuesRow2",
-    "workerId",
     "genderBox",
     "male",
     "female",
-    "nationality",
     "pValuesRow3",
-    "socialSecurity",
-    "spacer",
     "maritalStatus",
     "pValuesRow4",
-    "driversLicense",
-    "licenseExpDate",
     "contactInfo",
     "inputValuesRow12",
     "street1",
@@ -793,43 +667,24 @@ const PlasmicDescendants = {
     "middleName",
     "lastName",
     "pValuesRow2",
-    "workerId",
     "genderBox",
     "male",
     "female",
-    "nationality",
     "pValuesRow3",
-    "socialSecurity",
-    "spacer",
     "maritalStatus",
-    "pValuesRow4",
-    "driversLicense",
-    "licenseExpDate"
+    "pValuesRow4"
   ],
   pValuesRow1: ["pValuesRow1", "firstName", "middleName", "lastName"],
   firstName: ["firstName"],
   middleName: ["middleName"],
   lastName: ["lastName"],
-  pValuesRow2: [
-    "pValuesRow2",
-    "workerId",
-    "genderBox",
-    "male",
-    "female",
-    "nationality"
-  ],
-  workerId: ["workerId"],
+  pValuesRow2: ["pValuesRow2", "genderBox", "male", "female"],
   genderBox: ["genderBox", "male", "female"],
   male: ["male"],
   female: ["female"],
-  nationality: ["nationality"],
-  pValuesRow3: ["pValuesRow3", "socialSecurity", "spacer", "maritalStatus"],
-  socialSecurity: ["socialSecurity"],
-  spacer: ["spacer"],
+  pValuesRow3: ["pValuesRow3", "maritalStatus"],
   maritalStatus: ["maritalStatus"],
-  pValuesRow4: ["pValuesRow4", "driversLicense", "licenseExpDate"],
-  driversLicense: ["driversLicense"],
-  licenseExpDate: ["licenseExpDate"],
+  pValuesRow4: ["pValuesRow4"],
   contactInfo: [
     "contactInfo",
     "inputValuesRow12",
@@ -880,18 +735,12 @@ type NodeDefaultElementType = {
   middleName: "input";
   lastName: "input";
   pValuesRow2: "div";
-  workerId: "input";
   genderBox: "div";
   male: typeof CheckboxPrimary;
   female: typeof CheckboxPrimary;
-  nationality: typeof SelectBoxPrimary;
   pValuesRow3: "div";
-  socialSecurity: "input";
-  spacer: "div";
   maritalStatus: typeof SelectBoxPrimary;
   pValuesRow4: "div";
-  driversLicense: "input";
-  licenseExpDate: "input";
   contactInfo: "div";
   inputValuesRow12: "div";
   street1: "input";
@@ -981,18 +830,12 @@ export const PlasmicMyInfo = Object.assign(
     middleName: makeNodeComponent("middleName"),
     lastName: makeNodeComponent("lastName"),
     pValuesRow2: makeNodeComponent("pValuesRow2"),
-    workerId: makeNodeComponent("workerId"),
     genderBox: makeNodeComponent("genderBox"),
     male: makeNodeComponent("male"),
     female: makeNodeComponent("female"),
-    nationality: makeNodeComponent("nationality"),
     pValuesRow3: makeNodeComponent("pValuesRow3"),
-    socialSecurity: makeNodeComponent("socialSecurity"),
-    spacer: makeNodeComponent("spacer"),
     maritalStatus: makeNodeComponent("maritalStatus"),
     pValuesRow4: makeNodeComponent("pValuesRow4"),
-    driversLicense: makeNodeComponent("driversLicense"),
-    licenseExpDate: makeNodeComponent("licenseExpDate"),
     contactInfo: makeNodeComponent("contactInfo"),
     inputValuesRow12: makeNodeComponent("inputValuesRow12"),
     street1: makeNodeComponent("street1"),

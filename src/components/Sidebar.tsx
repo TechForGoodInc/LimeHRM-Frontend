@@ -5,7 +5,7 @@ import {
 } from "./plasmic/lime_hrm_front/PlasmicSidebar";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import { UrlRoutes, navigate } from "./../Router";
-import { getUsername, getToken } from "./../App";
+import { getUsername, deleteFromLocalStorage } from "./../App";
 
 interface SidebarProps extends DefaultSidebarProps {}
 
@@ -56,7 +56,7 @@ function Sidebar_(props: SidebarProps, ref: HTMLElementRefOf<"div">) {
       }}
       loggedInUser={{
         className: "loggedInUser",
-        children: () => getUsername()
+        children: getUsername()
       }}
     />
   );
@@ -90,6 +90,7 @@ const handleMaintenanceClick = () => {
   navigate(UrlRoutes.Maintenance);
 }
 const handleLogoutClick = () => {
+  deleteFromLocalStorage();
   navigate(UrlRoutes.Login);
 }
 

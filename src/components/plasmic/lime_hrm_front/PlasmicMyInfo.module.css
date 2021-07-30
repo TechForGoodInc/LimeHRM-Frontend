@@ -131,18 +131,6 @@
 .pValuesRow2 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 6.5%;
 }
-.freeBox__ofAl0 {
-  position: relative;
-  width: 96px;
-  flex-shrink: 0;
-}
-.workerId {
-  position: relative;
-  width: 180px;
-  text-align: center;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
 .genderBox {
   display: flex;
   position: relative;
@@ -174,20 +162,6 @@
 .female:global(.__wab_instance) {
   position: relative;
 }
-.freeBox__vXv2Q {
-  position: relative;
-}
-.nationality:global(.__wab_instance) {
-  position: relative;
-  width: 170px;
-  flex-shrink: 0;
-}
-.option__la1Qs:global(.__wab_instance) {
-  position: relative;
-}
-.option__buIxr:global(.__wab_instance) {
-  position: relative;
-}
 .pValuesRow3 {
   display: flex;
   position: relative;
@@ -208,29 +182,6 @@
 .pValuesRow3 > :global(.__wab_flex-container) > *,
 .pValuesRow3 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 1%;
-}
-.freeBox__k0RjP {
-  position: relative;
-  width: 168px;
-  text-align: right;
-  flex-shrink: 0;
-}
-.socialSecurity {
-  position: relative;
-  width: 180px;
-  text-align: center;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.spacer {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 21px;
-  width: 61px;
-  flex-shrink: 0;
 }
 .freeBox__h9Ovs {
   position: relative;
@@ -265,26 +216,6 @@
 .pValuesRow4 > :global(.__wab_flex-container) > *,
 .pValuesRow4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 7%;
-}
-.freeBox__fjLb7 {
-  position: relative;
-}
-.driversLicense {
-  position: relative;
-  width: 180px;
-  text-align: center;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.freeBox___0Ggm5 {
-  position: relative;
-}
-.licenseExpDate {
-  position: relative;
-  width: 180px;
-  text-align: center;
-  flex-shrink: 0;
-  border-radius: 5px;
 }
 .buttonPrimary__odcZj:global(.__wab_instance) {
   position: relative;

@@ -11,3 +11,28 @@
 .sidebar:global(.__wab_instance) {
   position: relative;
 }
+.freeBox__pp1D1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 988px;
+  height: 230px;
+  flex-shrink: 0;
+}
+.freeBox___7ITl {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 204px;
+  height: 52px;
+  flex-shrink: 0;
+}
+.textbox {
+  width: 180px;
+  height: 37px;
+  flex-shrink: 0;
+}

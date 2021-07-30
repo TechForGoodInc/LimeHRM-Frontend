@@ -1,4 +1,5 @@
 import { BrowserRouter, Routes, Route, Redirect } from 'react-router-dom';
+import { getToken } from "./App";
 
 //Page component imports
 import Admin from './components/Administration';
@@ -15,23 +16,36 @@ import Time from './components/Time';
 //UrlMappings
 //Conditional statement + Redirect = saved state for login.
 const Router = () => {
-    return (
-        <BrowserRouter>
-            <Routes>
-                <Redirect from={UrlRoutes.Root} to={UrlRoutes.Login}></Redirect>
-                <Route path={UrlRoutes.Login} element={<Login></Login>}/>
-                <Route path={UrlRoutes.Dashboard} element={<Dashboard></Dashboard>}/>
-                <Route path={UrlRoutes.Admin} element={<Admin></Admin>}/>
-                <Route path={UrlRoutes.Leave} element={<Leave></Leave>}/>
-                <Route path={UrlRoutes.Maintenance} element={<Maintenance></Maintenance>}/>
-                <Route path={UrlRoutes.Account} element={<Account></Account>}/>
-                <Route path={UrlRoutes.Pay} element={<Pay></Pay>}/>
-                <Route path={UrlRoutes.Performance} element={<Performance></Performance>}/>
-                <Route path={UrlRoutes.Recruitment} element={<Recruitment></Recruitment>}/>
-                <Route path={UrlRoutes.Time} element={<Time></Time>}/>
-            </Routes>
-        </BrowserRouter>
-    )
+    if (getToken() !== ""){
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Redirect from={UrlRoutes.Root} to={UrlRoutes.Dashboard}></Redirect>
+                    <Route path={UrlRoutes.Login} element={<Login></Login>}/>
+                    <Route path={UrlRoutes.Dashboard} element={<Dashboard></Dashboard>}/>
+                    <Route path={UrlRoutes.Admin} element={<Admin></Admin>}/>
+                    <Route path={UrlRoutes.Leave} element={<Leave></Leave>}/>
+                    <Route path={UrlRoutes.Maintenance} element={<Maintenance></Maintenance>}/>
+                    <Route path={UrlRoutes.Account} element={<Account></Account>}/>
+                    <Route path={UrlRoutes.Pay} element={<Pay></Pay>}/>
+                    <Route path={UrlRoutes.Performance} element={<Performance></Performance>}/>
+                    <Route path={UrlRoutes.Recruitment} element={<Recruitment></Recruitment>}/>
+                    <Route path={UrlRoutes.Time} element={<Time></Time>}/>
+                </Routes>
+            </BrowserRouter>
+        );
+    }
+    else {
+        return (
+            <BrowserRouter>
+                <Routes>
+                    <Route path={UrlRoutes.Login} element={<Login></Login>}/>
+                    <Redirect from="*" to={UrlRoutes.Login}></Redirect>
+                </Routes>
+            </BrowserRouter>
+        );
+    }
+    
 }
 export default Router;
 
@@ -51,7 +65,7 @@ export const UrlRoutes = {
     "Time": "/time"
 };
 
-export const ApiRoutes = {
+export var ApiRoutes = {
     "Base": "http://localhost:7000",
 }
 

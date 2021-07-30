@@ -23,23 +23,17 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 interface DashboardProps extends DefaultDashboardProps {}
 
 function Dashboard_(props: DashboardProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicDashboard to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicDashboard are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all DashboardProps here, but feel free
-  // to do whatever works for you.
-
-  return <PlasmicDashboard root={{ ref }} {...props} />;
+  var time = new Date();
+  return (
+    <PlasmicDashboard 
+    root={{ ref }} 
+    {...props} 
+    currentTime={{
+      className: "currentTime",
+      children: time.getHours() + ":" + time.getMinutes()
+    }}
+    />
+  );
 }
-
 const Dashboard = React.forwardRef(Dashboard_);
 export default Dashboard;

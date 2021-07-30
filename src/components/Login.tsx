@@ -6,7 +6,9 @@ import {
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 import { setToken, getToken, getLoginToken } from "./../App";
 import { UrlRoutes, navigate } from "./../Router";
-import { waitFor } from "@testing-library/react";
+
+var loginUsername = "";
+var loginPassword = "";
 
 interface LoginProps extends DefaultLoginProps {}
 
@@ -16,40 +18,43 @@ function Login_(props: LoginProps, ref: HTMLElementRefOf<"div">) {
       root={{ ref }} 
       {...props} 
       loginButton={{
-        className: "loginDiv",
-        onClick: () => handleLogin("email@casiano.dev", "password") //replace with values from textboxes on login page
+        className: "loginButton",
+        onClick: () => handleLogin(loginUsername, loginPassword)
       }}
       emailInput={{
         className: "emailInput",
-        onChange: () => handleEmailChange()
+        onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e)
       }}
       passwordInput={{
         className: "passwordInput",
-        onChange: () => handlePasswordChange()
+        onChange: (e: React.FormEvent<HTMLInputElement>) => handlePasswordChange(e)
       }}
     />
   );
 }
 
-const handleEmailChange = () => {
-
+const handleEmailChange = (e: React.FormEvent<HTMLInputElement>) => {
+  loginUsername = e.currentTarget.value;
 }
 
-const handlePasswordChange = () => {
-
+const handlePasswordChange = (e: React.FormEvent<HTMLInputElement>) => {
+  loginPassword = e.currentTarget.value;
 }
 
 const handleLogin = (username: string, password: string) => {
+  errorCheckBoxes()
   getLoginToken(username, password).then(
     result => {
       setToken(result.token);
-      if (getToken() != undefined){
-        alert(getToken());
-        navigate(UrlRoutes.Dashboard);
-      }
+      if (getToken() != undefined) navigate(UrlRoutes.Dashboard);
       else {alert("Connection to server could not be established.")}
     }
   );
+}
+
+const errorCheckBoxes = () => {
+  if (loginUsername === "") alert("Please enter an email address");
+  if (loginPassword === "") alert("Please enter a password");
 }
 
 const Login = React.forwardRef(Login_);

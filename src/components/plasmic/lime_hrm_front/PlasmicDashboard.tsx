@@ -55,6 +55,7 @@ export type PlasmicDashboard__OverridesType = {
   pageContent?: p.Flex<"div">;
   timeLeaveTiles?: p.Flex<"div">;
   timeTile?: p.Flex<"div">;
+  currentTime?: p.Flex<"h1">;
   clockButtons?: p.Flex<"div">;
   freeBox?: p.Flex<"div">;
   leaveTile?: p.Flex<"div">;
@@ -132,10 +133,12 @@ function PlasmicDashboard__RenderFunc(props: {
                   </h1>
 
                   <h1
+                    data-plasmic-name={"currentTime"}
+                    data-plasmic-override={overrides.currentTime}
                     className={classNames(
                       defaultcss.h1,
                       defaultcss.__wab_text,
-                      sty.h1___1SP1U
+                      sty.currentTime
                     )}
                   >
                     {"5:30 PM"}
@@ -254,6 +257,7 @@ const PlasmicDescendants = {
     "pageContent",
     "timeLeaveTiles",
     "timeTile",
+    "currentTime",
     "clockButtons",
     "freeBox",
     "leaveTile",
@@ -267,6 +271,7 @@ const PlasmicDescendants = {
     "pageContent",
     "timeLeaveTiles",
     "timeTile",
+    "currentTime",
     "clockButtons",
     "freeBox",
     "leaveTile",
@@ -278,6 +283,7 @@ const PlasmicDescendants = {
     "pageContent",
     "timeLeaveTiles",
     "timeTile",
+    "currentTime",
     "clockButtons",
     "freeBox",
     "leaveTile",
@@ -288,11 +294,13 @@ const PlasmicDescendants = {
   timeLeaveTiles: [
     "timeLeaveTiles",
     "timeTile",
+    "currentTime",
     "clockButtons",
     "freeBox",
     "leaveTile"
   ],
-  timeTile: ["timeTile", "clockButtons", "freeBox"],
+  timeTile: ["timeTile", "currentTime", "clockButtons", "freeBox"],
+  currentTime: ["currentTime"],
   clockButtons: ["clockButtons"],
   freeBox: ["freeBox"],
   leaveTile: ["leaveTile"],
@@ -310,6 +318,7 @@ type NodeDefaultElementType = {
   pageContent: "div";
   timeLeaveTiles: "div";
   timeTile: "div";
+  currentTime: "h1";
   clockButtons: "div";
   freeBox: "div";
   leaveTile: "div";
@@ -384,6 +393,7 @@ export const PlasmicDashboard = Object.assign(
     pageContent: makeNodeComponent("pageContent"),
     timeLeaveTiles: makeNodeComponent("timeLeaveTiles"),
     timeTile: makeNodeComponent("timeTile"),
+    currentTime: makeNodeComponent("currentTime"),
     clockButtons: makeNodeComponent("clockButtons"),
     freeBox: makeNodeComponent("freeBox"),
     leaveTile: makeNodeComponent("leaveTile"),

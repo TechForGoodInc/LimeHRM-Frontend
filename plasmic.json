@@ -317,6 +317,19 @@
           "cssFilePath": "plasmic/lime_hrm_front/PlasmicApplyLeave.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "tm5vSvyu3h",
+          "name": "AdminTable",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicAdminTable.tsx",
+          "importSpec": {
+            "modulePath": "AdminTable.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicAdminTable.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

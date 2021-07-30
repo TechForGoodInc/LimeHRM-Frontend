@@ -50,6 +50,7 @@ export const PlasmicAdministration__ArgProps = new Array<ArgPropType>();
 export type PlasmicAdministration__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
+  textbox?: p.Flex<"input">;
 };
 
 export interface DefaultAdministrationProps {
@@ -87,6 +88,20 @@ function PlasmicAdministration__RenderFunc(props: {
             data-plasmic-override={overrides.sidebar}
             className={classNames("__wab_instance", sty.sidebar)}
           />
+
+          <div className={classNames(defaultcss.all, sty.freeBox__pp1D1)}>
+            <div className={classNames(defaultcss.all, sty.freeBox___7ITl)} />
+
+            <input
+              data-plasmic-name={"textbox"}
+              data-plasmic-override={overrides.textbox}
+              className={classNames(defaultcss.input, sty.textbox)}
+              placeholder={"Some placeholder" as const}
+              size={1 as const}
+              type={"text" as const}
+              value={"Some value" as const}
+            />
+          </div>
         </div>
       </div>
     </React.Fragment>
@@ -94,8 +109,9 @@ function PlasmicAdministration__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  root: ["root", "sidebar"],
-  sidebar: ["sidebar"]
+  root: ["root", "sidebar", "textbox"],
+  sidebar: ["sidebar"],
+  textbox: ["textbox"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -103,6 +119,7 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
+  textbox: "input";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -167,6 +184,7 @@ export const PlasmicAdministration = Object.assign(
   {
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
+    textbox: makeNodeComponent("textbox"),
 
     // Metadata about props expected for PlasmicAdministration
     internalVariantProps: PlasmicAdministration__VariantProps,

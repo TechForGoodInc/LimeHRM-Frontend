@@ -4,10 +4,14 @@ import './App.css';
 import Router from './Router';
 import { ApiRoutes } from "./Router";
 
-var authToken = "";
-var username = "";
+var state = {
+  authToken: "",
+  username: ""
+};
 
 function App() {
+  loadFromLocalStorage();
+  console.log("%cDEBUG:\nCurrent Bearer Token: " + state.authToken, "background-color: #1f4221;");
   return (
     <Router/>
   );
@@ -15,19 +19,37 @@ function App() {
 export default App;
 
 export function setUsername(val: string){
-  username = val
+  state.username = val
 }
 
 export function setToken(val: string){
-  authToken = val;
+  state.authToken = val;
 }
 
 export function getToken(){
-  return authToken
+  return state.authToken
 }
 
 export function getUsername(){
- return username;
+ return state.username;
+}
+
+const saveToLocalStorage = () => {
+  try {localStorage.setItem('state', JSON.stringify(state));}
+  catch (err) {console.log("Error in saving local storage: " + err);}
+}
+
+const loadFromLocalStorage = () => {
+  try {
+    const serializedState = localStorage.getItem('state');
+    state = serializedState !== null ? JSON.parse(serializedState) : {authToken: "", username: ""};
+  }
+  catch (err) {console.log("Error in loading local storage: " + err);}
+}
+
+export const deleteFromLocalStorage = () => {
+  localStorage.removeItem('state');
+  state = {authToken: "", username: ""};
 }
 
 export async function getLoginToken(username: string, password: string){
@@ -47,4 +69,8 @@ export async function getLoginToken(username: string, password: string){
         }
     );
     return response.json();
+}
+
+window.onbeforeunload = (e) => {
+  saveToLocalStorage();
 }
