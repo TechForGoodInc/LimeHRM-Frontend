@@ -46,7 +46,7 @@ const handleLogin = (username: string, password: string) => {
   getLoginToken(username, password).then(
     result => {
       setToken(result.token);
-      if (getToken() != undefined) navigate(UrlRoutes.Dashboard);
+      if (getToken() !== undefined) navigate(UrlRoutes.Dashboard);
       else {alert("Connection to server could not be established.")}
     }
   );

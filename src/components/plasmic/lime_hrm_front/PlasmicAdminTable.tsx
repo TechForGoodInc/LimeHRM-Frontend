@@ -30,6 +30,7 @@ import {
   deriveRenderOpts,
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
+import CheckboxPrimary from "../../CheckboxPrimary"; // plasmic-import: txP424hXELb/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
@@ -48,6 +49,15 @@ export const PlasmicAdminTable__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicAdminTable__OverridesType = {
   root?: p.Flex<"div">;
+  columns?: p.Flex<"div">;
+  column2?: p.Flex<"div">;
+  column1?: p.Flex<"div">;
+  column3?: p.Flex<"div">;
+  column4?: p.Flex<"div">;
+  checkBoxColumn?: p.Flex<"div">;
+  row1?: p.Flex<"div">;
+  row2?: p.Flex<"div">;
+  row3?: p.Flex<"div">;
 };
 
 export interface DefaultAdminTableProps {
@@ -71,73 +81,216 @@ function PlasmicAdminTable__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div className={classNames(defaultcss.all, sty.columns__plNrT)}>
-        <div className={classNames(defaultcss.all, sty.column__wlDw0)}>
-          <div className={classNames(defaultcss.all, sty.columns__jz1Xr)}>
-            <div className={classNames(defaultcss.all, sty.column__dCowb)}>
-              <div className={classNames(defaultcss.all, sty.columns___98SyD)}>
-                <div
-                  className={classNames(defaultcss.all, sty.column__jkejp)}
-                />
-
-                <div
-                  className={classNames(defaultcss.all, sty.column__cwiuj)}
-                />
-              </div>
-            </div>
-
-            <div className={classNames(defaultcss.all, sty.column__nzf7U)}>
-              <div className={classNames(defaultcss.all, sty.columns__zmNOv)}>
-                <div
-                  className={classNames(defaultcss.all, sty.column__lx9Z7)}
-                />
-
-                <div className={classNames(defaultcss.all, sty.column__p6Xg)} />
-              </div>
-            </div>
-          </div>
+      <div
+        data-plasmic-name={"columns"}
+        data-plasmic-override={overrides.columns}
+        className={classNames(defaultcss.all, sty.columns)}
+      >
+        <div
+          data-plasmic-name={"column2"}
+          data-plasmic-override={overrides.column2}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.column2
+          )}
+        >
+          {"User Role"}
         </div>
 
-        <div className={classNames(defaultcss.all, sty.column__k2S59)}>
-          <div className={classNames(defaultcss.all, sty.columns___5HHWs)}>
-            <div className={classNames(defaultcss.all, sty.column__zGLuC)}>
-              <div className={classNames(defaultcss.all, sty.columns__bevzY)}>
-                <div
-                  className={classNames(defaultcss.all, sty.column__dvcYs)}
-                />
+        <div
+          data-plasmic-name={"column1"}
+          data-plasmic-override={overrides.column1}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.column1
+          )}
+        >
+          {"Username"}
+        </div>
 
-                <div
-                  className={classNames(defaultcss.all, sty.column__wFoJl)}
-                />
-              </div>
-            </div>
+        <div
+          data-plasmic-name={"column3"}
+          data-plasmic-override={overrides.column3}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.column3
+          )}
+        >
+          {"Employee Name"}
+        </div>
 
-            <div className={classNames(defaultcss.all, sty.column__hOwjy)}>
-              <div className={classNames(defaultcss.all, sty.columns__qWwkh)}>
-                <div
-                  className={classNames(defaultcss.all, sty.column__hPRee)}
-                />
-
-                <div
-                  className={classNames(defaultcss.all, sty.column__tm3QA)}
-                />
-              </div>
-            </div>
-          </div>
+        <div
+          data-plasmic-name={"column4"}
+          data-plasmic-override={overrides.column4}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.column4
+          )}
+        >
+          {"Status"}
         </div>
       </div>
+
+      <div
+        data-plasmic-name={"checkBoxColumn"}
+        data-plasmic-override={overrides.checkBoxColumn}
+        className={classNames(defaultcss.all, sty.checkBoxColumn)}
+      >
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__b5Nii)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__tDl5)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__hjnRw)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__nUwSa)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__i3MgJ)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary___393Ze)}
+        >
+          {null}
+        </CheckboxPrimary>
+
+        <CheckboxPrimary
+          className={classNames("__wab_instance", sty.checkboxPrimary__uZkHx)}
+        >
+          {null}
+        </CheckboxPrimary>
+      </div>
+
+      <div className={classNames(defaultcss.all, sty.freeBox__f40Bx)}>
+        <div
+          data-plasmic-name={"row1"}
+          data-plasmic-override={overrides.row1}
+          className={classNames(defaultcss.all, sty.row1)}
+        >
+          <div className={classNames(defaultcss.all, sty.freeBox__hwUi)} />
+        </div>
+
+        <div
+          data-plasmic-name={"row2"}
+          data-plasmic-override={overrides.row2}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.row2
+          )}
+        >
+          {"\n"}
+        </div>
+
+        <div
+          data-plasmic-name={"row3"}
+          data-plasmic-override={overrides.row3}
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.row3
+          )}
+        >
+          {"\n"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__od7Tb
+          )}
+        >
+          {"\n"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__n0Ns
+          )}
+        >
+          {"\n"}
+        </div>
+      </div>
+
+      <div className={classNames(defaultcss.all, sty.freeBox__gpmM)}>
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__cjOts
+          )}
+        >
+          {"\n"}
+        </div>
+      </div>
+
+      <div className={classNames(defaultcss.all, sty.freeBox__rl727)} />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root"]
+  root: [
+    "root",
+    "columns",
+    "column2",
+    "column1",
+    "column3",
+    "column4",
+    "checkBoxColumn",
+    "row1",
+    "row2",
+    "row3"
+  ],
+  columns: ["columns", "column2", "column1", "column3", "column4"],
+  column2: ["column2"],
+  column1: ["column1"],
+  column3: ["column3"],
+  column4: ["column4"],
+  checkBoxColumn: ["checkBoxColumn"],
+  row1: ["row1"],
+  row2: ["row2"],
+  row3: ["row3"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
+  columns: "div";
+  column2: "div";
+  column1: "div";
+  column3: "div";
+  column4: "div";
+  checkBoxColumn: "div";
+  row1: "div";
+  row2: "div";
+  row3: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -201,6 +354,15 @@ export const PlasmicAdminTable = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
+    columns: makeNodeComponent("columns"),
+    column2: makeNodeComponent("column2"),
+    column1: makeNodeComponent("column1"),
+    column3: makeNodeComponent("column3"),
+    column4: makeNodeComponent("column4"),
+    checkBoxColumn: makeNodeComponent("checkBoxColumn"),
+    row1: makeNodeComponent("row1"),
+    row2: makeNodeComponent("row2"),
+    row3: makeNodeComponent("row3"),
 
     // Metadata about props expected for PlasmicAdminTable
     internalVariantProps: PlasmicAdminTable__VariantProps,

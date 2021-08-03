@@ -11,28 +11,176 @@
 .sidebar:global(.__wab_instance) {
   position: relative;
 }
-.freeBox__pp1D1 {
+.adminSection {
   display: flex;
-  position: relative;
-  flex-direction: column;
+  position: absolute;
+  flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  width: 988px;
-  height: 230px;
+  width: 976px;
+  height: 467px;
+  left: 302px;
+  top: 251px;
   flex-shrink: 0;
 }
-.freeBox___7ITl {
+.deleteButton {
+  position: absolute;
+  width: 136px;
+  height: 38px;
+  left: 213px;
+  top: 65px;
+  flex-shrink: 0;
+  border-width: 1px;
+  border-style: solid;
+}
+.buttonPrimary__lwf0I:global(.__wab_instance) {
+  position: absolute;
+  width: 135px;
+  height: 39px;
+  left: 35px;
+  top: 65px;
+  bottom: auto;
+  flex-shrink: 0;
+}
+.adminTable:global(.__wab_instance) {
+  position: absolute;
+  align-self: flex-end;
+  left: 310px;
+  top: 369px;
+  flex-shrink: 0;
+}
+.filterEmployees {
   display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  width: 204px;
-  height: 52px;
+  width: 982px;
+  height: 251px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
   flex-shrink: 0;
 }
-.textbox {
-  width: 180px;
+.selectBoxPrimary__h3JUv:global(.__wab_instance) {
+  position: absolute;
+  width: 160px;
+  height: 33px;
+  left: 273px;
+  top: 103px;
+  flex-shrink: 0;
+}
+.option___0Uqp:global(.__wab_instance) {
+  position: relative;
+}
+.option__b2Oym:global(.__wab_instance) {
+  position: relative;
+}
+.selectBoxPrimary__kiSb6:global(.__wab_instance) {
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 518px;
+  top: 103px;
+  bottom: auto;
+  flex-shrink: 0;
+}
+.option__ypuNu:global(.__wab_instance) {
+  position: relative;
+}
+.option__wWaJz:global(.__wab_instance) {
+  position: relative;
+}
+.selectBoxPrimary__x1J19:global(.__wab_instance) {
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 770px;
+  top: 103px;
+  right: auto;
+  bottom: auto;
+  flex-shrink: 0;
+}
+.option___9PqR8:global(.__wab_instance) {
+  position: relative;
+}
+.option__njOlw:global(.__wab_instance) {
+  position: relative;
+}
+.selectBoxPrimary__piE4A:global(.__wab_instance) {
+  position: absolute;
+  width: 155px;
+  height: 33px;
+  left: 30px;
+  top: 104px;
+  flex-shrink: 0;
+}
+.option__wJqoX:global(.__wab_instance) {
+  position: relative;
+}
+.option__r20VP:global(.__wab_instance) {
+  position: relative;
+}
+.buttonPrimary__nMz:global(.__wab_instance) {
+  position: absolute;
+  width: 125px;
+  height: 41px;
+  bottom: auto;
+  top: 188px;
+  left: 20px;
+  flex-shrink: 0;
+}
+.freeBox__dgG1I {
+  position: absolute;
+  height: 33px;
+  width: 107px;
+  top: 68px;
+  left: 54px;
+  font-size: 23px;
+  flex-shrink: 0;
+}
+.freeBox__isZQi {
+  position: absolute;
+  height: 33px;
+  width: 107px;
+  top: 68px;
+  left: 299px;
+  font-size: 23px;
+  bottom: auto;
+  right: auto;
+  flex-shrink: 0;
+}
+.freeBox__qnbN {
+  position: absolute;
+  height: 34px;
+  width: 170px;
+  top: 68px;
+  left: 513px;
+  font-size: 23px;
+  bottom: auto;
+  right: auto;
+  flex-shrink: 0;
+}
+.freeBox__gBg0 {
+  position: absolute;
+  height: 33px;
+  width: 107px;
+  top: 68px;
+  left: 804px;
+  font-size: 23px;
+  bottom: auto;
+  right: auto;
+  flex-shrink: 0;
+}
+.freeBox___7JdPe {
+  position: absolute;
   height: 37px;
+  width: 167px;
+  top: auto;
+  left: 450px;
+  font-size: 25px;
+  bottom: auto;
+  right: auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
   flex-shrink: 0;
 }
