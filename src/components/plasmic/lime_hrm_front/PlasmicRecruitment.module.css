@@ -17,69 +17,95 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 3%;
+}
+.divider > :global(.__wab_flex-container) {
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 1122px;
-  height: 720px;
   align-content: unset;
-  flex-shrink: 0;
+  margin-top: calc(0px - 4%);
+  height: calc(100% + 4%);
 }
-.content {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  align-self: stretch;
-  left: 51px;
-  top: 66px;
-  width: 1128px;
-  height: 644px;
-  background: #ffffff;
-  box-shadow: 1px 2px 2px 1px #00000038;
-  flex-shrink: 0;
-  border-width: 1px;
-  border-style: solid;
+.divider > :global(.__wab_flex-container) > *,
+.divider > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 4%;
 }
 .filterCandidates {
   display: flex;
   position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  width: 100%;
+  height: 27%;
+  left: auto;
+  top: auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 8px 4px #0000001f;
+  min-width: 0;
+}
+.freeBox__fMy0M {
+  width: 495px;
+  height: 49px;
+  font-size: 26px;
+  text-align: center;
+  align-self: center;
+  flex-shrink: 0;
+  margin: 1%;
+}
+.selectBoxes {
+  display: flex;
+  position: relative;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 207px;
-  width: 1123px;
-  align-self: auto;
-  flex-shrink: 0;
-  border: 1px solid transparent;
-}
-.clearAllButton:global(.__wab_instance) {
-  position: absolute;
-  bottom: auto;
-  top: 154px;
+  top: auto;
+  left: auto;
   right: auto;
-  left: 951px;
-  width: 108px;
-  height: 33px;
-  flex-shrink: 0;
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 2%;
 }
-.filterButton:global(.__wab_instance) {
-  position: absolute;
-  bottom: auto;
-  top: 154px;
-  right: auto;
-  left: 820px;
-  width: 108px;
-  height: 33px;
-  flex-shrink: 0;
+.selectBoxes > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  margin-left: calc(0px - 2%);
+  width: calc(100% + 2%);
+}
+.selectBoxes > :global(.__wab_flex-container) > *,
+.selectBoxes > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 2%;
+}
+.jobTitle {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
+}
+.freeBox__n9RMj {
+  position: relative;
+  left: auto;
+  top: auto;
 }
 .jobTitleSelect:global(.__wab_instance) {
-  position: absolute;
-  left: 21px;
-  top: 93px;
-  width: 161px;
-  height: 32px;
-  flex-shrink: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
 }
 .option__i1ZI:global(.__wab_instance) {
   position: relative;
@@ -87,13 +113,27 @@
 .option__bomvG:global(.__wab_instance) {
   position: relative;
 }
+.candidateName {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
+}
+.freeBox__lvRuY {
+  position: relative;
+  left: auto;
+  top: auto;
+}
 .candidateNameSelect:global(.__wab_instance) {
-  position: absolute;
-  left: 199px;
-  top: 92px;
-  width: 161px;
-  height: 32px;
-  flex-shrink: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
 }
 .option__ovjoX:global(.__wab_instance) {
   position: relative;
@@ -101,13 +141,24 @@
 .option__uDTu:global(.__wab_instance) {
   position: relative;
 }
+.priority {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+  left: auto;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
+}
 .prioritySelect:global(.__wab_instance) {
-  position: absolute;
-  left: 377px;
-  top: 93px;
-  width: 161px;
-  height: 32px;
-  flex-shrink: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
 }
 .option__p1ElB:global(.__wab_instance) {
   position: relative;
@@ -115,79 +166,24 @@
 .option__qbFiR:global(.__wab_instance) {
   position: relative;
 }
-.freeBox__n9RMj {
-  position: absolute;
-  left: 66px;
-  top: 65px;
-}
-.freeBox__lvRuY {
-  position: absolute;
-  left: 221px;
-  top: 65px;
-}
-.freeBox__oDDuR {
-  position: absolute;
-  left: 428px;
-  top: 68px;
-}
-.freeBox__fMy0M {
+.status {
+  display: flex;
   position: relative;
-  width: 495px;
-  height: 49px;
-  left: 304px;
-  top: 17px;
-  font-size: 26px;
-  text-align: center;
-  right: auto;
-  align-self: flex-start;
-  flex-shrink: 0;
-}
-.textbox {
-  position: absolute;
-  width: 159px;
-  height: 33px;
-  left: 926px;
-  top: 93px;
-  background: #f4f4f4;
-  flex-shrink: 0;
-  border-radius: 3px;
-}
-.freeBox__k9ItK {
-  position: absolute;
-  left: 981px;
-  top: 68px;
-}
-.freeBox__cptyE {
-  position: absolute;
-  left: 792px;
-  top: 67px;
-}
-.freeBox___05PmQ {
-  position: absolute;
-  left: 585px;
-  top: 68px;
-}
-.hiringManagerSelect:global(.__wab_instance) {
-  position: absolute;
-  left: 560px;
-  top: 94px;
-  width: 161px;
-  height: 32px;
-  flex-shrink: 0;
-}
-.option__mPhqc:global(.__wab_instance) {
-  position: relative;
-}
-.option__z5GgB:global(.__wab_instance) {
-  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+  left: auto;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
 }
 .statusSelect:global(.__wab_instance) {
-  position: absolute;
-  left: 738px;
-  top: 93px;
-  width: 161px;
-  height: 32px;
-  flex-shrink: 0;
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
 }
 .option__k2TTx:global(.__wab_instance) {
   position: relative;
@@ -195,40 +191,132 @@
 .option__kdIh:global(.__wab_instance) {
   position: relative;
 }
-.addCandidates {
+.hiringManager {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+  left: auto;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
+}
+.hiringManagerSelect:global(.__wab_instance) {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 100%;
+  min-width: 0;
+}
+.option__mPhqc:global(.__wab_instance) {
+  position: relative;
+}
+.option__z5GgB:global(.__wab_instance) {
+  position: relative;
+}
+.date {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  top: auto;
+  left: auto;
+  width: 100%;
+  align-content: unset;
+  min-width: 0;
+}
+.textbox {
+  position: relative;
+  width: 100%;
+  left: auto;
+  top: auto;
+  background: #f4f4f4;
+  height: 31px;
+  min-width: 0;
+  flex-shrink: 0;
+  border-radius: 3px;
+}
+.buttons {
   display: flex;
   position: relative;
   flex-direction: row;
+  align-self: flex-end;
+  padding: 2%;
+}
+.buttons > :global(.__wab_flex-container) {
+  flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
-  height: 435px;
-  border-top-width: 1px;
-  border-top-style: solid;
+  margin-left: calc(0px - 2%);
+  width: calc(100% + 2%);
+}
+.buttons > :global(.__wab_flex-container) > *,
+.buttons > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 2%;
+}
+.clearAllButton:global(.__wab_instance) {
+  width: 108px;
+  height: 33px;
   flex-shrink: 0;
 }
-.freeBox__fbFf {
-  position: absolute;
-  left: 425px;
-  top: 18px;
-  font-size: 26px;
-  align-self: flex-start;
-  width: 284px;
-  height: 36px;
+.filterButton:global(.__wab_instance) {
+  position: relative;
+  bottom: auto;
+  top: auto;
+  right: auto;
+  left: auto;
+  width: 108px;
+  height: 33px;
   flex-shrink: 0;
+}
+.candidateInfo {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  align-content: unset;
+  width: 100%;
+  height: 100%;
+  left: auto;
+  top: auto;
+  background: #ffffff;
+  box-shadow: 0px 5px 8px 4px #0000001f;
+  min-width: 0;
+  min-height: 0;
+  padding: 2%;
+}
+.freeBox__iss1F {
+  position: relative;
+  left: auto;
+  top: auto;
+  font-size: 26px;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  min-width: 0;
 }
 .buttonPrimary:global(.__wab_instance) {
-  position: absolute;
+  position: relative;
   bottom: auto;
-  top: 75px;
+  top: auto;
   right: auto;
-  left: 908px;
-  width: 151px;
-  height: 32px;
+  left: auto;
+  width: 108px;
+  height: 33px;
+  align-self: flex-end;
   flex-shrink: 0;
 }
 .recruitmentTable:global(.__wab_instance) {
-  position: absolute;
-  top: 122px;
-  left: 52px;
-  flex-shrink: 0;
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
 }

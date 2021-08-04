@@ -1,0 +1,72 @@
+.popupLogout {
+  display: inline-flex;
+  flex-direction: column;
+  position: relative;
+  width: auto;
+  height: auto;
+}
+.popupContainer {
+  display: flex;
+  position: relative;
+  height: auto;
+  margin-right: 0px;
+  margin-left: 0px;
+  width: 100%;
+  flex-direction: column;
+  box-shadow: 0px 5px 8px 4px #0000001f;
+  max-width: 414px;
+  background: rgb(255, 255, 255);
+  min-width: 0;
+  padding: 20px 35px;
+}
+.popupContainer > :global(.__wab_flex-container) {
+  flex-direction: column;
+  justify-content: center;
+  margin-top: calc(0px - 20px);
+  height: calc(100% + 20px);
+}
+.popupContainer > :global(.__wab_flex-container) > *,
+.popupContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-top: 20px;
+}
+.text {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0px;
+  line-height: 20px;
+  color: rgba(8, 29, 65, 1);
+  position: relative;
+  top: auto;
+  left: auto;
+  width: 100%;
+  min-width: 0;
+  padding: 5px;
+}
+.buttonDiv {
+  display: inline-flex;
+  position: relative;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  box-shadow: none;
+}
+.buttonDiv > :global(.__wab_flex-container) {
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: calc(0px - 20px);
+  width: calc(100% + 20px);
+}
+.buttonDiv > :global(.__wab_flex-container) > *,
+.buttonDiv > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 20px;
+}
+.continueButton:global(.__wab_instance) {
+  position: relative;
+}
+.logoutButton:global(.__wab_instance) {
+  position: relative;
+}

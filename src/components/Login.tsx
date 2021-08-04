@@ -23,11 +23,13 @@ function Login_(props: LoginProps, ref: HTMLElementRefOf<"div">) {
       }}
       emailInput={{
         className: "emailInput",
-        onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e)
+        onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e),
+        onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => handleKeyPress(e)
       }}
       passwordInput={{
         className: "passwordInput",
-        onChange: (e: React.FormEvent<HTMLInputElement>) => handlePasswordChange(e)
+        onChange: (e: React.FormEvent<HTMLInputElement>) => handlePasswordChange(e),
+        onKeyPress: (e: React.KeyboardEvent<HTMLInputElement>) => handleKeyPress(e)
       }}
     />
   );
@@ -36,11 +38,9 @@ function Login_(props: LoginProps, ref: HTMLElementRefOf<"div">) {
 const handleEmailChange = (e: React.FormEvent<HTMLInputElement>) => {
   loginUsername = e.currentTarget.value;
 }
-
 const handlePasswordChange = (e: React.FormEvent<HTMLInputElement>) => {
   loginPassword = e.currentTarget.value;
 }
-
 const handleLogin = (username: string, password: string) => {
   errorCheckBoxes()
   getLoginToken(username, password).then(
@@ -50,6 +50,9 @@ const handleLogin = (username: string, password: string) => {
       else {alert("Connection to server could not be established.")}
     }
   );
+}
+const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+  if (e.key == 'Enter') handleLogin(loginUsername, loginPassword);
 }
 
 const errorCheckBoxes = () => {
