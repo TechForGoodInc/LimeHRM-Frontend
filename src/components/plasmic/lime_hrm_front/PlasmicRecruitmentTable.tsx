@@ -51,28 +51,25 @@ export const PlasmicRecruitmentTable__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicRecruitmentTable__OverridesType = {
   root?: p.Flex<"div">;
-  columns?: p.Flex<"div">;
-  column2Main?: p.Flex<"div">;
-  column3Main?: p.Flex<"div">;
-  column4Main?: p.Flex<"div">;
-  column5Main?: p.Flex<"div">;
-  column6Main?: p.Flex<"div">;
-  column7Main?: p.Flex<"div">;
-  column8Main?: p.Flex<"div">;
-  example1?: p.Flex<"div">;
-  example2?: p.Flex<"div">;
-  example3?: p.Flex<"div">;
-  example4?: p.Flex<"div">;
-  example5?: p.Flex<"div">;
-  example6?: p.Flex<"div">;
-  column1?: p.Flex<"div">;
-  column2?: p.Flex<"div">;
-  column3?: p.Flex<"div">;
-  column4?: p.Flex<"div">;
-  column5?: p.Flex<"div">;
-  column52?: p.Flex<"div">;
-  column53?: p.Flex<"div">;
-  column7?: p.Flex<"div">;
+  tableHeaders?: p.Flex<"div">;
+  rowContent?: p.Flex<"div">;
+  checkboxDiv?: p.Flex<"div">;
+  buttonDiv?: p.Flex<"div">;
+  rowContent2?: p.Flex<"div">;
+  checkboxDiv2?: p.Flex<"div">;
+  buttonDiv2?: p.Flex<"div">;
+  rowContent3?: p.Flex<"div">;
+  checkboxDiv3?: p.Flex<"div">;
+  buttonDiv3?: p.Flex<"div">;
+  rowContent4?: p.Flex<"div">;
+  checkboxDiv4?: p.Flex<"div">;
+  buttonDiv4?: p.Flex<"div">;
+  rowContent5?: p.Flex<"div">;
+  checkboxDiv5?: p.Flex<"div">;
+  buttonDiv5?: p.Flex<"div">;
+  rowContent6?: p.Flex<"div">;
+  checkboxDiv6?: p.Flex<"div">;
+  buttonDiv6?: p.Flex<"div">;
 };
 
 export interface DefaultRecruitmentTableProps {
@@ -96,192 +93,114 @@ function PlasmicRecruitmentTable__RenderFunc(props: {
       data-plasmic-for-node={forNode}
       className={classNames(defaultcss.all, projectcss.root_reset, sty.root)}
     >
-      <div className={classNames(defaultcss.all, sty.freeBox__olUus)} />
-
       <div
-        data-plasmic-name={"columns"}
-        data-plasmic-override={overrides.columns}
-        className={classNames(defaultcss.all, sty.columns)}
+        data-plasmic-name={"tableHeaders"}
+        data-plasmic-override={overrides.tableHeaders}
+        className={classNames(defaultcss.all, sty.tableHeaders)}
       >
         <div
-          data-plasmic-name={"column2Main"}
-          data-plasmic-override={overrides.column2Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column2Main
+            sty.freeBox__g9In
+          )}
+        >
+          {"Select"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__fkKDd
           )}
         >
           {"Job Title"}
         </div>
 
         <div
-          data-plasmic-name={"column3Main"}
-          data-plasmic-override={overrides.column3Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column3Main
+            sty.freeBox__afJe
           )}
         >
           {"Candidate"}
         </div>
 
         <div
-          data-plasmic-name={"column4Main"}
-          data-plasmic-override={overrides.column4Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column4Main
+            sty.freeBox__mxVhy
           )}
         >
           {"Priority"}
         </div>
 
         <div
-          data-plasmic-name={"column5Main"}
-          data-plasmic-override={overrides.column5Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column5Main
+            sty.freeBox___2L18R
           )}
         >
           {"Hiring Manager"}
         </div>
 
         <div
-          data-plasmic-name={"column6Main"}
-          data-plasmic-override={overrides.column6Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column6Main
+            sty.freeBox___7P64W
           )}
         >
           {"Status"}
         </div>
 
         <div
-          data-plasmic-name={"column7Main"}
-          data-plasmic-override={overrides.column7Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column7Main
+            sty.freeBox__bawcC
           )}
         >
           {"Resume"}
         </div>
 
         <div
-          data-plasmic-name={"column8Main"}
-          data-plasmic-override={overrides.column8Main}
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.column8Main
+            sty.freeBox__hSazc
           )}
         >
           {"Date"}
         </div>
-
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__hlQww)}
-        >
-          {null}
-        </CheckboxPrimary>
       </div>
 
       <div
-        data-plasmic-name={"example1"}
-        data-plasmic-override={overrides.example1}
-        className={classNames(defaultcss.all, sty.example1)}
-      />
-
-      <div
-        data-plasmic-name={"example2"}
-        data-plasmic-override={overrides.example2}
-        className={classNames(defaultcss.all, sty.example2)}
-      />
-
-      <div
-        data-plasmic-name={"example3"}
-        data-plasmic-override={overrides.example3}
-        className={classNames(defaultcss.all, sty.example3)}
-      />
-
-      <div
-        data-plasmic-name={"example4"}
-        data-plasmic-override={overrides.example4}
-        className={classNames(defaultcss.all, sty.example4)}
-      />
-
-      <div
-        data-plasmic-name={"example5"}
-        data-plasmic-override={overrides.example5}
-        className={classNames(defaultcss.all, sty.example5)}
-      />
-
-      <div
-        data-plasmic-name={"example6"}
-        data-plasmic-override={overrides.example6}
-        className={classNames(defaultcss.all, sty.example6)}
-      />
-
-      <div
-        data-plasmic-name={"column1"}
-        data-plasmic-override={overrides.column1}
-        className={classNames(defaultcss.all, sty.column1)}
+        data-plasmic-name={"rowContent"}
+        data-plasmic-override={overrides.rowContent}
+        className={classNames(defaultcss.all, sty.rowContent)}
       >
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__opm2S)}
+        <div
+          data-plasmic-name={"checkboxDiv"}
+          data-plasmic-override={overrides.checkboxDiv}
+          className={classNames(defaultcss.all, sty.checkboxDiv)}
         >
-          {null}
-        </CheckboxPrimary>
+          <CheckboxPrimary
+            className={classNames("__wab_instance", sty.checkboxPrimary__yyiuI)}
+          >
+            {null}
+          </CheckboxPrimary>
+        </div>
 
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__iQXj1)}
-        >
-          {null}
-        </CheckboxPrimary>
-
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__x3Qny)}
-        >
-          {null}
-        </CheckboxPrimary>
-
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__onoHv)}
-        >
-          {null}
-        </CheckboxPrimary>
-
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__x2AXa)}
-        >
-          {null}
-        </CheckboxPrimary>
-
-        <CheckboxPrimary
-          className={classNames("__wab_instance", sty.checkboxPrimary__oyyGy)}
-        >
-          {null}
-        </CheckboxPrimary>
-      </div>
-
-      <div
-        data-plasmic-name={"column2"}
-        data-plasmic-override={overrides.column2}
-        className={classNames(defaultcss.all, sty.column2)}
-      >
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__ax2J5
+            sty.freeBox__pPtq9
           )}
         >
           {"SWE Intern"}
@@ -291,129 +210,17 @@ function PlasmicRecruitmentTable__RenderFunc(props: {
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__laPtq
+            sty.freeBox__bHm3
           )}
         >
-          {"Graphic Desig..."}
+          {"Roger Foreman"}
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__i39Xv
-          )}
-        >
-          {"FSW Intern"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__o7HAb
-          )}
-        >
-          {"Graphic Desig..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__ua4Cw
-          )}
-        >
-          {"FSW Intern"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__sfw8Q
-          )}
-        >
-          {"FSW Intern"}
-        </div>
-      </div>
-
-      <div
-        data-plasmic-name={"column3"}
-        data-plasmic-override={overrides.column3}
-        className={classNames(defaultcss.all, sty.column3)}
-      >
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__ymvQo
-          )}
-        >
-          {"Reshmitha M..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__pzcqK
-          )}
-        >
-          {"Jane Doe"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__kKxhF
-          )}
-        >
-          {"John Doe"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__o9CMx
-          )}
-        >
-          {"Billy Bob"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__tRtcq
-          )}
-        >
-          {"Lightning Mc..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__fBubK
-          )}
-        >
-          {"Albert Einste..."}
-        </div>
-      </div>
-
-      <div
-        data-plasmic-name={"column4"}
-        data-plasmic-override={overrides.column4}
-        className={classNames(defaultcss.all, sty.column4)}
-      >
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__eFnjJ
+            sty.freeBox__mz3Qt
           )}
         >
           {"High"}
@@ -423,7 +230,86 @@ function PlasmicRecruitmentTable__RenderFunc(props: {
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__dGsVu
+            sty.freeBox__udtRv
+          )}
+        >
+          {"Piratla"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__iu6Ic
+          )}
+        >
+          {"Interview"}
+        </div>
+
+        <div
+          data-plasmic-name={"buttonDiv"}
+          data-plasmic-override={overrides.buttonDiv}
+          className={classNames(defaultcss.all, sty.buttonDiv)}
+        >
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary__i4O)}
+            prop={"Download"}
+          />
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__neDrl
+          )}
+        >
+          {"07/12/2021"}
+        </div>
+      </div>
+
+      <div
+        data-plasmic-name={"rowContent2"}
+        data-plasmic-override={overrides.rowContent2}
+        className={classNames(defaultcss.all, sty.rowContent2)}
+      >
+        <div
+          data-plasmic-name={"checkboxDiv2"}
+          data-plasmic-override={overrides.checkboxDiv2}
+          className={classNames(defaultcss.all, sty.checkboxDiv2)}
+        >
+          <CheckboxPrimary
+            className={classNames("__wab_instance", sty.checkboxPrimary__qY3Xj)}
+          >
+            {null}
+          </CheckboxPrimary>
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__imTzK
+          )}
+        >
+          {"Graphic Design"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__jlE32
+          )}
+        >
+          {"Jane Doe"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__odp7L
           )}
         >
           {"Low"}
@@ -433,269 +319,401 @@ function PlasmicRecruitmentTable__RenderFunc(props: {
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__cgAdF
+            sty.freeBox__jdhFb
           )}
         >
-          {"Mid"}
+          {"Raikman"}
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox___7LjJc
-          )}
-        >
-          {"Low"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__lEpj
-          )}
-        >
-          {"Mid"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__qGsf
-          )}
-        >
-          {"Mid"}
-        </div>
-      </div>
-
-      <div
-        data-plasmic-name={"column5"}
-        data-plasmic-override={overrides.column5}
-        className={classNames(defaultcss.all, sty.column5)}
-      >
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__qLqgW
-          )}
-        >
-          {"Srivishnu Pira..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__ynx8A
-          )}
-        >
-          {"Nathan Raikm..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__nvZiE
-          )}
-        >
-          {"Srivishnu Pira..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox___9QSn
-          )}
-        >
-          {"Nathan Raikm..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__sC9Kb
-          )}
-        >
-          {"Nathan Raikm..."}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__nwflo
-          )}
-        >
-          {"Srivishnu Pira..."}
-        </div>
-      </div>
-
-      <div
-        data-plasmic-name={"column52"}
-        data-plasmic-override={overrides.column52}
-        className={classNames(defaultcss.all, sty.column52)}
-      >
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__lwFgV
-          )}
-        >
-          {"Interview"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__pgUbs
+            sty.freeBox___42OIy
           )}
         >
           {"Offer Letter"}
         </div>
 
         <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox___8PCFs
-          )}
+          data-plasmic-name={"buttonDiv2"}
+          data-plasmic-override={overrides.buttonDiv2}
+          className={classNames(defaultcss.all, sty.buttonDiv2)}
         >
-          {"Indeed"}
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary__laUsL)}
+            prop={"Download"}
+          />
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__j069
+            sty.freeBox__ypvxC
           )}
         >
-          {"Indeed"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__pk33L
-          )}
-        >
-          {"Offer Letter"}
-        </div>
-
-        <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox__iodfN
-          )}
-        >
-          {"Interview"}
+          {"07/12/2021"}
         </div>
       </div>
 
       <div
-        data-plasmic-name={"column53"}
-        data-plasmic-override={overrides.column53}
-        className={classNames(defaultcss.all, sty.column53)}
+        data-plasmic-name={"rowContent3"}
+        data-plasmic-override={overrides.rowContent3}
+        className={classNames(defaultcss.all, sty.rowContent3)}
       >
         <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox___6NRwP
-          )}
+          data-plasmic-name={"checkboxDiv3"}
+          data-plasmic-override={overrides.checkboxDiv3}
+          className={classNames(defaultcss.all, sty.checkboxDiv3)}
         >
-          {"07/12/2021"}
+          <CheckboxPrimary
+            className={classNames("__wab_instance", sty.checkboxPrimary__xnJfH)}
+          >
+            {null}
+          </CheckboxPrimary>
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__l6Y3U
+            sty.freeBox__jmM2A
           )}
         >
-          {"07/12/2021"}
+          {"FSW Intern"}
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox___59Mtc
+            sty.freeBox__fDoYh
+          )}
+        >
+          {"John Doe"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__sxm4Z
+          )}
+        >
+          {"Mid"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__ijC6B
+          )}
+        >
+          {"Piratla"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__xFVok
+          )}
+        >
+          {"Indeed"}
+        </div>
+
+        <div
+          data-plasmic-name={"buttonDiv3"}
+          data-plasmic-override={overrides.buttonDiv3}
+          className={classNames(defaultcss.all, sty.buttonDiv3)}
+        >
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary___1Rfvh)}
+            prop={"Download"}
+          />
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__bKaNq
           )}
         >
           {"07/10/2021"}
         </div>
+      </div>
+
+      <div
+        data-plasmic-name={"rowContent4"}
+        data-plasmic-override={overrides.rowContent4}
+        className={classNames(defaultcss.all, sty.rowContent4)}
+      >
+        <div
+          data-plasmic-name={"checkboxDiv4"}
+          data-plasmic-override={overrides.checkboxDiv4}
+          className={classNames(defaultcss.all, sty.checkboxDiv4)}
+        >
+          <CheckboxPrimary
+            className={classNames("__wab_instance", sty.checkboxPrimary__kQYr)}
+          >
+            {null}
+          </CheckboxPrimary>
+        </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__i7Luq
+            sty.freeBox___0PueM
+          )}
+        >
+          {"Graphic Design"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__tVo2P
+          )}
+        >
+          {"Billy Bob"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__mSmlz
+          )}
+        >
+          {"Low"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox___7Myp3
+          )}
+        >
+          {"Raikman"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__zNwyN
+          )}
+        >
+          {"Indeed"}
+        </div>
+
+        <div
+          data-plasmic-name={"buttonDiv4"}
+          data-plasmic-override={overrides.buttonDiv4}
+          className={classNames(defaultcss.all, sty.buttonDiv4)}
+        >
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary__lPv2V)}
+            prop={"Download"}
+          />
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__blIbV
           )}
         >
           {"07/01/2021"}
         </div>
+      </div>
 
+      <div
+        data-plasmic-name={"rowContent5"}
+        data-plasmic-override={overrides.rowContent5}
+        className={classNames(defaultcss.all, sty.rowContent5)}
+      >
         <div
-          className={classNames(
-            defaultcss.all,
-            defaultcss.__wab_text,
-            sty.freeBox___04CS
-          )}
+          data-plasmic-name={"checkboxDiv5"}
+          data-plasmic-override={overrides.checkboxDiv5}
+          className={classNames(defaultcss.all, sty.checkboxDiv5)}
         >
-          {"06/21/2021"}
+          <CheckboxPrimary
+            className={classNames("__wab_instance", sty.checkboxPrimary__brfkm)}
+          >
+            {null}
+          </CheckboxPrimary>
         </div>
 
         <div
           className={classNames(
             defaultcss.all,
             defaultcss.__wab_text,
-            sty.freeBox__wY1U
+            sty.freeBox__cHb0H
           )}
         >
-          {"06/21/2021"}
+          {"Graphic Design"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox___2Js7U
+          )}
+        >
+          {"Ralph Norman"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__hDrmX
+          )}
+        >
+          {"Mid"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__tmqH9
+          )}
+        >
+          {"Raikman"}
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox___1RtDr
+          )}
+        >
+          {"Offer Letter"}
+        </div>
+
+        <div
+          data-plasmic-name={"buttonDiv5"}
+          data-plasmic-override={overrides.buttonDiv5}
+          className={classNames(defaultcss.all, sty.buttonDiv5)}
+        >
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary__ec4Jt)}
+            prop={"Download"}
+          />
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__iFo6
+          )}
+        >
+          {"07/01/2021"}
         </div>
       </div>
 
       <div
-        data-plasmic-name={"column7"}
-        data-plasmic-override={overrides.column7}
-        className={classNames(defaultcss.all, sty.column7)}
+        data-plasmic-name={"rowContent6"}
+        data-plasmic-override={overrides.rowContent6}
+        className={classNames(defaultcss.all, sty.rowContent6)}
       >
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary__bDSmG)}
-        />
+        <div
+          data-plasmic-name={"checkboxDiv6"}
+          data-plasmic-override={overrides.checkboxDiv6}
+          className={classNames(defaultcss.all, sty.checkboxDiv6)}
+        >
+          <CheckboxPrimary
+            className={classNames(
+              "__wab_instance",
+              sty.checkboxPrimary___9DgHj
+            )}
+          >
+            {null}
+          </CheckboxPrimary>
+        </div>
 
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary___959K)}
-        />
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__runCe
+          )}
+        >
+          {"FSW Intern"}
+        </div>
 
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary___59Xo)}
-        />
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__tPxZk
+          )}
+        >
+          {"Jeff Spears"}
+        </div>
 
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary___9Wg73)}
-        />
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__bZ16Q
+          )}
+        >
+          {"Mid"}
+        </div>
 
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary__gVrDl)}
-        />
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__h3SEc
+          )}
+        >
+          {"Piratla"}
+        </div>
 
-        <ButtonPrimary
-          className={classNames("__wab_instance", sty.buttonPrimary__rRtJh)}
-        />
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__q2GyZ
+          )}
+        >
+          {"Interview"}
+        </div>
+
+        <div
+          data-plasmic-name={"buttonDiv6"}
+          data-plasmic-override={overrides.buttonDiv6}
+          className={classNames(defaultcss.all, sty.buttonDiv6)}
+        >
+          <ButtonPrimary
+            className={classNames("__wab_instance", sty.buttonPrimary__xg7Xt)}
+            prop={"Download"}
+          />
+        </div>
+
+        <div
+          className={classNames(
+            defaultcss.all,
+            defaultcss.__wab_text,
+            sty.freeBox__t2Gja
+          )}
+        >
+          {"06/21/2021"}
+        </div>
       </div>
     </div>
   ) as React.ReactElement | null;
@@ -704,88 +722,70 @@ function PlasmicRecruitmentTable__RenderFunc(props: {
 const PlasmicDescendants = {
   root: [
     "root",
-    "columns",
-    "column2Main",
-    "column3Main",
-    "column4Main",
-    "column5Main",
-    "column6Main",
-    "column7Main",
-    "column8Main",
-    "example1",
-    "example2",
-    "example3",
-    "example4",
-    "example5",
-    "example6",
-    "column1",
-    "column2",
-    "column3",
-    "column4",
-    "column5",
-    "column52",
-    "column53",
-    "column7"
+    "tableHeaders",
+    "rowContent",
+    "checkboxDiv",
+    "buttonDiv",
+    "rowContent2",
+    "checkboxDiv2",
+    "buttonDiv2",
+    "rowContent3",
+    "checkboxDiv3",
+    "buttonDiv3",
+    "rowContent4",
+    "checkboxDiv4",
+    "buttonDiv4",
+    "rowContent5",
+    "checkboxDiv5",
+    "buttonDiv5",
+    "rowContent6",
+    "checkboxDiv6",
+    "buttonDiv6"
   ],
-  columns: [
-    "columns",
-    "column2Main",
-    "column3Main",
-    "column4Main",
-    "column5Main",
-    "column6Main",
-    "column7Main",
-    "column8Main"
-  ],
-  column2Main: ["column2Main"],
-  column3Main: ["column3Main"],
-  column4Main: ["column4Main"],
-  column5Main: ["column5Main"],
-  column6Main: ["column6Main"],
-  column7Main: ["column7Main"],
-  column8Main: ["column8Main"],
-  example1: ["example1"],
-  example2: ["example2"],
-  example3: ["example3"],
-  example4: ["example4"],
-  example5: ["example5"],
-  example6: ["example6"],
-  column1: ["column1"],
-  column2: ["column2"],
-  column3: ["column3"],
-  column4: ["column4"],
-  column5: ["column5"],
-  column52: ["column52"],
-  column53: ["column53"],
-  column7: ["column7"]
+  tableHeaders: ["tableHeaders"],
+  rowContent: ["rowContent", "checkboxDiv", "buttonDiv"],
+  checkboxDiv: ["checkboxDiv"],
+  buttonDiv: ["buttonDiv"],
+  rowContent2: ["rowContent2", "checkboxDiv2", "buttonDiv2"],
+  checkboxDiv2: ["checkboxDiv2"],
+  buttonDiv2: ["buttonDiv2"],
+  rowContent3: ["rowContent3", "checkboxDiv3", "buttonDiv3"],
+  checkboxDiv3: ["checkboxDiv3"],
+  buttonDiv3: ["buttonDiv3"],
+  rowContent4: ["rowContent4", "checkboxDiv4", "buttonDiv4"],
+  checkboxDiv4: ["checkboxDiv4"],
+  buttonDiv4: ["buttonDiv4"],
+  rowContent5: ["rowContent5", "checkboxDiv5", "buttonDiv5"],
+  checkboxDiv5: ["checkboxDiv5"],
+  buttonDiv5: ["buttonDiv5"],
+  rowContent6: ["rowContent6", "checkboxDiv6", "buttonDiv6"],
+  checkboxDiv6: ["checkboxDiv6"],
+  buttonDiv6: ["buttonDiv6"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   typeof PlasmicDescendants[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  columns: "div";
-  column2Main: "div";
-  column3Main: "div";
-  column4Main: "div";
-  column5Main: "div";
-  column6Main: "div";
-  column7Main: "div";
-  column8Main: "div";
-  example1: "div";
-  example2: "div";
-  example3: "div";
-  example4: "div";
-  example5: "div";
-  example6: "div";
-  column1: "div";
-  column2: "div";
-  column3: "div";
-  column4: "div";
-  column5: "div";
-  column52: "div";
-  column53: "div";
-  column7: "div";
+  tableHeaders: "div";
+  rowContent: "div";
+  checkboxDiv: "div";
+  buttonDiv: "div";
+  rowContent2: "div";
+  checkboxDiv2: "div";
+  buttonDiv2: "div";
+  rowContent3: "div";
+  checkboxDiv3: "div";
+  buttonDiv3: "div";
+  rowContent4: "div";
+  checkboxDiv4: "div";
+  buttonDiv4: "div";
+  rowContent5: "div";
+  checkboxDiv5: "div";
+  buttonDiv5: "div";
+  rowContent6: "div";
+  checkboxDiv6: "div";
+  buttonDiv6: "div";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -849,28 +849,25 @@ export const PlasmicRecruitmentTable = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    columns: makeNodeComponent("columns"),
-    column2Main: makeNodeComponent("column2Main"),
-    column3Main: makeNodeComponent("column3Main"),
-    column4Main: makeNodeComponent("column4Main"),
-    column5Main: makeNodeComponent("column5Main"),
-    column6Main: makeNodeComponent("column6Main"),
-    column7Main: makeNodeComponent("column7Main"),
-    column8Main: makeNodeComponent("column8Main"),
-    example1: makeNodeComponent("example1"),
-    example2: makeNodeComponent("example2"),
-    example3: makeNodeComponent("example3"),
-    example4: makeNodeComponent("example4"),
-    example5: makeNodeComponent("example5"),
-    example6: makeNodeComponent("example6"),
-    column1: makeNodeComponent("column1"),
-    column2: makeNodeComponent("column2"),
-    column3: makeNodeComponent("column3"),
-    column4: makeNodeComponent("column4"),
-    column5: makeNodeComponent("column5"),
-    column52: makeNodeComponent("column52"),
-    column53: makeNodeComponent("column53"),
-    column7: makeNodeComponent("column7"),
+    tableHeaders: makeNodeComponent("tableHeaders"),
+    rowContent: makeNodeComponent("rowContent"),
+    checkboxDiv: makeNodeComponent("checkboxDiv"),
+    buttonDiv: makeNodeComponent("buttonDiv"),
+    rowContent2: makeNodeComponent("rowContent2"),
+    checkboxDiv2: makeNodeComponent("checkboxDiv2"),
+    buttonDiv2: makeNodeComponent("buttonDiv2"),
+    rowContent3: makeNodeComponent("rowContent3"),
+    checkboxDiv3: makeNodeComponent("checkboxDiv3"),
+    buttonDiv3: makeNodeComponent("buttonDiv3"),
+    rowContent4: makeNodeComponent("rowContent4"),
+    checkboxDiv4: makeNodeComponent("checkboxDiv4"),
+    buttonDiv4: makeNodeComponent("buttonDiv4"),
+    rowContent5: makeNodeComponent("rowContent5"),
+    checkboxDiv5: makeNodeComponent("checkboxDiv5"),
+    buttonDiv5: makeNodeComponent("buttonDiv5"),
+    rowContent6: makeNodeComponent("rowContent6"),
+    checkboxDiv6: makeNodeComponent("checkboxDiv6"),
+    buttonDiv6: makeNodeComponent("buttonDiv6"),
 
     // Metadata about props expected for PlasmicRecruitmentTable
     internalVariantProps: PlasmicRecruitmentTable__VariantProps,

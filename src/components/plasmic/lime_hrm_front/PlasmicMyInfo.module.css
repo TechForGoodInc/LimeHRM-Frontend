@@ -35,44 +35,50 @@
   align-items: center;
   justify-content: center;
   align-content: unset;
-  width: 1132px;
-  height: 672px;
+  width: 100%;
+  height: 100%;
   background: #ffffff;
   box-shadow: 2px 4px 4px 2px #00000021;
-  flex-shrink: 0;
+  min-width: 0;
+  min-height: 0;
 }
-.personalInfo {
+.infoContent {
   display: flex;
   position: relative;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  width: 1132px;
-  height: 336px;
+  width: 100%;
+  height: 100%;
   align-content: unset;
   align-self: center;
-  flex-shrink: 0;
+  min-width: 0;
+  min-height: 0;
   border-width: 1px;
   border-style: solid;
 }
-.freeBox__n7IdM {
+.myInformation {
   position: relative;
-  align-self: flex-start;
-  width: 1132px;
-  font-size: 28px;
+  width: 100%;
+  height: auto;
   text-align: center;
+  font-size: 27px;
+  min-width: 0;
   border-width: 1px;
   border-style: solid;
 }
-.pValuesRow1 {
+.infoRow1 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1130px;
-  height: 60px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-width: 1px;
+  border-style: solid;
 }
-.pValuesRow1 > :global(.__wab_flex-container) {
+.infoRow1 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -80,8 +86,8 @@
   margin-left: calc(0px - 8%);
   width: calc(100% + 8%);
 }
-.pValuesRow1 > :global(.__wab_flex-container) > *,
-.pValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.infoRow1 > :global(.__wab_flex-container) > *,
+.infoRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 8%;
 }
 .freeBox__u1Zkk {
@@ -111,15 +117,18 @@
   flex-shrink: 0;
   border-radius: 5px;
 }
-.pValuesRow2 {
+.infoRow2 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1129px;
-  height: 60px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-width: 1px;
+  border-style: solid;
 }
-.pValuesRow2 > :global(.__wab_flex-container) {
+.infoRow2 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -127,8 +136,8 @@
   margin-left: calc(0px - 6.5%);
   width: calc(100% + 6.5%);
 }
-.pValuesRow2 > :global(.__wab_flex-container) > *,
-.pValuesRow2 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.infoRow2 > :global(.__wab_flex-container) > *,
+.infoRow2 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 6.5%;
 }
 .genderBox {
@@ -162,100 +171,30 @@
 .female:global(.__wab_instance) {
   position: relative;
 }
-.pValuesRow3 {
+.freeBox__pzPdt {
+  position: relative;
+}
+.maritalStatusBox:global(.__wab_instance) {
+  position: relative;
+}
+.option__yUos1:global(.__wab_instance) {
+  position: relative;
+}
+.option__bGV3:global(.__wab_instance) {
+  position: relative;
+}
+.infoRow3 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1131px;
-  height: 60px;
-  align-self: auto;
-  flex-shrink: 0;
-}
-.pValuesRow3 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: unset;
-  margin-left: calc(0px - 1%);
-  width: calc(100% + 1%);
-}
-.pValuesRow3 > :global(.__wab_flex-container) > *,
-.pValuesRow3 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 1%;
-}
-.freeBox__h9Ovs {
-  position: relative;
-}
-.maritalStatus:global(.__wab_instance) {
-  position: relative;
-  width: 132px;
-  flex-shrink: 0;
-}
-.option__i3N4Y:global(.__wab_instance) {
-  position: relative;
-}
-.option__s16W2:global(.__wab_instance) {
-  position: relative;
-}
-.pValuesRow4 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  width: 1131px;
-  height: 60px;
-  flex-shrink: 0;
-}
-.pValuesRow4 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: unset;
-  margin-left: calc(0px - 7%);
-  width: calc(100% + 7%);
-}
-.pValuesRow4 > :global(.__wab_flex-container) > *,
-.pValuesRow4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 7%;
-}
-.buttonPrimary__odcZj:global(.__wab_instance) {
-  position: relative;
-  width: 96px;
-  align-self: flex-start;
-  flex-shrink: 0;
-  margin: 0px 0px 0px 30px;
-}
-.contactInfo {
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: unset;
-  height: 336px;
-  width: 1132px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
   border-width: 1px;
   border-style: solid;
 }
-.freeBox___6RBrt {
-  position: relative;
-  width: 1132px;
-  height: 44px;
-  font-size: 28px;
-  text-align: center;
-  flex-shrink: 0;
-  border-width: 1px;
-  border-style: solid;
-}
-.inputValuesRow12 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.inputValuesRow12 > :global(.__wab_flex-container) {
+.infoRow3 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -263,16 +202,13 @@
   margin-left: calc(0px - 6%);
   width: calc(100% + 6%);
 }
-.inputValuesRow12 > :global(.__wab_flex-container) > *,
-.inputValuesRow12 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.infoRow3 > :global(.__wab_flex-container) > *,
+.infoRow3 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 6%;
 }
-.freeBox__byLv5 {
+.freeBox__zvfin {
   position: relative;
-  height: 33px;
-  width: 135px;
   font-size: 16px;
-  flex-shrink: 0;
 }
 .street1 {
   position: relative;
@@ -282,32 +218,9 @@
   flex-shrink: 0;
   border-radius: 5px;
 }
-.inputValuesRow1 {
-  display: flex;
+.freeBox__zQTz {
   position: relative;
-  flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.inputValuesRow1 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: unset;
-  margin-left: calc(0px - 6%);
-  width: calc(100% + 6%);
-}
-.inputValuesRow1 > :global(.__wab_flex-container) > *,
-.inputValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 6%;
-}
-.freeBox__zAsDz {
-  position: relative;
-  height: 33px;
-  width: 135px;
   font-size: 16px;
-  flex-shrink: 0;
 }
 .street2 {
   position: relative;
@@ -317,30 +230,18 @@
   flex-shrink: 0;
   border-radius: 5px;
 }
-.freeBox__fb2YN {
-  position: relative;
-  height: 33px;
-  width: 165px;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.homeTelephone {
-  position: relative;
-  width: 175px;
-  text-align: center;
-  height: 28px;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.inputValuesRow13 {
+.infoRow4 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-width: 1px;
+  border-style: solid;
 }
-.inputValuesRow13 > :global(.__wab_flex-container) {
+.infoRow4 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
@@ -348,166 +249,143 @@
   margin-left: calc(0px - 6%);
   width: calc(100% + 6%);
 }
-.inputValuesRow13 > :global(.__wab_flex-container) > *,
-.inputValuesRow13 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.infoRow4 > :global(.__wab_flex-container) > *,
+.infoRow4 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
   margin-left: 6%;
 }
-.freeBox___3OWgx {
+.freeBox__bhCVm {
   position: relative;
-  height: 33px;
-  width: 135px;
-  font-size: 16px;
-  flex-shrink: 0;
+  text-align: left;
 }
-.city {
+.homePhone {
   position: relative;
-  width: 175px;
+  width: 146px;
   text-align: center;
   height: 28px;
   flex-shrink: 0;
   border-radius: 5px;
 }
-.freeBox__rLtoH {
+.freeBox__z464F {
   position: relative;
-  height: 33px;
-  width: 166px;
   font-size: 16px;
-  flex-shrink: 0;
 }
 .mobile {
   position: relative;
-  width: 175px;
+  width: 146px;
   text-align: center;
   height: 28px;
   flex-shrink: 0;
   border-radius: 5px;
 }
-.inputValuesRow14 {
+.freeBox__tgc1W {
+  position: relative;
+  font-size: 16px;
+}
+.workPhone {
+  position: relative;
+  width: 146px;
+  text-align: center;
+  height: 28px;
+  flex-shrink: 0;
+  border-radius: 5px;
+}
+.infoRow5 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-width: 1px;
+  border-style: solid;
 }
-.inputValuesRow14 > :global(.__wab_flex-container) {
+.infoRow5 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   align-content: unset;
-  margin-left: calc(0px - 8%);
-  width: calc(100% + 8%);
+  margin-left: calc(0px - 6%);
+  width: calc(100% + 6%);
 }
-.inputValuesRow14 > :global(.__wab_flex-container) > *,
-.inputValuesRow14 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 8%;
+.infoRow5 > :global(.__wab_flex-container) > *,
+.infoRow5 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6%;
 }
-.freeBox___7Gc2Y {
+.freeBox__pw9Oi {
   position: relative;
-  height: 33px;
-  width: 106px;
   font-size: 16px;
-  flex-shrink: 0;
 }
-.stateProvince {
+.city {
   position: relative;
-  width: 175px;
+  width: 146px;
   text-align: center;
   height: 28px;
   flex-shrink: 0;
   border-radius: 5px;
 }
-.freeBox__gOlIk {
+.freeBox__a6H2O {
   position: relative;
-  height: 33px;
-  width: 116px;
   font-size: 16px;
-  flex-shrink: 0;
 }
-.workTelephone {
+.state {
   position: relative;
-  width: 175px;
+  width: 146px;
   text-align: center;
   height: 28px;
   flex-shrink: 0;
   border-radius: 5px;
 }
-.inputValuesRow15 {
-  display: flex;
+.freeBox__rszMw {
   position: relative;
-  flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
-}
-.inputValuesRow15 > :global(.__wab_flex-container) {
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  align-content: unset;
-  margin-left: calc(0px - 7%);
-  width: calc(100% + 7%);
-}
-.inputValuesRow15 > :global(.__wab_flex-container) > *,
-.inputValuesRow15 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 7%;
-}
-.freeBox__u7H6 {
-  position: relative;
-  height: 33px;
-  width: 119px;
   font-size: 16px;
-  flex-shrink: 0;
 }
 .zip {
   position: relative;
-  width: 175px;
+  width: 146px;
   text-align: center;
   height: 28px;
   flex-shrink: 0;
   border-radius: 5px;
 }
-.freeBox__mmEhm {
-  position: relative;
-  height: 26px;
-  width: 143px;
-  font-size: 16px;
-  flex-shrink: 0;
-}
-.workEmail {
-  position: relative;
-  width: 175px;
-  text-align: center;
-  height: 28px;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.inputValuesRow16 {
+.infoRow6 {
   display: flex;
   position: relative;
   flex-direction: row;
-  width: 1130px;
-  height: 38px;
-  flex-shrink: 0;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  border-width: 1px;
+  border-style: solid;
 }
-.inputValuesRow16 > :global(.__wab_flex-container) {
+.infoRow6 > :global(.__wab_flex-container) {
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
   align-content: unset;
-  margin-left: calc(0px - 8%);
-  width: calc(100% + 8%);
+  margin-left: calc(0px - 6%);
+  width: calc(100% + 6%);
 }
-.inputValuesRow16 > :global(.__wab_flex-container) > *,
-.inputValuesRow16 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-left: 8%;
+.infoRow6 > :global(.__wab_flex-container) > *,
+.infoRow6 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+  margin-left: 6%;
 }
-.freeBox__fsIrE {
+.freeBox__xa595 {
   position: relative;
-  height: 33px;
-  width: 102px;
   font-size: 16px;
+}
+.email {
+  position: relative;
+  width: 175px;
+  text-align: center;
+  height: 28px;
   flex-shrink: 0;
+  border-radius: 5px;
+}
+.freeBox___2XbGz {
+  position: relative;
+  font-size: 16px;
 }
 .country {
   position: relative;
@@ -517,10 +395,9 @@
   flex-shrink: 0;
   border-radius: 5px;
 }
-.buttonPrimary__krhJh:global(.__wab_instance) {
+.saveButton:global(.__wab_instance) {
   position: relative;
-  width: 96px;
-  align-self: flex-start;
-  flex-shrink: 0;
-  margin: 0px 0px 0px 30px;
+  align-self: auto;
+  width: auto;
+  height: auto;
 }

@@ -168,7 +168,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"timeButton"}
           data-plasmic-override={overrides.timeButton}
           className={classNames("__wab_instance", sty.timeButton)}
-          time={"time" as const}
         >
           {"Time"}
         </ButtonSidebar>
@@ -177,7 +176,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"leaveButton"}
           data-plasmic-override={overrides.leaveButton}
           className={classNames("__wab_instance", sty.leaveButton)}
-          leave={"leave" as const}
         >
           <div
             className={classNames(
@@ -194,7 +192,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"performanceButton"}
           data-plasmic-override={overrides.performanceButton}
           className={classNames("__wab_instance", sty.performanceButton)}
-          performance={"performance" as const}
         >
           {"Performance"}
         </ButtonSidebar>
@@ -203,7 +200,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"payButton"}
           data-plasmic-override={overrides.payButton}
           className={classNames("__wab_instance", sty.payButton)}
-          pay={"pay" as const}
         >
           {"Pay"}
         </ButtonSidebar>
@@ -212,7 +208,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"recruitmentButton"}
           data-plasmic-override={overrides.recruitmentButton}
           className={classNames("__wab_instance", sty.recruitmentButton)}
-          recruitment={"recruitment" as const}
         >
           <div
             className={classNames(
@@ -228,7 +223,6 @@ function PlasmicSidebar__RenderFunc(props: {
         <ButtonSidebar
           data-plasmic-name={"adminButton"}
           data-plasmic-override={overrides.adminButton}
-          administration={"administration" as const}
           className={classNames("__wab_instance", sty.adminButton)}
         >
           <div
@@ -246,7 +240,6 @@ function PlasmicSidebar__RenderFunc(props: {
           data-plasmic-name={"maintenanceButton"}
           data-plasmic-override={overrides.maintenanceButton}
           className={classNames("__wab_instance", sty.maintenanceButton)}
-          maintenance={"maintenance" as const}
         >
           <div
             className={classNames(
