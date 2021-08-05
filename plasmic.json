@@ -330,6 +330,32 @@
           "cssFilePath": "plasmic/lime_hrm_front/PlasmicAdminTable.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "wzrzdQ0JQ7",
+          "name": "PopupLogout",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicPopupLogout.tsx",
+          "importSpec": {
+            "modulePath": "PopupLogout.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicPopupLogout.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
+        },
+        {
+          "id": "RpSPfHBhcc",
+          "name": "ButtonSecondary",
+          "type": "managed",
+          "projectId": "vQU939GjUi82K5u1iSBKF3",
+          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicButtonSecondary.tsx",
+          "importSpec": {
+            "modulePath": "ButtonSecondary.tsx"
+          },
+          "cssFilePath": "plasmic/lime_hrm_front/PlasmicButtonSecondary.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [

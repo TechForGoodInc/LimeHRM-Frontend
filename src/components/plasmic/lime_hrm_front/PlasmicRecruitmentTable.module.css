@@ -5,562 +5,520 @@
   justify-content: flex-start;
   width: 1018px;
   height: 246px;
-  box-shadow: 1px 2px 2px 1px #00000033;
   position: relative;
   border-radius: 1px;
-  border-width: 1px;
   border-style: solid;
 }
-.freeBox__olUus {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 169px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 554px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.columns {
+.tableHeaders {
   display: flex;
   position: relative;
   flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #f4f4f4;
-  border-bottom-style: solid;
+  align-items: center;
+  justify-content: center;
   border-bottom-width: 1px;
-  flex-shrink: 0;
+  border-bottom-style: solid;
+  height: 20%;
+  align-content: unset;
 }
-.column2Main {
-  position: absolute;
-  left: 44px;
-  top: 4px;
-}
-.column3Main {
-  position: absolute;
-  left: 185px;
-  top: 4px;
-}
-.column4Main {
-  position: absolute;
-  left: 320px;
-  top: 4px;
-}
-.column5Main {
-  position: absolute;
-  left: 460px;
-  top: 4px;
-}
-.column6Main {
-  position: absolute;
-  left: 601px;
-  top: 5px;
-}
-.column7Main {
-  position: absolute;
-  left: 742px;
-  top: 5px;
-}
-.column8Main {
-  position: absolute;
-  left: 886px;
-  top: 5px;
-}
-.checkboxPrimary__hlQww:global(.__wab_instance) {
-  position: absolute;
-  left: 6px;
-  top: 5px;
-}
-.example1 {
-  display: flex;
+.freeBox__g9In {
   position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #ffffff;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.example2 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #f4f4f4;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.example3 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #ffffff;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.example4 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #f4f4f4;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.example5 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #ffffff;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.example6 {
-  display: flex;
-  position: relative;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 35px;
-  width: 1014px;
-  background: #f4f4f4;
-  border-bottom-style: solid;
-  border-bottom-width: 1px;
-  flex-shrink: 0;
-}
-.column1 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 36px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.checkboxPrimary__opm2S:global(.__wab_instance) {
-  position: absolute;
-  left: 6px;
-  top: 41px;
-}
-.checkboxPrimary__iQXj1:global(.__wab_instance) {
-  position: absolute;
-  left: 6px;
-  top: 75px;
-}
-.checkboxPrimary__x3Qny:global(.__wab_instance) {
-  position: absolute;
-  left: auto;
-  top: 110px;
-  align-self: center;
-}
-.checkboxPrimary__onoHv:global(.__wab_instance) {
-  position: absolute;
-  left: auto;
-  top: 145px;
-  align-self: center;
-}
-.checkboxPrimary__x2AXa:global(.__wab_instance) {
-  position: absolute;
-  left: auto;
-  top: 180px;
-  align-self: center;
-}
-.checkboxPrimary__oyyGy:global(.__wab_instance) {
-  position: absolute;
-  left: auto;
-  top: 215px;
-  align-self: center;
-}
-.column2 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 37px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.freeBox__ax2J5 {
-  position: absolute;
-  left: 8px;
-  top: 41px;
-}
-.freeBox__laPtq {
-  position: absolute;
-  left: 8px;
-  top: 74px;
-}
-.freeBox__i39Xv {
-  position: absolute;
-  left: 8px;
-  top: 109px;
-}
-.freeBox__o7HAb {
-  position: absolute;
-  left: 8px;
-  top: 144px;
-}
-.freeBox__ua4Cw {
-  position: absolute;
-  left: 8px;
-  top: 180px;
-}
-.freeBox__sfw8Q {
-  position: absolute;
-  left: 9px;
-  top: 213px;
-}
-.column3 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 174px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.freeBox__ymvQo {
-  position: absolute;
-  top: 43px;
-  left: 11px;
-}
-.freeBox__pzcqK {
-  position: absolute;
-  top: 77px;
-  left: 10px;
-}
-.freeBox__kKxhF {
-  position: absolute;
-  top: 112px;
-  left: 9px;
-}
-.freeBox__o9CMx {
-  position: absolute;
-  top: 148px;
-  left: 10px;
-}
-.freeBox__tRtcq {
-  position: absolute;
-  top: 183px;
-  left: 10px;
-}
-.freeBox__fBubK {
-  position: absolute;
-  top: 215px;
-  left: 8px;
-}
-.column4 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 309px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.freeBox__eFnjJ {
-  position: absolute;
-  top: 43px;
-  left: 11px;
-}
-.freeBox__dGsVu {
-  position: absolute;
-  top: 77px;
-  left: 10px;
-}
-.freeBox__cgAdF {
-  position: absolute;
-  top: 112px;
-  left: 9px;
-}
-.freeBox___7LjJc {
-  position: absolute;
-  top: 148px;
-  left: 10px;
-}
-.freeBox__lEpj {
-  position: absolute;
-  top: 183px;
-  left: 10px;
-}
-.freeBox__qGsf {
-  position: absolute;
-  top: 215px;
-  left: 8px;
-}
-.column5 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 447px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.freeBox__qLqgW {
-  position: absolute;
-  top: 43px;
-  left: 11px;
-}
-.freeBox__ynx8A {
-  position: absolute;
-  top: 77px;
-  left: 10px;
-}
-.freeBox__nvZiE {
-  position: absolute;
-  top: 112px;
-  left: 9px;
-}
-.freeBox___9QSn {
-  position: absolute;
-  top: 148px;
-  left: 10px;
-}
-.freeBox__sC9Kb {
-  position: absolute;
-  top: 183px;
-  left: 10px;
-}
-.freeBox__nwflo {
-  position: absolute;
-  top: 215px;
-  left: 8px;
-}
-.column52 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 590px;
-  top: 0px;
-  flex-shrink: 0;
-  border-style: solid;
-}
-.freeBox__lwFgV {
-  position: absolute;
-  top: 43px;
-  left: 11px;
-}
-.freeBox__pgUbs {
-  position: absolute;
-  top: 77px;
-  left: 10px;
-}
-.freeBox___8PCFs {
-  position: absolute;
-  top: 112px;
-  left: 9px;
-}
-.freeBox__j069 {
-  position: absolute;
-  top: 148px;
-  left: 10px;
-}
-.freeBox__pk33L {
-  position: absolute;
-  top: 183px;
-  left: 10px;
-}
-.freeBox__iodfN {
-  position: absolute;
-  top: 215px;
-  left: 8px;
-}
-.column53 {
-  display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 135px;
-  height: 243px;
-  left: 875px;
-  top: -2px;
-  flex-shrink: 0;
+  height: auto;
+  width: 5.5%;
+  text-align: center;
   border-width: 0px;
   border-style: solid;
 }
-.freeBox___6NRwP {
-  position: absolute;
-  top: 43px;
-  left: 11px;
+.freeBox__fkKDd {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
 }
-.freeBox__l6Y3U {
-  position: absolute;
-  top: 77px;
-  left: 10px;
+.freeBox__afJe {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
 }
-.freeBox___59Mtc {
-  position: absolute;
-  top: 112px;
-  left: 9px;
+.freeBox__mxVhy {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
-.freeBox__i7Luq {
-  position: absolute;
-  top: 148px;
-  left: 10px;
+.freeBox___2L18R {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
-.freeBox___04CS {
-  position: absolute;
-  top: 183px;
-  left: 10px;
+.freeBox___7P64W {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
-.freeBox__wY1U {
-  position: absolute;
-  top: 215px;
-  left: 8px;
+.freeBox__bawcC {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
-.column7 {
+.freeBox__hSazc {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent {
   display: flex;
-  position: absolute;
-  flex-direction: column;
-  align-items: stretch;
-  justify-content: flex-start;
-  width: 142px;
-  height: 243px;
-  border-top-width: 0px;
-  border-right-width: 1px;
-  border-bottom-width: 0px;
-  border-left-width: 0px;
-  left: 728px;
-  top: 1px;
-  flex-shrink: 0;
-  border-style: solid;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
 }
-.buttonPrimary__bDSmG:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 38px;
-  flex-shrink: 0;
+.checkboxDiv {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
 }
-.buttonPrimary___959K:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 72px;
-  flex-shrink: 0;
+.checkboxPrimary__yyiuI:global(.__wab_instance) {
+  width: auto;
+  height: auto;
 }
-.buttonPrimary___59Xo:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 108px;
-  flex-shrink: 0;
+.freeBox__pPtq9 {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+  height: auto;
 }
-.buttonPrimary___9Wg73:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 142px;
-  flex-shrink: 0;
+.freeBox__bHm3 {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
 }
-.buttonPrimary__gVrDl:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 177px;
-  flex-shrink: 0;
+.freeBox__mz3Qt {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
-.buttonPrimary__rRtJh:global(.__wab_instance) {
-  position: absolute;
-  width: 120px;
-  height: 27px;
-  right: auto;
-  left: 9px;
-  bottom: auto;
-  top: 213px;
-  flex-shrink: 0;
+.freeBox__udtRv {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__iu6Ic {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary__i4O:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__neDrl {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
+}
+.checkboxDiv2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.checkboxPrimary__qY3Xj:global(.__wab_instance) {
+  width: auto;
+  height: auto;
+}
+.freeBox__imTzK {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__jlE32 {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__odp7L {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__jdhFb {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox___42OIy {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv2 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary__laUsL:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__ypvxC {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
+}
+.checkboxDiv3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.checkboxPrimary__xnJfH:global(.__wab_instance) {
+  width: auto;
+  height: auto;
+}
+.freeBox__jmM2A {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__fDoYh {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__sxm4Z {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__ijC6B {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__xFVok {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv3 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary___1Rfvh:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__bKaNq {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent4 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
+}
+.checkboxDiv4 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.checkboxPrimary__kQYr:global(.__wab_instance) {
+  width: auto;
+  height: auto;
+}
+.freeBox___0PueM {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__tVo2P {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+  height: auto;
+}
+.freeBox__mSmlz {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox___7Myp3 {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__zNwyN {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv4 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary__lPv2V:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__blIbV {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent5 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
+}
+.checkboxDiv5 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.checkboxPrimary__brfkm:global(.__wab_instance) {
+  width: auto;
+  height: auto;
+}
+.freeBox__cHb0H {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox___2Js7U {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+  height: auto;
+}
+.freeBox__hDrmX {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__tmqH9 {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox___1RtDr {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv5 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary__ec4Jt:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__iFo6 {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.rowContent6 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 13.33%;
+  align-content: unset;
+}
+.checkboxDiv6 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  align-self: auto;
+  width: 5.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.checkboxPrimary___9DgHj:global(.__wab_instance) {
+  width: auto;
+  height: auto;
+}
+.freeBox__runCe {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__tPxZk {
+  position: relative;
+  width: 13.5%;
+  text-align: center;
+  height: auto;
+}
+.freeBox__bZ16Q {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__h3SEc {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.freeBox__q2GyZ {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
+}
+.buttonDiv6 {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 13.5%;
+  align-content: unset;
+  height: 100%;
+  min-height: 0;
+}
+.buttonPrimary__xg7Xt:global(.__wab_instance) {
+  position: relative;
+  width: 85%;
+  height: 70%;
+}
+.freeBox__t2Gja {
+  position: relative;
+  height: auto;
+  width: 13.5%;
+  text-align: center;
 }
