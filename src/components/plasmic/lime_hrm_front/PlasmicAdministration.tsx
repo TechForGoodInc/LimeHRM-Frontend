@@ -31,10 +31,10 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: yoRVhunlI-d/component
-import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: puPU6pgA-z/component
-import AdminTable from "../../AdminTable"; // plasmic-import: tm5vSvyu3h/component
 import SelectBoxPrimary from "../../SelectBoxPrimary"; // plasmic-import: 3HWfNZURm7l/component
 import SelectBoxPrimary__Option from "../../SelectBoxPrimary__Option"; // plasmic-import: dmwcrBXAMAY/component
+import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: puPU6pgA-z/component
+import AdminTable from "../../AdminTable"; // plasmic-import: tm5vSvyu3h/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
@@ -54,10 +54,13 @@ export const PlasmicAdministration__ArgProps = new Array<ArgPropType>();
 export type PlasmicAdministration__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
-  adminSection?: p.Flex<"div">;
-  deleteButton?: p.Flex<"button">;
-  adminTable?: p.Flex<typeof AdminTable>;
   filterEmployees?: p.Flex<"div">;
+  searchButton?: p.Flex<typeof ButtonPrimary>;
+  adminSection?: p.Flex<"div">;
+  tableButtons?: p.Flex<"div">;
+  deleteButton?: p.Flex<"button">;
+  buttonPrimary?: p.Flex<typeof ButtonPrimary>;
+  adminTable?: p.Flex<typeof AdminTable>;
 };
 
 export interface DefaultAdministrationProps {
@@ -96,121 +99,135 @@ function PlasmicAdministration__RenderFunc(props: {
             className={classNames("__wab_instance", sty.sidebar)}
           />
 
-          <div
-            data-plasmic-name={"adminSection"}
-            data-plasmic-override={overrides.adminSection}
-            className={classNames(defaultcss.all, sty.adminSection)}
-          >
-            <button
-              data-plasmic-name={"deleteButton"}
-              data-plasmic-override={overrides.deleteButton}
-              className={classNames(
-                defaultcss.button,
-                defaultcss.__wab_text,
-                sty.deleteButton
-              )}
-            >
-              {"Delete"}
-            </button>
-
-            <ButtonPrimary
-              className={classNames("__wab_instance", sty.buttonPrimary__lwf0I)}
-              prop={"Add"}
-            />
-          </div>
-
-          <AdminTable
-            data-plasmic-name={"adminTable"}
-            data-plasmic-override={overrides.adminTable}
-            className={classNames("__wab_instance", sty.adminTable)}
-          />
-
-          <div
-            data-plasmic-name={"filterEmployees"}
-            data-plasmic-override={overrides.filterEmployees}
-            className={classNames(defaultcss.all, sty.filterEmployees)}
-          >
-            <SelectBoxPrimary
-              className={classNames(
-                "__wab_instance",
-                sty.selectBoxPrimary__h3JUv
-              )}
-            />
-
-            <SelectBoxPrimary
-              className={classNames(
-                "__wab_instance",
-                sty.selectBoxPrimary__kiSb6
-              )}
-            />
-
-            <SelectBoxPrimary
-              className={classNames(
-                "__wab_instance",
-                sty.selectBoxPrimary__x1J19
-              )}
-            />
-
-            <SelectBoxPrimary
-              className={classNames(
-                "__wab_instance",
-                sty.selectBoxPrimary__piE4A
-              )}
-            />
-
-            <ButtonPrimary
-              className={classNames("__wab_instance", sty.buttonPrimary__nMz)}
-              prop={"Search"}
-            />
-
+          <div className={classNames(defaultcss.all, sty.freeBox__xUinI)}>
             <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox__dgG1I
-              )}
+              data-plasmic-name={"filterEmployees"}
+              data-plasmic-override={overrides.filterEmployees}
+              className={classNames(defaultcss.all, sty.filterEmployees)}
             >
-              {"Username"}
+              <SelectBoxPrimary
+                className={classNames(
+                  "__wab_instance",
+                  sty.selectBoxPrimary__h3JUv
+                )}
+              />
+
+              <SelectBoxPrimary
+                className={classNames(
+                  "__wab_instance",
+                  sty.selectBoxPrimary__kiSb6
+                )}
+              />
+
+              <SelectBoxPrimary
+                className={classNames(
+                  "__wab_instance",
+                  sty.selectBoxPrimary__x1J19
+                )}
+              />
+
+              <SelectBoxPrimary
+                className={classNames(
+                  "__wab_instance",
+                  sty.selectBoxPrimary__piE4A
+                )}
+              />
+
+              <ButtonPrimary
+                data-plasmic-name={"searchButton"}
+                data-plasmic-override={overrides.searchButton}
+                className={classNames("__wab_instance", sty.searchButton)}
+                prop={"Search"}
+              />
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__dgG1I
+                )}
+              >
+                {"Username"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__isZQi
+                )}
+              >
+                {"User Role"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__qnbN
+                )}
+              >
+                {"Employee Name"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__gBg0
+                )}
+              >
+                {"Status"}
+              </div>
+
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox___7JdPe
+                )}
+              >
+                {"Administration"}
+              </div>
             </div>
 
             <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox__isZQi
-              )}
+              data-plasmic-name={"adminSection"}
+              data-plasmic-override={overrides.adminSection}
+              className={classNames(defaultcss.all, sty.adminSection)}
             >
-              {"User Role"}
-            </div>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"tableButtons"}
+                data-plasmic-override={overrides.tableButtons}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.tableButtons)}
+              >
+                <button
+                  data-plasmic-name={"deleteButton"}
+                  data-plasmic-override={overrides.deleteButton}
+                  className={classNames(
+                    defaultcss.button,
+                    defaultcss.__wab_text,
+                    sty.deleteButton
+                  )}
+                >
+                  {"Delete"}
+                </button>
 
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox__qnbN
-              )}
-            >
-              {"Employee Name"}
-            </div>
+                <ButtonPrimary
+                  data-plasmic-name={"buttonPrimary"}
+                  data-plasmic-override={overrides.buttonPrimary}
+                  className={classNames("__wab_instance", sty.buttonPrimary)}
+                  prop={"Add"}
+                />
+              </p.Stack>
 
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox__gBg0
-              )}
-            >
-              {"Status"}
-            </div>
-
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox___7JdPe
-              )}
-            >
-              {"Administration"}
+              <AdminTable
+                data-plasmic-name={"adminTable"}
+                data-plasmic-override={overrides.adminTable}
+                className={classNames("__wab_instance", sty.adminTable)}
+              />
             </div>
           </div>
         </div>
@@ -223,16 +240,28 @@ const PlasmicDescendants = {
   root: [
     "root",
     "sidebar",
+    "filterEmployees",
+    "searchButton",
     "adminSection",
+    "tableButtons",
     "deleteButton",
-    "adminTable",
-    "filterEmployees"
+    "buttonPrimary",
+    "adminTable"
   ],
   sidebar: ["sidebar"],
-  adminSection: ["adminSection", "deleteButton"],
+  filterEmployees: ["filterEmployees", "searchButton"],
+  searchButton: ["searchButton"],
+  adminSection: [
+    "adminSection",
+    "tableButtons",
+    "deleteButton",
+    "buttonPrimary",
+    "adminTable"
+  ],
+  tableButtons: ["tableButtons", "deleteButton", "buttonPrimary"],
   deleteButton: ["deleteButton"],
-  adminTable: ["adminTable"],
-  filterEmployees: ["filterEmployees"]
+  buttonPrimary: ["buttonPrimary"],
+  adminTable: ["adminTable"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -240,10 +269,13 @@ type DescendantsType<T extends NodeNameType> =
 type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
-  adminSection: "div";
-  deleteButton: "button";
-  adminTable: typeof AdminTable;
   filterEmployees: "div";
+  searchButton: typeof ButtonPrimary;
+  adminSection: "div";
+  tableButtons: "div";
+  deleteButton: "button";
+  buttonPrimary: typeof ButtonPrimary;
+  adminTable: typeof AdminTable;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -308,10 +340,13 @@ export const PlasmicAdministration = Object.assign(
   {
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
-    adminSection: makeNodeComponent("adminSection"),
-    deleteButton: makeNodeComponent("deleteButton"),
-    adminTable: makeNodeComponent("adminTable"),
     filterEmployees: makeNodeComponent("filterEmployees"),
+    searchButton: makeNodeComponent("searchButton"),
+    adminSection: makeNodeComponent("adminSection"),
+    tableButtons: makeNodeComponent("tableButtons"),
+    deleteButton: makeNodeComponent("deleteButton"),
+    buttonPrimary: makeNodeComponent("buttonPrimary"),
+    adminTable: makeNodeComponent("adminTable"),
 
     // Metadata about props expected for PlasmicAdministration
     internalVariantProps: PlasmicAdministration__VariantProps,

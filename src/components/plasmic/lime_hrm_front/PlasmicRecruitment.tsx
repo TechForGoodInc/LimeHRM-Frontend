@@ -31,9 +31,9 @@ import {
   ensureGlobalVariants
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: yoRVhunlI-d/component
-import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: puPU6pgA-z/component
 import SelectBoxPrimary from "../../SelectBoxPrimary"; // plasmic-import: 3HWfNZURm7l/component
 import SelectBoxPrimary__Option from "../../SelectBoxPrimary__Option"; // plasmic-import: dmwcrBXAMAY/component
+import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: puPU6pgA-z/component
 import RecruitmentTable from "../../RecruitmentTable"; // plasmic-import: 06awOUIVXL/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -55,17 +55,24 @@ export type PlasmicRecruitment__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
   divider?: p.Flex<"div">;
-  content?: p.Flex<"div">;
   filterCandidates?: p.Flex<"div">;
+  selectBoxes?: p.Flex<"div">;
+  jobTitle?: p.Flex<"div">;
+  jobTitleSelect?: p.Flex<typeof SelectBoxPrimary>;
+  candidateName?: p.Flex<"div">;
+  candidateNameSelect?: p.Flex<typeof SelectBoxPrimary>;
+  priority?: p.Flex<"div">;
+  prioritySelect?: p.Flex<typeof SelectBoxPrimary>;
+  status?: p.Flex<"div">;
+  statusSelect?: p.Flex<typeof SelectBoxPrimary>;
+  hiringManager?: p.Flex<"div">;
+  hiringManagerSelect?: p.Flex<typeof SelectBoxPrimary>;
+  date?: p.Flex<"div">;
+  textbox?: p.Flex<"input">;
+  buttons?: p.Flex<"div">;
   clearAllButton?: p.Flex<typeof ButtonPrimary>;
   filterButton?: p.Flex<typeof ButtonPrimary>;
-  jobTitleSelect?: p.Flex<typeof SelectBoxPrimary>;
-  candidateNameSelect?: p.Flex<typeof SelectBoxPrimary>;
-  prioritySelect?: p.Flex<typeof SelectBoxPrimary>;
-  textbox?: p.Flex<"input">;
-  hiringManagerSelect?: p.Flex<typeof SelectBoxPrimary>;
-  statusSelect?: p.Flex<typeof SelectBoxPrimary>;
-  addCandidates?: p.Flex<"div">;
+  candidateInfo?: p.Flex<"div">;
   buttonPrimary?: p.Flex<typeof ButtonPrimary>;
   recruitmentTable?: p.Flex<typeof RecruitmentTable>;
 };
@@ -106,20 +113,184 @@ function PlasmicRecruitment__RenderFunc(props: {
             className={classNames("__wab_instance", sty.sidebar)}
           />
 
-          <div
+          <p.Stack
+            as={"div"}
             data-plasmic-name={"divider"}
             data-plasmic-override={overrides.divider}
+            hasGap={true}
             className={classNames(defaultcss.all, sty.divider)}
           >
             <div
-              data-plasmic-name={"content"}
-              data-plasmic-override={overrides.content}
-              className={classNames(defaultcss.all, sty.content)}
+              data-plasmic-name={"filterCandidates"}
+              data-plasmic-override={overrides.filterCandidates}
+              className={classNames(defaultcss.all, sty.filterCandidates)}
             >
               <div
-                data-plasmic-name={"filterCandidates"}
-                data-plasmic-override={overrides.filterCandidates}
-                className={classNames(defaultcss.all, sty.filterCandidates)}
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__fMy0M
+                )}
+              >
+                {"Filter Candidates"}
+              </div>
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"selectBoxes"}
+                data-plasmic-override={overrides.selectBoxes}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.selectBoxes)}
+              >
+                <div
+                  data-plasmic-name={"jobTitle"}
+                  data-plasmic-override={overrides.jobTitle}
+                  className={classNames(defaultcss.all, sty.jobTitle)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox__n9RMj
+                    )}
+                  >
+                    {"Job Title"}
+                  </div>
+
+                  <SelectBoxPrimary
+                    data-plasmic-name={"jobTitleSelect"}
+                    data-plasmic-override={overrides.jobTitleSelect}
+                    className={classNames("__wab_instance", sty.jobTitleSelect)}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"candidateName"}
+                  data-plasmic-override={overrides.candidateName}
+                  className={classNames(defaultcss.all, sty.candidateName)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox__lvRuY
+                    )}
+                  >
+                    {"Candidate Name"}
+                  </div>
+
+                  <SelectBoxPrimary
+                    data-plasmic-name={"candidateNameSelect"}
+                    data-plasmic-override={overrides.candidateNameSelect}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.candidateNameSelect
+                    )}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"priority"}
+                  data-plasmic-override={overrides.priority}
+                  className={classNames(defaultcss.all, sty.priority)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox__oDDuR
+                    )}
+                  >
+                    {"Priority"}
+                  </div>
+
+                  <SelectBoxPrimary
+                    data-plasmic-name={"prioritySelect"}
+                    data-plasmic-override={overrides.prioritySelect}
+                    className={classNames("__wab_instance", sty.prioritySelect)}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"status"}
+                  data-plasmic-override={overrides.status}
+                  className={classNames(defaultcss.all, sty.status)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox__cptyE
+                    )}
+                  >
+                    {"Status"}
+                  </div>
+
+                  <SelectBoxPrimary
+                    data-plasmic-name={"statusSelect"}
+                    data-plasmic-override={overrides.statusSelect}
+                    className={classNames("__wab_instance", sty.statusSelect)}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"hiringManager"}
+                  data-plasmic-override={overrides.hiringManager}
+                  className={classNames(defaultcss.all, sty.hiringManager)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox___05PmQ
+                    )}
+                  >
+                    {"Hiring Manager"}
+                  </div>
+
+                  <SelectBoxPrimary
+                    data-plasmic-name={"hiringManagerSelect"}
+                    data-plasmic-override={overrides.hiringManagerSelect}
+                    className={classNames(
+                      "__wab_instance",
+                      sty.hiringManagerSelect
+                    )}
+                  />
+                </div>
+
+                <div
+                  data-plasmic-name={"date"}
+                  data-plasmic-override={overrides.date}
+                  className={classNames(defaultcss.all, sty.date)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox__k9ItK
+                    )}
+                  >
+                    {"Date"}
+                  </div>
+
+                  <input
+                    data-plasmic-name={"textbox"}
+                    data-plasmic-override={overrides.textbox}
+                    className={classNames(defaultcss.input, sty.textbox)}
+                    placeholder={"Date" as const}
+                    size={1 as const}
+                    type={"text" as const}
+                    value={"" as const}
+                  />
+                </div>
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"buttons"}
+                data-plasmic-override={overrides.buttons}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.buttons)}
               >
                 <ButtonPrimary
                   data-plasmic-name={"clearAllButton"}
@@ -134,154 +305,38 @@ function PlasmicRecruitment__RenderFunc(props: {
                   className={classNames("__wab_instance", sty.filterButton)}
                   prop={"Filter"}
                 />
-
-                <SelectBoxPrimary
-                  data-plasmic-name={"jobTitleSelect"}
-                  data-plasmic-override={overrides.jobTitleSelect}
-                  className={classNames("__wab_instance", sty.jobTitleSelect)}
-                />
-
-                <SelectBoxPrimary
-                  data-plasmic-name={"candidateNameSelect"}
-                  data-plasmic-override={overrides.candidateNameSelect}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.candidateNameSelect
-                  )}
-                />
-
-                <SelectBoxPrimary
-                  data-plasmic-name={"prioritySelect"}
-                  data-plasmic-override={overrides.prioritySelect}
-                  className={classNames("__wab_instance", sty.prioritySelect)}
-                />
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__n9RMj
-                  )}
-                >
-                  {"Job Title"}
-                </div>
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__lvRuY
-                  )}
-                >
-                  {"Candidate Name"}
-                </div>
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__oDDuR
-                  )}
-                >
-                  {"Priority"}
-                </div>
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__fMy0M
-                  )}
-                >
-                  {"Filter Candidates"}
-                </div>
-
-                <input
-                  data-plasmic-name={"textbox"}
-                  data-plasmic-override={overrides.textbox}
-                  className={classNames(defaultcss.input, sty.textbox)}
-                  placeholder={"Date" as const}
-                  size={1 as const}
-                  type={"text" as const}
-                  value={"" as const}
-                />
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__k9ItK
-                  )}
-                >
-                  {"Date"}
-                </div>
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__cptyE
-                  )}
-                >
-                  {"Status"}
-                </div>
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox___05PmQ
-                  )}
-                >
-                  {"Hiring Manager"}
-                </div>
-
-                <SelectBoxPrimary
-                  data-plasmic-name={"hiringManagerSelect"}
-                  data-plasmic-override={overrides.hiringManagerSelect}
-                  className={classNames(
-                    "__wab_instance",
-                    sty.hiringManagerSelect
-                  )}
-                />
-
-                <SelectBoxPrimary
-                  data-plasmic-name={"statusSelect"}
-                  data-plasmic-override={overrides.statusSelect}
-                  className={classNames("__wab_instance", sty.statusSelect)}
-                />
-              </div>
-
-              <div
-                data-plasmic-name={"addCandidates"}
-                data-plasmic-override={overrides.addCandidates}
-                className={classNames(defaultcss.all, sty.addCandidates)}
-              >
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__fbFf
-                  )}
-                >
-                  {"Candidate Information"}
-                </div>
-
-                <ButtonPrimary
-                  data-plasmic-name={"buttonPrimary"}
-                  data-plasmic-override={overrides.buttonPrimary}
-                  className={classNames("__wab_instance", sty.buttonPrimary)}
-                  prop={"Add"}
-                />
-
-                <RecruitmentTable
-                  data-plasmic-name={"recruitmentTable"}
-                  data-plasmic-override={overrides.recruitmentTable}
-                  className={classNames("__wab_instance", sty.recruitmentTable)}
-                />
-              </div>
+              </p.Stack>
             </div>
-          </div>
+
+            <div
+              data-plasmic-name={"candidateInfo"}
+              data-plasmic-override={overrides.candidateInfo}
+              className={classNames(defaultcss.all, sty.candidateInfo)}
+            >
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__iss1F
+                )}
+              >
+                {"Candidate Information"}
+              </div>
+
+              <ButtonPrimary
+                data-plasmic-name={"buttonPrimary"}
+                data-plasmic-override={overrides.buttonPrimary}
+                className={classNames("__wab_instance", sty.buttonPrimary)}
+                prop={"Add"}
+              />
+
+              <RecruitmentTable
+                data-plasmic-name={"recruitmentTable"}
+                data-plasmic-override={overrides.recruitmentTable}
+                className={classNames("__wab_instance", sty.recruitmentTable)}
+              />
+            </div>
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -293,72 +348,101 @@ const PlasmicDescendants = {
     "root",
     "sidebar",
     "divider",
-    "content",
     "filterCandidates",
+    "selectBoxes",
+    "jobTitle",
+    "jobTitleSelect",
+    "candidateName",
+    "candidateNameSelect",
+    "priority",
+    "prioritySelect",
+    "status",
+    "statusSelect",
+    "hiringManager",
+    "hiringManagerSelect",
+    "date",
+    "textbox",
+    "buttons",
     "clearAllButton",
     "filterButton",
-    "jobTitleSelect",
-    "candidateNameSelect",
-    "prioritySelect",
-    "textbox",
-    "hiringManagerSelect",
-    "statusSelect",
-    "addCandidates",
+    "candidateInfo",
     "buttonPrimary",
     "recruitmentTable"
   ],
   sidebar: ["sidebar"],
   divider: [
     "divider",
-    "content",
     "filterCandidates",
+    "selectBoxes",
+    "jobTitle",
+    "jobTitleSelect",
+    "candidateName",
+    "candidateNameSelect",
+    "priority",
+    "prioritySelect",
+    "status",
+    "statusSelect",
+    "hiringManager",
+    "hiringManagerSelect",
+    "date",
+    "textbox",
+    "buttons",
     "clearAllButton",
     "filterButton",
-    "jobTitleSelect",
-    "candidateNameSelect",
-    "prioritySelect",
-    "textbox",
-    "hiringManagerSelect",
-    "statusSelect",
-    "addCandidates",
-    "buttonPrimary",
-    "recruitmentTable"
-  ],
-  content: [
-    "content",
-    "filterCandidates",
-    "clearAllButton",
-    "filterButton",
-    "jobTitleSelect",
-    "candidateNameSelect",
-    "prioritySelect",
-    "textbox",
-    "hiringManagerSelect",
-    "statusSelect",
-    "addCandidates",
+    "candidateInfo",
     "buttonPrimary",
     "recruitmentTable"
   ],
   filterCandidates: [
     "filterCandidates",
-    "clearAllButton",
-    "filterButton",
+    "selectBoxes",
+    "jobTitle",
     "jobTitleSelect",
+    "candidateName",
     "candidateNameSelect",
+    "priority",
     "prioritySelect",
-    "textbox",
+    "status",
+    "statusSelect",
+    "hiringManager",
     "hiringManagerSelect",
-    "statusSelect"
+    "date",
+    "textbox",
+    "buttons",
+    "clearAllButton",
+    "filterButton"
   ],
+  selectBoxes: [
+    "selectBoxes",
+    "jobTitle",
+    "jobTitleSelect",
+    "candidateName",
+    "candidateNameSelect",
+    "priority",
+    "prioritySelect",
+    "status",
+    "statusSelect",
+    "hiringManager",
+    "hiringManagerSelect",
+    "date",
+    "textbox"
+  ],
+  jobTitle: ["jobTitle", "jobTitleSelect"],
+  jobTitleSelect: ["jobTitleSelect"],
+  candidateName: ["candidateName", "candidateNameSelect"],
+  candidateNameSelect: ["candidateNameSelect"],
+  priority: ["priority", "prioritySelect"],
+  prioritySelect: ["prioritySelect"],
+  status: ["status", "statusSelect"],
+  statusSelect: ["statusSelect"],
+  hiringManager: ["hiringManager", "hiringManagerSelect"],
+  hiringManagerSelect: ["hiringManagerSelect"],
+  date: ["date", "textbox"],
+  textbox: ["textbox"],
+  buttons: ["buttons", "clearAllButton", "filterButton"],
   clearAllButton: ["clearAllButton"],
   filterButton: ["filterButton"],
-  jobTitleSelect: ["jobTitleSelect"],
-  candidateNameSelect: ["candidateNameSelect"],
-  prioritySelect: ["prioritySelect"],
-  textbox: ["textbox"],
-  hiringManagerSelect: ["hiringManagerSelect"],
-  statusSelect: ["statusSelect"],
-  addCandidates: ["addCandidates", "buttonPrimary", "recruitmentTable"],
+  candidateInfo: ["candidateInfo", "buttonPrimary", "recruitmentTable"],
   buttonPrimary: ["buttonPrimary"],
   recruitmentTable: ["recruitmentTable"]
 } as const;
@@ -369,17 +453,24 @@ type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
   divider: "div";
-  content: "div";
   filterCandidates: "div";
+  selectBoxes: "div";
+  jobTitle: "div";
+  jobTitleSelect: typeof SelectBoxPrimary;
+  candidateName: "div";
+  candidateNameSelect: typeof SelectBoxPrimary;
+  priority: "div";
+  prioritySelect: typeof SelectBoxPrimary;
+  status: "div";
+  statusSelect: typeof SelectBoxPrimary;
+  hiringManager: "div";
+  hiringManagerSelect: typeof SelectBoxPrimary;
+  date: "div";
+  textbox: "input";
+  buttons: "div";
   clearAllButton: typeof ButtonPrimary;
   filterButton: typeof ButtonPrimary;
-  jobTitleSelect: typeof SelectBoxPrimary;
-  candidateNameSelect: typeof SelectBoxPrimary;
-  prioritySelect: typeof SelectBoxPrimary;
-  textbox: "input";
-  hiringManagerSelect: typeof SelectBoxPrimary;
-  statusSelect: typeof SelectBoxPrimary;
-  addCandidates: "div";
+  candidateInfo: "div";
   buttonPrimary: typeof ButtonPrimary;
   recruitmentTable: typeof RecruitmentTable;
 };
@@ -447,17 +538,24 @@ export const PlasmicRecruitment = Object.assign(
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
     divider: makeNodeComponent("divider"),
-    content: makeNodeComponent("content"),
     filterCandidates: makeNodeComponent("filterCandidates"),
+    selectBoxes: makeNodeComponent("selectBoxes"),
+    jobTitle: makeNodeComponent("jobTitle"),
+    jobTitleSelect: makeNodeComponent("jobTitleSelect"),
+    candidateName: makeNodeComponent("candidateName"),
+    candidateNameSelect: makeNodeComponent("candidateNameSelect"),
+    priority: makeNodeComponent("priority"),
+    prioritySelect: makeNodeComponent("prioritySelect"),
+    status: makeNodeComponent("status"),
+    statusSelect: makeNodeComponent("statusSelect"),
+    hiringManager: makeNodeComponent("hiringManager"),
+    hiringManagerSelect: makeNodeComponent("hiringManagerSelect"),
+    date: makeNodeComponent("date"),
+    textbox: makeNodeComponent("textbox"),
+    buttons: makeNodeComponent("buttons"),
     clearAllButton: makeNodeComponent("clearAllButton"),
     filterButton: makeNodeComponent("filterButton"),
-    jobTitleSelect: makeNodeComponent("jobTitleSelect"),
-    candidateNameSelect: makeNodeComponent("candidateNameSelect"),
-    prioritySelect: makeNodeComponent("prioritySelect"),
-    textbox: makeNodeComponent("textbox"),
-    hiringManagerSelect: makeNodeComponent("hiringManagerSelect"),
-    statusSelect: makeNodeComponent("statusSelect"),
-    addCandidates: makeNodeComponent("addCandidates"),
+    candidateInfo: makeNodeComponent("candidateInfo"),
     buttonPrimary: makeNodeComponent("buttonPrimary"),
     recruitmentTable: makeNodeComponent("recruitmentTable"),
 

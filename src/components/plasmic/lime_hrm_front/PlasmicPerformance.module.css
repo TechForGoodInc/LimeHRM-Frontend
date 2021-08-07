@@ -95,6 +95,9 @@
   height: 192px;
   flex-shrink: 0;
 }
+.img > picture > img {
+  object-fit: contain;
+}
 .recruitmentTable:global(.__wab_instance) {
   position: relative;
   width: 40%;

@@ -31,6 +31,16 @@
       }
     },
     {
+      "name": "MainDiv Shadow",
+      "type": "color",
+      "value": "#0000001F",
+      "category": "color",
+      "meta": {
+        "projectId": "vQU939GjUi82K5u1iSBKF3",
+        "id": "KNwN1sAgp"
+      }
+    },
+    {
       "name": "UnnamedStyleToken",
       "type": "color",
       "value": "#F4F4F4",

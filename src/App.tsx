@@ -12,6 +12,8 @@ var state = {
   firstName: "",
   middleName: "",
   lastName: "",
+  gender: "",
+  maritalStatus: "",
   street1: "",
   street2: "",
   city: "",
@@ -61,6 +63,14 @@ export function setMiddleName(val: string) {
 
 export function setLastName(val: string) {
   state.lastName = val;
+}
+
+export function setGender(val: string) {
+  state.gender = val;
+}
+
+export function setMaritalStatus(val: string) {
+  state.maritalStatus = val;
 }
 
 export function setStreet1(val: string) {
@@ -120,7 +130,8 @@ const loadFromLocalStorage = () => {
 export const deleteFromLocalStorage = () => {
   localStorage.removeItem('state');
   state = {authToken: "", username: "", firstName: "", 
-            middleName: "", lastName: "", street1: "", street2: "",
+            middleName: "", lastName: "", gender: "", maritalStatus: "", 
+            street1: "", street2: "",
             city: "", state: "", zip: "",
             country: "", homePhone: "", mobile: "",
             workPhone: "", email: ""};
@@ -145,12 +156,14 @@ export async function getLoginToken(username: string, password: string){
     return response.json();
 }
 
-export async function saveInfo(firstName: string, middleName: string, lastName: string, street1: string, street2: string,
-                              city: string, state: string, zip: string, country: string, homePhone: string, mobile: string,
-                              workPhone: string, email: string){
+export async function saveInfo(firstName: string, middleName: string, lastName: string, gender: string, maritalStatus: string, 
+                              street1: string, street2: string, city: string, state: string, zip: string, country: string, 
+                              homePhone: string, mobile: string, workPhone: string, email: string){
   setFirstName(firstName);
   setMiddleName(middleName);
   setLastName(lastName);
+  setGender(gender);
+  setMaritalStatus(maritalStatus);
   setStreet1(street1);
   setStreet2(street2);
   setCity(city);
@@ -162,12 +175,13 @@ export async function saveInfo(firstName: string, middleName: string, lastName: 
   setWorkPhone(workPhone);
   setEmail(email);
   const response = await fetch(
-      ApiRoutes.Base + '/api/workers?firstName=' + firstName + '&middleName' + middleName + '&lastName=' + lastName
-      + '&street1=' + street1 + '&street2=' + street2 + '&city=' + city + '&state=' + state + '&zip=' + zip
-      + '&country=' + country + '&homePhone=' + homePhone + '&mobile=' + mobile + '&workPhone=' + workPhone
-      + '&email=' + email,
+      ApiRoutes.Base + '/api/workers/:workerId="workers/1"?firstName=' + firstName + '&middleName' + middleName 
+      + '&lastName=' + lastName + '&gender=' + gender + '&maritalStatus=' + maritalStatus 
+      + '&street1=' + street1 + '&street2=' + street2 + '&city=' + city + '&state=' 
+      + state + '&zip=' + zip + '&country=' + country + '&homePhone=' + homePhone + '&mobile=' + mobile 
+      + '&workPhone=' + workPhone + '&email=' + email,
       {
-          method: 'POST',
+          method: 'PATCH',
           mode: 'cors',
           cache: 'no-cache',
           credentials: 'same-origin',
@@ -177,6 +191,24 @@ export async function saveInfo(firstName: string, middleName: string, lastName: 
           redirect: 'follow',
           referrerPolicy: 'no-referrer',
       }
+  );
+  return response.json();
+}
+
+export async function getInfo(){
+  const response = await fetch(
+    ApiRoutes.Base + '/api/workers/:workerId="workers/1"?',
+    {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
+    }
   );
   return response.json();
 }

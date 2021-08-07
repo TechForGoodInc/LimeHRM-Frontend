@@ -32,8 +32,6 @@ import {
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: yoRVhunlI-d/component
 import CheckboxPrimary from "../../CheckboxPrimary"; // plasmic-import: txP424hXELb/component
-import SelectBoxPrimary from "../../SelectBoxPrimary"; // plasmic-import: 3HWfNZURm7l/component
-import SelectBoxPrimary__Option from "../../SelectBoxPrimary__Option"; // plasmic-import: dmwcrBXAMAY/component
 import ButtonPrimary from "../../ButtonPrimary"; // plasmic-import: puPU6pgA-z/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -55,9 +53,7 @@ export type PlasmicMyInfo__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
   divider?: p.Flex<"div">;
-  mainContent?: p.Flex<"div">;
-  infoContent?: p.Flex<"div">;
-  myInformation?: p.Flex<"div">;
+  mainContent1?: p.Flex<"div">;
   infoRow1?: p.Flex<"div">;
   firstName?: p.Flex<"input">;
   middleName?: p.Flex<"input">;
@@ -66,19 +62,20 @@ export type PlasmicMyInfo__OverridesType = {
   genderBox?: p.Flex<"div">;
   male?: p.Flex<typeof CheckboxPrimary>;
   female?: p.Flex<typeof CheckboxPrimary>;
-  maritalStatusBox?: p.Flex<typeof SelectBoxPrimary>;
+  maritalStatus?: p.Flex<"input">;
   infoRow3?: p.Flex<"div">;
   street1?: p.Flex<"input">;
   street2?: p.Flex<"input">;
-  infoRow4?: p.Flex<"div">;
+  mainContent2?: p.Flex<"div">;
+  infoRow42?: p.Flex<"div">;
   homePhone?: p.Flex<"input">;
   mobile?: p.Flex<"input">;
   workPhone?: p.Flex<"input">;
-  infoRow5?: p.Flex<"div">;
+  infoRow52?: p.Flex<"div">;
   city?: p.Flex<"input">;
   state?: p.Flex<"input">;
   zip?: p.Flex<"input">;
-  infoRow6?: p.Flex<"div">;
+  infoRow62?: p.Flex<"div">;
   email?: p.Flex<"input">;
   country?: p.Flex<"input">;
   saveButton?: p.Flex<typeof ButtonPrimary>;
@@ -120,383 +117,378 @@ function PlasmicMyInfo__RenderFunc(props: {
             className={classNames("__wab_instance", sty.sidebar)}
           />
 
-          <div
+          <p.Stack
+            as={"div"}
             data-plasmic-name={"divider"}
             data-plasmic-override={overrides.divider}
+            hasGap={true}
             className={classNames(defaultcss.all, sty.divider)}
           >
-            <div
-              data-plasmic-name={"mainContent"}
-              data-plasmic-override={overrides.mainContent}
-              className={classNames(defaultcss.all, sty.mainContent)}
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"mainContent1"}
+              data-plasmic-override={overrides.mainContent1}
+              hasGap={true}
+              className={classNames(defaultcss.all, sty.mainContent1)}
             >
-              <div
-                data-plasmic-name={"infoContent"}
-                data-plasmic-override={overrides.infoContent}
-                className={classNames(defaultcss.all, sty.infoContent)}
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow1"}
+                data-plasmic-override={overrides.infoRow1}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow1)}
               >
                 <div
-                  data-plasmic-name={"myInformation"}
-                  data-plasmic-override={overrides.myInformation}
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.myInformation
+                    sty.freeBox__u1Zkk
                   )}
                 >
-                  {"My Information"}
+                  {"Full Name"}
                 </div>
 
+                <input
+                  data-plasmic-name={"firstName"}
+                  data-plasmic-override={overrides.firstName}
+                  className={classNames(defaultcss.input, sty.firstName)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"First Name" as const}
+                />
+
+                <input
+                  data-plasmic-name={"middleName"}
+                  data-plasmic-override={overrides.middleName}
+                  className={classNames(defaultcss.input, sty.middleName)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Middle Name" as const}
+                />
+
+                <input
+                  data-plasmic-name={"lastName"}
+                  data-plasmic-override={overrides.lastName}
+                  className={classNames(defaultcss.input, sty.lastName)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Last Name" as const}
+                />
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow2"}
+                data-plasmic-override={overrides.infoRow2}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow2)}
+              >
                 <p.Stack
                   as={"div"}
-                  data-plasmic-name={"infoRow1"}
-                  data-plasmic-override={overrides.infoRow1}
+                  data-plasmic-name={"genderBox"}
+                  data-plasmic-override={overrides.genderBox}
                   hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow1)}
+                  className={classNames(defaultcss.all, sty.genderBox)}
                 >
                   <div
                     className={classNames(
                       defaultcss.all,
                       defaultcss.__wab_text,
-                      sty.freeBox__u1Zkk
+                      sty.freeBox__f6Ahn
                     )}
                   >
-                    {"Full Name"}
+                    {"Gender"}
                   </div>
 
-                  <input
-                    data-plasmic-name={"firstName"}
-                    data-plasmic-override={overrides.firstName}
-                    className={classNames(defaultcss.input, sty.firstName)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"First Name" as const}
-                  />
+                  <CheckboxPrimary
+                    data-plasmic-name={"male"}
+                    data-plasmic-override={overrides.male}
+                    className={classNames("__wab_instance", sty.male)}
+                  >
+                    {"Male"}
+                  </CheckboxPrimary>
 
-                  <input
-                    data-plasmic-name={"middleName"}
-                    data-plasmic-override={overrides.middleName}
-                    className={classNames(defaultcss.input, sty.middleName)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Middle Name" as const}
-                  />
-
-                  <input
-                    data-plasmic-name={"lastName"}
-                    data-plasmic-override={overrides.lastName}
-                    className={classNames(defaultcss.input, sty.lastName)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Last Name" as const}
-                  />
+                  <CheckboxPrimary
+                    data-plasmic-name={"female"}
+                    data-plasmic-override={overrides.female}
+                    className={classNames("__wab_instance", sty.female)}
+                  >
+                    {"Female"}
+                  </CheckboxPrimary>
                 </p.Stack>
 
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"infoRow2"}
-                  data-plasmic-override={overrides.infoRow2}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow2)}
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__pzPdt
+                  )}
                 >
-                  <p.Stack
-                    as={"div"}
-                    data-plasmic-name={"genderBox"}
-                    data-plasmic-override={overrides.genderBox}
-                    hasGap={true}
-                    className={classNames(defaultcss.all, sty.genderBox)}
-                  >
-                    <div
-                      className={classNames(
-                        defaultcss.all,
-                        defaultcss.__wab_text,
-                        sty.freeBox__f6Ahn
-                      )}
-                    >
-                      {"Gender"}
-                    </div>
+                  {"Marital Status"}
+                </div>
 
-                    <CheckboxPrimary
-                      data-plasmic-name={"male"}
-                      data-plasmic-override={overrides.male}
-                      className={classNames("__wab_instance", sty.male)}
-                    >
-                      {"Male"}
-                    </CheckboxPrimary>
+                <input
+                  data-plasmic-name={"maritalStatus"}
+                  data-plasmic-override={overrides.maritalStatus}
+                  className={classNames(defaultcss.input, sty.maritalStatus)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+              </p.Stack>
 
-                    <CheckboxPrimary
-                      data-plasmic-name={"female"}
-                      data-plasmic-override={overrides.female}
-                      className={classNames("__wab_instance", sty.female)}
-                    >
-                      {"Female"}
-                    </CheckboxPrimary>
-                  </p.Stack>
-
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__pzPdt
-                    )}
-                  >
-                    {"Marital Status"}
-                  </div>
-
-                  <SelectBoxPrimary
-                    data-plasmic-name={"maritalStatusBox"}
-                    data-plasmic-override={overrides.maritalStatusBox}
-                    className={classNames(
-                      "__wab_instance",
-                      sty.maritalStatusBox
-                    )}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"infoRow3"}
-                  data-plasmic-override={overrides.infoRow3}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow3)}
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow3"}
+                data-plasmic-override={overrides.infoRow3}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow3)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__zvfin
+                  )}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__zvfin
-                    )}
-                  >
-                    {"Address Street #1"}
-                  </div>
+                  {"Address Street #1"}
+                </div>
 
-                  <input
-                    data-plasmic-name={"street1"}
-                    data-plasmic-override={overrides.street1}
-                    className={classNames(defaultcss.input, sty.street1)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
+                <input
+                  data-plasmic-name={"street1"}
+                  data-plasmic-override={overrides.street1}
+                  className={classNames(defaultcss.input, sty.street1)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
 
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__zQTz
-                    )}
-                  >
-                    {"Address Street #2"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"street2"}
-                    data-plasmic-override={overrides.street2}
-                    className={classNames(defaultcss.input, sty.street2)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"infoRow4"}
-                  data-plasmic-override={overrides.infoRow4}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow4)}
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__zQTz
+                  )}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__bhCVm
-                    )}
-                  >
-                    {"Home Telephone"}
-                  </div>
+                  {"Address Street #2"}
+                </div>
 
-                  <input
-                    data-plasmic-name={"homePhone"}
-                    data-plasmic-override={overrides.homePhone}
-                    className={classNames(defaultcss.input, sty.homePhone)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
+                <input
+                  data-plasmic-name={"street2"}
+                  data-plasmic-override={overrides.street2}
+                  className={classNames(defaultcss.input, sty.street2)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+              </p.Stack>
+            </p.Stack>
 
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__z464F
-                    )}
-                  >
-                    {"Mobile"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"mobile"}
-                    data-plasmic-override={overrides.mobile}
-                    className={classNames(defaultcss.input, sty.mobile)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
-
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__tgc1W
-                    )}
-                  >
-                    {"Work Telephone"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"workPhone"}
-                    data-plasmic-override={overrides.workPhone}
-                    className={classNames(defaultcss.input, sty.workPhone)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"infoRow5"}
-                  data-plasmic-override={overrides.infoRow5}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow5)}
+            <p.Stack
+              as={"div"}
+              data-plasmic-name={"mainContent2"}
+              data-plasmic-override={overrides.mainContent2}
+              hasGap={true}
+              className={classNames(defaultcss.all, sty.mainContent2)}
+            >
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow42"}
+                data-plasmic-override={overrides.infoRow42}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow42)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox___5ReX2
+                  )}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__pw9Oi
-                    )}
-                  >
-                    {"City"}
-                  </div>
+                  {"Home Telephone"}
+                </div>
 
-                  <input
-                    data-plasmic-name={"city"}
-                    data-plasmic-override={overrides.city}
-                    className={classNames(defaultcss.input, sty.city)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
+                <input
+                  data-plasmic-name={"homePhone"}
+                  data-plasmic-override={overrides.homePhone}
+                  className={classNames(defaultcss.input, sty.homePhone)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
 
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__a6H2O
-                    )}
-                  >
-                    {"State/Province"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"state"}
-                    data-plasmic-override={overrides.state}
-                    className={classNames(defaultcss.input, sty.state)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
-
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__rszMw
-                    )}
-                  >
-                    {"Zip/Postal Code"}
-                  </div>
-
-                  <input
-                    data-plasmic-name={"zip"}
-                    data-plasmic-override={overrides.zip}
-                    className={classNames(defaultcss.input, sty.zip)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
-                </p.Stack>
-
-                <p.Stack
-                  as={"div"}
-                  data-plasmic-name={"infoRow6"}
-                  data-plasmic-override={overrides.infoRow6}
-                  hasGap={true}
-                  className={classNames(defaultcss.all, sty.infoRow6)}
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__cuRb
+                  )}
                 >
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox__xa595
-                    )}
-                  >
-                    {"Work Email"}
-                  </div>
+                  {"Mobile"}
+                </div>
 
-                  <input
-                    data-plasmic-name={"email"}
-                    data-plasmic-override={overrides.email}
-                    className={classNames(defaultcss.input, sty.email)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
+                <input
+                  data-plasmic-name={"mobile"}
+                  data-plasmic-override={overrides.mobile}
+                  className={classNames(defaultcss.input, sty.mobile)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
 
-                  <div
-                    className={classNames(
-                      defaultcss.all,
-                      defaultcss.__wab_text,
-                      sty.freeBox___2XbGz
-                    )}
-                  >
-                    {"Country"}
-                  </div>
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__sOeNn
+                  )}
+                >
+                  {"Work Telephone"}
+                </div>
 
-                  <input
-                    data-plasmic-name={"country"}
-                    data-plasmic-override={overrides.country}
-                    className={classNames(defaultcss.input, sty.country)}
-                    placeholder={"Some placeholder" as const}
-                    size={1 as const}
-                    type={"text" as const}
-                    value={"Some Value" as const}
-                  />
+                <input
+                  data-plasmic-name={"workPhone"}
+                  data-plasmic-override={overrides.workPhone}
+                  className={classNames(defaultcss.input, sty.workPhone)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+              </p.Stack>
 
-                  <ButtonPrimary
-                    data-plasmic-name={"saveButton"}
-                    data-plasmic-override={overrides.saveButton}
-                    className={classNames("__wab_instance", sty.saveButton)}
-                    prop={"Save"}
-                  />
-                </p.Stack>
-              </div>
-            </div>
-          </div>
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow52"}
+                data-plasmic-override={overrides.infoRow52}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow52)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__lBPje
+                  )}
+                >
+                  {"City"}
+                </div>
+
+                <input
+                  data-plasmic-name={"city"}
+                  data-plasmic-override={overrides.city}
+                  className={classNames(defaultcss.input, sty.city)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__lXusJ
+                  )}
+                >
+                  {"State/Province"}
+                </div>
+
+                <input
+                  data-plasmic-name={"state"}
+                  data-plasmic-override={overrides.state}
+                  className={classNames(defaultcss.input, sty.state)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__xVbDy
+                  )}
+                >
+                  {"Zip/Postal Code"}
+                </div>
+
+                <input
+                  data-plasmic-name={"zip"}
+                  data-plasmic-override={overrides.zip}
+                  className={classNames(defaultcss.input, sty.zip)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"infoRow62"}
+                data-plasmic-override={overrides.infoRow62}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.infoRow62)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__jgDtb
+                  )}
+                >
+                  {"Work Email"}
+                </div>
+
+                <input
+                  data-plasmic-name={"email"}
+                  data-plasmic-override={overrides.email}
+                  className={classNames(defaultcss.input, sty.email)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__oQzeB
+                  )}
+                >
+                  {"Country"}
+                </div>
+
+                <input
+                  data-plasmic-name={"country"}
+                  data-plasmic-override={overrides.country}
+                  className={classNames(defaultcss.input, sty.country)}
+                  placeholder={"Some placeholder" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"Some Value" as const}
+                />
+
+                <ButtonPrimary
+                  data-plasmic-name={"saveButton"}
+                  data-plasmic-override={overrides.saveButton}
+                  className={classNames("__wab_instance", sty.saveButton)}
+                  prop={"Save"}
+                />
+              </p.Stack>
+            </p.Stack>
+          </p.Stack>
         </div>
       </div>
     </React.Fragment>
@@ -508,9 +500,7 @@ const PlasmicDescendants = {
     "root",
     "sidebar",
     "divider",
-    "mainContent",
-    "infoContent",
-    "myInformation",
+    "mainContent1",
     "infoRow1",
     "firstName",
     "middleName",
@@ -519,19 +509,20 @@ const PlasmicDescendants = {
     "genderBox",
     "male",
     "female",
-    "maritalStatusBox",
+    "maritalStatus",
     "infoRow3",
     "street1",
     "street2",
-    "infoRow4",
+    "mainContent2",
+    "infoRow42",
     "homePhone",
     "mobile",
     "workPhone",
-    "infoRow5",
+    "infoRow52",
     "city",
     "state",
     "zip",
-    "infoRow6",
+    "infoRow62",
     "email",
     "country",
     "saveButton"
@@ -539,9 +530,7 @@ const PlasmicDescendants = {
   sidebar: ["sidebar"],
   divider: [
     "divider",
-    "mainContent",
-    "infoContent",
-    "myInformation",
+    "mainContent1",
     "infoRow1",
     "firstName",
     "middleName",
@@ -550,27 +539,26 @@ const PlasmicDescendants = {
     "genderBox",
     "male",
     "female",
-    "maritalStatusBox",
+    "maritalStatus",
     "infoRow3",
     "street1",
     "street2",
-    "infoRow4",
+    "mainContent2",
+    "infoRow42",
     "homePhone",
     "mobile",
     "workPhone",
-    "infoRow5",
+    "infoRow52",
     "city",
     "state",
     "zip",
-    "infoRow6",
+    "infoRow62",
     "email",
     "country",
     "saveButton"
   ],
-  mainContent: [
-    "mainContent",
-    "infoContent",
-    "myInformation",
+  mainContent1: [
+    "mainContent1",
     "infoRow1",
     "firstName",
     "middleName",
@@ -579,73 +567,47 @@ const PlasmicDescendants = {
     "genderBox",
     "male",
     "female",
-    "maritalStatusBox",
+    "maritalStatus",
     "infoRow3",
     "street1",
-    "street2",
-    "infoRow4",
-    "homePhone",
-    "mobile",
-    "workPhone",
-    "infoRow5",
-    "city",
-    "state",
-    "zip",
-    "infoRow6",
-    "email",
-    "country",
-    "saveButton"
+    "street2"
   ],
-  infoContent: [
-    "infoContent",
-    "myInformation",
-    "infoRow1",
-    "firstName",
-    "middleName",
-    "lastName",
-    "infoRow2",
-    "genderBox",
-    "male",
-    "female",
-    "maritalStatusBox",
-    "infoRow3",
-    "street1",
-    "street2",
-    "infoRow4",
-    "homePhone",
-    "mobile",
-    "workPhone",
-    "infoRow5",
-    "city",
-    "state",
-    "zip",
-    "infoRow6",
-    "email",
-    "country",
-    "saveButton"
-  ],
-  myInformation: ["myInformation"],
   infoRow1: ["infoRow1", "firstName", "middleName", "lastName"],
   firstName: ["firstName"],
   middleName: ["middleName"],
   lastName: ["lastName"],
-  infoRow2: ["infoRow2", "genderBox", "male", "female", "maritalStatusBox"],
+  infoRow2: ["infoRow2", "genderBox", "male", "female", "maritalStatus"],
   genderBox: ["genderBox", "male", "female"],
   male: ["male"],
   female: ["female"],
-  maritalStatusBox: ["maritalStatusBox"],
+  maritalStatus: ["maritalStatus"],
   infoRow3: ["infoRow3", "street1", "street2"],
   street1: ["street1"],
   street2: ["street2"],
-  infoRow4: ["infoRow4", "homePhone", "mobile", "workPhone"],
+  mainContent2: [
+    "mainContent2",
+    "infoRow42",
+    "homePhone",
+    "mobile",
+    "workPhone",
+    "infoRow52",
+    "city",
+    "state",
+    "zip",
+    "infoRow62",
+    "email",
+    "country",
+    "saveButton"
+  ],
+  infoRow42: ["infoRow42", "homePhone", "mobile", "workPhone"],
   homePhone: ["homePhone"],
   mobile: ["mobile"],
   workPhone: ["workPhone"],
-  infoRow5: ["infoRow5", "city", "state", "zip"],
+  infoRow52: ["infoRow52", "city", "state", "zip"],
   city: ["city"],
   state: ["state"],
   zip: ["zip"],
-  infoRow6: ["infoRow6", "email", "country", "saveButton"],
+  infoRow62: ["infoRow62", "email", "country", "saveButton"],
   email: ["email"],
   country: ["country"],
   saveButton: ["saveButton"]
@@ -657,9 +619,7 @@ type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
   divider: "div";
-  mainContent: "div";
-  infoContent: "div";
-  myInformation: "div";
+  mainContent1: "div";
   infoRow1: "div";
   firstName: "input";
   middleName: "input";
@@ -668,19 +628,20 @@ type NodeDefaultElementType = {
   genderBox: "div";
   male: typeof CheckboxPrimary;
   female: typeof CheckboxPrimary;
-  maritalStatusBox: typeof SelectBoxPrimary;
+  maritalStatus: "input";
   infoRow3: "div";
   street1: "input";
   street2: "input";
-  infoRow4: "div";
+  mainContent2: "div";
+  infoRow42: "div";
   homePhone: "input";
   mobile: "input";
   workPhone: "input";
-  infoRow5: "div";
+  infoRow52: "div";
   city: "input";
   state: "input";
   zip: "input";
-  infoRow6: "div";
+  infoRow62: "div";
   email: "input";
   country: "input";
   saveButton: typeof ButtonPrimary;
@@ -749,9 +710,7 @@ export const PlasmicMyInfo = Object.assign(
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
     divider: makeNodeComponent("divider"),
-    mainContent: makeNodeComponent("mainContent"),
-    infoContent: makeNodeComponent("infoContent"),
-    myInformation: makeNodeComponent("myInformation"),
+    mainContent1: makeNodeComponent("mainContent1"),
     infoRow1: makeNodeComponent("infoRow1"),
     firstName: makeNodeComponent("firstName"),
     middleName: makeNodeComponent("middleName"),
@@ -760,19 +719,20 @@ export const PlasmicMyInfo = Object.assign(
     genderBox: makeNodeComponent("genderBox"),
     male: makeNodeComponent("male"),
     female: makeNodeComponent("female"),
-    maritalStatusBox: makeNodeComponent("maritalStatusBox"),
+    maritalStatus: makeNodeComponent("maritalStatus"),
     infoRow3: makeNodeComponent("infoRow3"),
     street1: makeNodeComponent("street1"),
     street2: makeNodeComponent("street2"),
-    infoRow4: makeNodeComponent("infoRow4"),
+    mainContent2: makeNodeComponent("mainContent2"),
+    infoRow42: makeNodeComponent("infoRow42"),
     homePhone: makeNodeComponent("homePhone"),
     mobile: makeNodeComponent("mobile"),
     workPhone: makeNodeComponent("workPhone"),
-    infoRow5: makeNodeComponent("infoRow5"),
+    infoRow52: makeNodeComponent("infoRow52"),
     city: makeNodeComponent("city"),
     state: makeNodeComponent("state"),
     zip: makeNodeComponent("zip"),
-    infoRow6: makeNodeComponent("infoRow6"),
+    infoRow62: makeNodeComponent("infoRow62"),
     email: makeNodeComponent("email"),
     country: makeNodeComponent("country"),
     saveButton: makeNodeComponent("saveButton"),

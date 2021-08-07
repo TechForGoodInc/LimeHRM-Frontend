@@ -4,14 +4,14 @@ import {
   DefaultMyInfoProps
 } from "./plasmic/lime_hrm_front/PlasmicMyInfo";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import { saveInfo } from "./../App";
+import { getInfo, saveInfo } from "./../App";
 
 var firstName = "";
 var middleName = "";
 var lastName = "";
 
-//var for gender checkboxes
-//var for marital status select box
+var gender = "";
+var maritalStatus = "";
 
 var street1 = "";
 var street2 = "";
@@ -35,75 +35,97 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       {...props} 
       saveButton={{
         className: "saveButton",
-        onClick: () => handleSave(firstName, middleName, lastName, street1, street2,
-                                  city, state, zip, country, homePhone,
-                                  mobile, workPhone, email)
+        onClick: () => handleSave(firstName, middleName, lastName, gender, maritalStatus, street1, street2,
+                                  city, state, zip, country, homePhone, mobile, workPhone, email)
       }}
       firstName={{
         className: "firstName",
+        placeholder: "Enter your first name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleFirstNameChange(e)
       }}
       middleName={{
         className: "middleName",
+        placeholder: "Enter your middle name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMiddleNameChange(e)
       }}
       lastName={{
         className: "lastName",
+        placeholder: "Enter your last name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleLastNameChange(e)
       }}
-      //function for checkboxes for gender
-
-      //function for select box for marital status
-
+      male={{
+        className: "male",
+        isSelected: () => handleGenderChange("Male")
+      }}
+      female={{
+        className: "female",
+        isSelected: () => handleGenderChange("Female")
+      }}
+      maritalStatus={{
+        className: "maritalStatus",
+        placeholder: "Enter your marital status",
+        onChange: (e: React.FormEvent<HTMLInputElement>) => handleMaritalChange(e)
+      }}
       street1={{
         className: "street1",
+        placeholder: "Enter your first street address",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStreet1Change(e)
       }}
       street2={{
         className: "street2",
+        placeholder: "Enter your second street address",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStreet2Change(e)
       }}
       city={{
         className: "city",
+        placeholder: "Enter your city",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleCityChange(e)
       }}
       state={{
         className: "state",
+        placeholder: "Enter your state",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStateChange(e)
       }}
       zip={{
         className: "zip",
+        placeholder: "Enter your zip code",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleZipChange(e)
       }}
       country={{
         className: "country",
+        placeholder: "Enter your country",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleCountryChange(e)
       }}
       homePhone={{
         className: "homePhone",
+        placeholder: "Enter your home phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleHomePhoneChange(e)
       }}
       mobile={{
         className: "mobile",
+        placeholder: "Enter your mobile phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMobileChange(e)
       }}
       workPhone={{
         className: "workPhone",
+        placeholder: "Enter your work phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleWorkPhoneChange(e)
       }}
       email={{
         className: "email",
+        placeholder: "Enter your work email",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e)
       }}
     />
   );
 }
 
-const handleSave = (firstName: string, middleName: string, lastName: string, street1: string, street2: string,
-  city: string, state: string, zip: string, country: string, homePhone: string, mobile: string,
-  workPhone: string, email: string) => {
-  saveInfo(firstName, middleName, lastName, street1, street2, city, state,
+const handleSave = (firstName: string, middleName: string, lastName: string, gender: string, maritalStatus: string, 
+  street1: string, street2: string, city: string, state: string, zip: string, country: string, homePhone: string, 
+  mobile: string, workPhone: string, email: string) => {
+  saveInfo(firstName, middleName, lastName, gender, maritalStatus, street1, street2, city, state,
           zip, country, homePhone, mobile, workPhone, email);
+  alert("Your info has been saved.");
 }
 
 const handleFirstNameChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -116,6 +138,14 @@ const handleMiddleNameChange = (e: React.FormEvent<HTMLInputElement>) => {
 
 const handleLastNameChange = (e: React.FormEvent<HTMLInputElement>) => {
   lastName = e.currentTarget.value;
+}
+
+const handleGenderChange = (g: string) => {
+  gender = g;
+}
+
+const handleMaritalChange = (e: React.FormEvent<HTMLInputElement>) => {
+  maritalStatus = e.currentTarget.value;
 }
 
 const handleStreet1Change = (e: React.FormEvent<HTMLInputElement>) => {
