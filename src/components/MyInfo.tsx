@@ -40,16 +40,19 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       }}
       firstName={{
         className: "firstName",
+        value: firstName,
         placeholder: "Enter your first name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleFirstNameChange(e)
       }}
       middleName={{
         className: "middleName",
+        value: middleName,
         placeholder: "Enter your middle name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMiddleNameChange(e)
       }}
       lastName={{
         className: "lastName",
+        value: lastName,
         placeholder: "Enter your last name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleLastNameChange(e)
       }}
@@ -63,56 +66,67 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       }}
       maritalStatus={{
         className: "maritalStatus",
+        value: maritalStatus,
         placeholder: "Enter your marital status",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMaritalChange(e)
       }}
       street1={{
         className: "street1",
+        value: street1,
         placeholder: "Enter your first street address",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStreet1Change(e)
       }}
       street2={{
         className: "street2",
+        value: street2,
         placeholder: "Enter your second street address",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStreet2Change(e)
       }}
       city={{
         className: "city",
+        value: city,
         placeholder: "Enter your city",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleCityChange(e)
       }}
       state={{
         className: "state",
+        value: state,
         placeholder: "Enter your state",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStateChange(e)
       }}
       zip={{
         className: "zip",
+        value: zip,
         placeholder: "Enter your zip code",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleZipChange(e)
       }}
       country={{
         className: "country",
+        value: country,
         placeholder: "Enter your country",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleCountryChange(e)
       }}
       homePhone={{
         className: "homePhone",
+        value: homePhone,
         placeholder: "Enter your home phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleHomePhoneChange(e)
       }}
       mobile={{
         className: "mobile",
+        value: mobile,
         placeholder: "Enter your mobile phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMobileChange(e)
       }}
       workPhone={{
         className: "workPhone",
+        value: workPhone,
         placeholder: "Enter your work phone #",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleWorkPhoneChange(e)
       }}
       email={{
         className: "email",
+        value: email,
         placeholder: "Enter your work email",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e)
       }}
