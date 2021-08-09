@@ -78,7 +78,7 @@ window.onbeforeunload = (e) => {
 export async function getLoginToken(username: string, password: string){
     setUsername(username);
     const response = await fetch(
-        ApiRoutes.Base + '/api/authentication/getToken?email=' + username + '&password=' + password + '&grant_type=password',
+        ApiRoutes.Base + '/api/authentication/getToken?userId=' + username + '&password=' + password + '&grant_type=password',
         {
             method: 'POST',
             mode: 'cors',
