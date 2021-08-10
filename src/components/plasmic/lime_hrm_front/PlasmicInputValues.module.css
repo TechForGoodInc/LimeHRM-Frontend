@@ -14,7 +14,13 @@
   width: calc(100% + 10%);
 }
 .inputValuesRow1 > :global(.__wab_flex-container) > *,
-.inputValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.inputValuesRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.inputValuesRow1 > :global(.__wab_flex-container) > picture > img,
+.inputValuesRow1
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 10%;
 }
 .fullName {

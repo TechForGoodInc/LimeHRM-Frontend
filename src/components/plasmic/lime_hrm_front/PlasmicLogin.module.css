@@ -40,7 +40,13 @@
   height: calc(100% + 20px);
 }
 .loginContainer > :global(.__wab_flex-container) > *,
-.loginContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.loginContainer > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.loginContainer > :global(.__wab_flex-container) > picture > img,
+.loginContainer
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 20px;
 }
 .text {
@@ -78,7 +84,13 @@
   height: calc(100% + 20px);
 }
 .loginDiv > :global(.__wab_flex-container) > *,
-.loginDiv > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.loginDiv > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.loginDiv > :global(.__wab_flex-container) > picture > img,
+.loginDiv
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 20px;
 }
 .emailInput:global(.__wab_instance) {

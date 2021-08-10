@@ -22,9 +22,6 @@
   height: 720px;
   flex-shrink: 0;
 }
-.applyLeave__myLeave:global(.__wab_instance) {
-  flex-shrink: 0;
-}
 .freeBox {
   display: flex;
   flex-direction: row;
@@ -38,9 +35,6 @@
   border-width: 1px;
   border-style: solid;
 }
-.freeBox__myLeave {
-  border-bottom-style: none;
-}
 .applylink {
   position: relative;
   border-right-style: solid;
@@ -52,19 +46,6 @@
   text-align: center;
   background: #0051cc;
   color: #ffffff /* plasmic-token: aIvfp6F0FfEuu */;
-  flex-shrink: 0;
-  min-height: 0;
-  padding: 16px;
-}
-.applylink__myLeave {
-  width: 200px;
-  height: 100%;
-  border-right-style: solid;
-  border-right-width: 1px;
-  font-size: 16px;
-  color: #000000eb /* plasmic-token: soY86JAOW */;
-  text-align: center;
-  background: linear-gradient(#ffffff, #ffffff), #0051cc;
   flex-shrink: 0;
   min-height: 0;
   padding: 16px;
@@ -83,19 +64,6 @@
   min-height: 0;
   padding: 16px;
 }
-.assign__myLeave {
-  width: 200px;
-  height: 100%;
-  border-right-style: solid;
-  border-right-width: 1px;
-  font-size: 16px;
-  color: #000000eb /* plasmic-token: soY86JAOW */;
-  text-align: center;
-  background: linear-gradient(#ffffff, #ffffff), #0051cc;
-  flex-shrink: 0;
-  min-height: 0;
-  padding: 16px;
-}
 .myleave {
   position: relative;
   border-right-style: solid;
@@ -108,19 +76,6 @@
   top: auto;
   color: #000000eb /* plasmic-token: soY86JAOW */;
   background: linear-gradient(#ffffff, #ffffff), #0051cc;
-  flex-shrink: 0;
-  min-height: 0;
-  padding: 16px;
-}
-.myleave__myLeave {
-  width: 200px;
-  height: 100%;
-  border-right-style: solid;
-  border-right-width: 1px;
-  font-size: 16px;
-  color: #ffffff /* plasmic-token: aIvfp6F0FfEuu */;
-  text-align: center;
-  background: #0051cc;
   flex-shrink: 0;
   min-height: 0;
   padding: 16px;

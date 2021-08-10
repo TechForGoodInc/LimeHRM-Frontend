@@ -71,7 +71,13 @@
   height: calc(100% + 3%);
 }
 .timeTile > :global(.__wab_flex-container) > *,
-.timeTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.timeTile > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.timeTile > :global(.__wab_flex-container) > picture > img,
+.timeTile
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 3%;
 }
 .h1__l8PZ {
@@ -103,7 +109,13 @@
   width: calc(100% + 5%);
 }
 .clockButtons > :global(.__wab_flex-container) > *,
-.clockButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.clockButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.clockButtons > :global(.__wab_flex-container) > picture > img,
+.clockButtons
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 5%;
 }
 .buttonPrimary__zDwiO:global(.__wab_instance) {
@@ -135,7 +147,13 @@
   height: calc(100% + 3%);
 }
 .leaveTile > :global(.__wab_flex-container) > *,
-.leaveTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.leaveTile > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.leaveTile > :global(.__wab_flex-container) > picture > img,
+.leaveTile
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 3%;
 }
 .h1__vD0Dq {
@@ -173,7 +191,13 @@
   height: calc(100% + 3%);
 }
 .payTile > :global(.__wab_flex-container) > *,
-.payTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.payTile > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.payTile > :global(.__wab_flex-container) > picture > img,
+.payTile
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 3%;
 }
 .h1__pyoHy {
@@ -201,7 +225,13 @@
   height: calc(100% + 3%);
 }
 .performanceTile > :global(.__wab_flex-container) > *,
-.performanceTile > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.performanceTile > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.performanceTile > :global(.__wab_flex-container) > picture > img,
+.performanceTile
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 3%;
 }
 .h1__lFMuc {

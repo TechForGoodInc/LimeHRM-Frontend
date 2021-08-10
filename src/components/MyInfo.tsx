@@ -4,7 +4,25 @@ import {
   DefaultMyInfoProps
 } from "./plasmic/lime_hrm_front/PlasmicMyInfo";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-//import { getInfo, saveInfo } from "./../App";
+import { ApiRoutes } from "../Router";
+
+/*var state={
+  firstName: "",
+  middleName: "",
+  lastName: "",
+  gender: "",
+  maritalStatus: "",
+  street1: "",
+  street2: "",
+  city: "",
+  state: "",
+  zip: "",
+  country: "",
+  homePhone: "",
+  mobile: "",
+  workPhone: "",
+  email: ""
+}*/
 
 var firstName = "";
 var middleName = "";
@@ -40,8 +58,8 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       }}
       firstName={{
         className: "firstName",
-        value: firstName,
-        placeholder: "Enter your first name",
+        //value: firstName,
+        //placeholder: "Enter your first name",
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleFirstNameChange(e)
       }}
       middleName={{
@@ -137,8 +155,8 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
 const handleSave = (firstName: string, middleName: string, lastName: string, gender: string, maritalStatus: string, 
   street1: string, street2: string, city: string, state: string, zip: string, country: string, homePhone: string, 
   mobile: string, workPhone: string, email: string) => {
-  /*saveInfo(firstName, middleName, lastName, gender, maritalStatus, street1, street2, city, state,
-          zip, country, homePhone, mobile, workPhone, email);*/
+  saveInfo(firstName, middleName, lastName, gender, maritalStatus, street1, street2, city, state,
+          zip, country, homePhone, mobile, workPhone, email);
   alert("Your info has been saved.");
 }
 
@@ -201,6 +219,126 @@ const handleWorkPhoneChange = (e: React.FormEvent<HTMLInputElement>) => {
 const handleEmailChange = (e: React.FormEvent<HTMLInputElement>) => {
   email = e.currentTarget.value;
 }
+
+
+export function setFirstName(val: string) {
+  firstName = val;
+}
+
+export function setMiddleName(val: string) {
+  middleName = val;
+}
+
+export function setLastName(val: string) {
+  lastName = val;
+}
+
+export function setGender(val: string) {
+  gender = val;
+}
+
+export function setMaritalStatus(val: string) {
+  maritalStatus = val;
+}
+
+export function setStreet1(val: string) {
+  street1 = val;
+}
+
+export function setStreet2(val: string) {
+  street2 = val;
+}
+
+export function setCity(val: string) {
+  city = val;
+}
+
+export function setState(val: string) {
+  state = val;
+}
+
+export function setZip(val: string) {
+  zip = val;
+}
+
+export function setCountry(val: string) {
+  country = val;
+}
+
+export function setHomePhone(val: string) {
+  homePhone = val;
+}
+
+export function setMobile(val: string) {
+  mobile = val;
+}
+
+export function setWorkPhone(val: string) {
+  workPhone = val;
+}
+
+export function setEmail(val: string) {
+  email = val;
+}
+
+
+export async function saveInfo(firstName: string, middleName: string, lastName: string, gender: string, maritalStatus: string, 
+                              street1: string, street2: string, city: string, state: string, zip: string, country: string, 
+                              homePhone: string, mobile: string, workPhone: string, email: string){
+  setFirstName(firstName);
+  setMiddleName(middleName);
+  setLastName(lastName);
+  setGender(gender);
+  setMaritalStatus(maritalStatus);
+  setStreet1(street1);
+  setStreet2(street2);
+  setCity(city);
+  setState(state);
+  setZip(zip);
+  setCountry(country);
+  setHomePhone(homePhone);
+  setMobile(mobile);
+  setWorkPhone(workPhone);
+  setEmail(email);
+  const response = await fetch(
+      ApiRoutes.Base + '/api/worker/:workerId="workers/1"?firstName=' + firstName + '&middleName' + middleName 
+      + '&lastName=' + lastName + '&gender=' + gender + '&maritalStatus=' + maritalStatus 
+      + '&street1=' + street1 + '&street2=' + street2 + '&city=' + city + '&state=' 
+      + state + '&zip=' + zip + '&country=' + country + '&homePhone=' + homePhone + '&mobile=' + mobile 
+      + '&workPhone=' + workPhone + '&email=' + email,
+      {
+          method: 'PATCH',
+          mode: 'cors',
+          cache: 'no-cache',
+          credentials: 'same-origin',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          redirect: 'follow',
+          referrerPolicy: 'no-referrer',
+      }
+  );
+  return response.json();
+}
+
+export async function getInfo(){
+  const response = await fetch(
+    ApiRoutes.Base + '/api/workers/:workerId="workers/1"?',
+    {
+      method: 'GET',
+      mode: 'cors',
+      cache: 'no-cache',
+      credentials: 'same-origin',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      redirect: 'follow',
+      referrerPolicy: 'no-referrer',
+    }
+  );
+  return response.json();
+}
+
 
 const MyInfo = React.forwardRef(MyInfo_);
 export default MyInfo;

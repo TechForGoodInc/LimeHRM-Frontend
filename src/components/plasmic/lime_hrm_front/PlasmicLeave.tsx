@@ -39,16 +39,11 @@ import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-i
 import * as projectcss from "./plasmic_lime_hrm_front.module.css"; // plasmic-import: vQU939GjUi82K5u1iSBKF3/projectcss
 import * as sty from "./PlasmicLeave.module.css"; // plasmic-import: eWqFv7MHWi/css
 
-export type PlasmicLeave__VariantMembers = {
-  myLeave: "myLeave";
-};
+export type PlasmicLeave__VariantMembers = {};
 
-export type PlasmicLeave__VariantsArgs = {
-  myLeave?: SingleBooleanChoiceArg<"myLeave">;
-};
-
+export type PlasmicLeave__VariantsArgs = {};
 type VariantPropType = keyof PlasmicLeave__VariantsArgs;
-export const PlasmicLeave__VariantProps = new Array<VariantPropType>("myLeave");
+export const PlasmicLeave__VariantProps = new Array<VariantPropType>();
 
 export type PlasmicLeave__ArgsType = {};
 type ArgPropType = keyof PlasmicLeave__ArgsType;
@@ -68,7 +63,6 @@ export type PlasmicLeave__OverridesType = {
 };
 
 export interface DefaultLeaveProps {
-  myLeave?: SingleBooleanChoiceArg<"myLeave">;
   className?: string;
 }
 
@@ -95,39 +89,24 @@ function PlasmicLeave__RenderFunc(props: {
           className={classNames(
             defaultcss.all,
             projectcss.root_reset,
-            sty.root,
-            { [sty.root__myLeave]: hasVariant(variants, "myLeave", "myLeave") }
+            sty.root
           )}
         >
           <Sidebar
             data-plasmic-name={"sidebar"}
             data-plasmic-override={overrides.sidebar}
-            className={classNames("__wab_instance", sty.sidebar, {
-              [sty.sidebar__myLeave]: hasVariant(variants, "myLeave", "myLeave")
-            })}
+            className={classNames("__wab_instance", sty.sidebar)}
           />
 
           <ApplyLeave
             data-plasmic-name={"applyLeave"}
             data-plasmic-override={overrides.applyLeave}
-            className={classNames("__wab_instance", sty.applyLeave, {
-              [sty.applyLeave__myLeave]: hasVariant(
-                variants,
-                "myLeave",
-                "myLeave"
-              )
-            })}
+            className={classNames("__wab_instance", sty.applyLeave)}
           >
             <div
               data-plasmic-name={"freeBox"}
               data-plasmic-override={overrides.freeBox}
-              className={classNames(defaultcss.all, sty.freeBox, {
-                [sty.freeBox__myLeave]: hasVariant(
-                  variants,
-                  "myLeave",
-                  "myLeave"
-                )
-              })}
+              className={classNames(defaultcss.all, sty.freeBox)}
             >
               <a
                 data-plasmic-name={"applylink"}
@@ -135,14 +114,7 @@ function PlasmicLeave__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.applylink,
-                  {
-                    [sty.applylink__myLeave]: hasVariant(
-                      variants,
-                      "myLeave",
-                      "myLeave"
-                    )
-                  }
+                  sty.applylink
                 )}
                 href={"/" as const}
               >
@@ -155,20 +127,9 @@ function PlasmicLeave__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.assign,
-                  {
-                    [sty.assign__myLeave]: hasVariant(
-                      variants,
-                      "myLeave",
-                      "myLeave"
-                    )
-                  }
+                  sty.assign
                 )}
-                href={
-                  hasVariant(variants, "myLeave", "myLeave")
-                    ? ("/leave:assign" as const)
-                    : ("/" as const)
-                }
+                href={"/" as const}
               >
                 {"Assign Leave"}
               </a>
@@ -179,20 +140,9 @@ function PlasmicLeave__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.myleave,
-                  {
-                    [sty.myleave__myLeave]: hasVariant(
-                      variants,
-                      "myLeave",
-                      "myLeave"
-                    )
-                  }
+                  sty.myleave
                 )}
-                href={
-                  hasVariant(variants, "myLeave", "myLeave")
-                    ? ("/" as const)
-                    : ("/leave:myleave" as const)
-                }
+                href={"/leave:myleave" as const}
               >
                 {"My Leave"}
               </a>
@@ -203,20 +153,8 @@ function PlasmicLeave__RenderFunc(props: {
                 className={classNames(
                   defaultcss.all,
                   defaultcss.__wab_text,
-                  sty.leaveist,
-                  {
-                    [sty.leaveist__myLeave]: hasVariant(
-                      variants,
-                      "myLeave",
-                      "myLeave"
-                    )
-                  }
+                  sty.leaveist
                 )}
-                href={
-                  hasVariant(variants, "myLeave", "myLeave")
-                    ? ("/leave:leavelist" as const)
-                    : undefined
-                }
               >
                 {"Leave List"}
               </a>
@@ -238,13 +176,7 @@ function PlasmicLeave__RenderFunc(props: {
             <Leaveassign
               data-plasmic-name={"leaveassign"}
               data-plasmic-override={overrides.leaveassign}
-              className={classNames("__wab_instance", sty.leaveassign, {
-                [sty.leaveassign__myLeave]: hasVariant(
-                  variants,
-                  "myLeave",
-                  "myLeave"
-                )
-              })}
+              className={classNames("__wab_instance", sty.leaveassign)}
             />
           </ApplyLeave>
         </div>

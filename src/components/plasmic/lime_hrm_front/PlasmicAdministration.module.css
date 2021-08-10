@@ -176,7 +176,13 @@
   width: calc(100% + 1%);
 }
 .tableButtons > :global(.__wab_flex-container) > *,
-.tableButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.tableButtons > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.tableButtons > :global(.__wab_flex-container) > picture > img,
+.tableButtons
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 1%;
 }
 .deleteButton {

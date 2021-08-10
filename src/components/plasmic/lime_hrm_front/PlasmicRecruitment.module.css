@@ -32,7 +32,13 @@
   height: calc(100% + 4%);
 }
 .divider > :global(.__wab_flex-container) > *,
-.divider > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.divider > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.divider > :global(.__wab_flex-container) > picture > img,
+.divider
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-top: 4%;
 }
 .filterCandidates {
@@ -82,7 +88,13 @@
   width: calc(100% + 2%);
 }
 .selectBoxes > :global(.__wab_flex-container) > *,
-.selectBoxes > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.selectBoxes > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.selectBoxes > :global(.__wab_flex-container) > picture > img,
+.selectBoxes
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 2%;
 }
 .jobTitle {
@@ -254,7 +266,13 @@
   width: calc(100% + 2%);
 }
 .buttons > :global(.__wab_flex-container) > *,
-.buttons > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.buttons > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttons > :global(.__wab_flex-container) > picture > img,
+.buttons
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 2%;
 }
 .clearAllButton:global(.__wab_instance) {

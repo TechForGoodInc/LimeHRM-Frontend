@@ -44,7 +44,13 @@
   width: calc(100% + 5%);
 }
 .buttonDiv > :global(.__wab_flex-container) > *,
-.buttonDiv > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.buttonDiv > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.buttonDiv > :global(.__wab_flex-container) > picture > img,
+.buttonDiv
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 5%;
 }
 .buttonPrimary__iROs:global(.__wab_instance) {
@@ -96,6 +102,9 @@
   flex-shrink: 0;
 }
 .img > picture > img {
+  object-fit: contain;
+}
+.img > .__wab_img-spacer > img {
   object-fit: contain;
 }
 .recruitmentTable:global(.__wab_instance) {

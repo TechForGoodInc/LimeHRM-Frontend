@@ -21,7 +21,13 @@
   width: calc(100% + 4px);
 }
 .trigger > :global(.__wab_flex-container) > *,
-.trigger > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
+.trigger > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
+.trigger > :global(.__wab_flex-container) > picture > img,
+.trigger
+  > :global(.__wab_flex-container)
+  > :global(.__wab_slot)
+  > picture
+  > img {
   margin-left: 4px;
 }
 .trigger__isOpen {

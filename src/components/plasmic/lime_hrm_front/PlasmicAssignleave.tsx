@@ -32,6 +32,8 @@ import {
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: yoRVhunlI-d/component
 import ApplyLeave from "../../ApplyLeave"; // plasmic-import: exv2JUik8JK/component
+import SelectBoxPrimary__OptionGroup from "../../SelectBoxPrimary__OptionGroup"; // plasmic-import: XomSqMHtbQj/component
+import SelectBoxPrimary__Option from "../../SelectBoxPrimary__Option"; // plasmic-import: dmwcrBXAMAY/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
@@ -57,6 +59,9 @@ export type PlasmicAssignleave__OverridesType = {
   myleave?: p.Flex<"a">;
   leaveist?: p.Flex<"a">;
   reports?: p.Flex<"a">;
+  optionGroup?: p.Flex<typeof SelectBoxPrimary__OptionGroup>;
+  rowWrapper?: p.Flex<"div">;
+  employeeName?: p.Flex<"label">;
 };
 
 export interface DefaultAssignleaveProps {
@@ -165,19 +170,77 @@ function PlasmicAssignleave__RenderFunc(props: {
                 {"Reports"}
               </a>
             </div>
-          </ApplyLeave>
 
-          <div className={classNames(defaultcss.all, sty.freeBox__nXqlz)}>
-            <div
-              className={classNames(
-                defaultcss.all,
-                defaultcss.__wab_text,
-                sty.freeBox___5D305
-              )}
-            >
-              {"Assign Leave"}
+            <div className={classNames(defaultcss.all, sty.freeBox__qIdpx)}>
+              <div className={classNames(defaultcss.all, sty.freeBox__nXqlz)}>
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox___5D305
+                  )}
+                >
+                  {"Assign Leave"}
+                </div>
+              </div>
+
+              <SelectBoxPrimary__OptionGroup
+                data-plasmic-name={"optionGroup"}
+                data-plasmic-override={overrides.optionGroup}
+                className={classNames("__wab_instance", sty.optionGroup)}
+              />
+
+              <p.Stack
+                as={"div"}
+                data-plasmic-name={"rowWrapper"}
+                data-plasmic-override={overrides.rowWrapper}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.rowWrapper)}
+              >
+                <label
+                  data-plasmic-name={"employeeName"}
+                  data-plasmic-override={overrides.employeeName}
+                  className={classNames(defaultcss.all, sty.employeeName)}
+                >
+                  <div
+                    className={classNames(
+                      defaultcss.all,
+                      defaultcss.__wab_text,
+                      sty.freeBox___1TiaT
+                    )}
+                  >
+                    {"Employee Name"}
+                  </div>
+                </label>
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__tzqFp
+                  )}
+                >
+                  {"Type here.."}
+                </div>
+              </p.Stack>
+
+              <p.Stack
+                as={"div"}
+                hasGap={true}
+                className={classNames(defaultcss.all, sty.freeBox__mt4X4)}
+              >
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox___2Sj8I
+                  )}
+                >
+                  {"Leave Type"}
+                </div>
+              </p.Stack>
             </div>
-          </div>
+          </ApplyLeave>
         </div>
       </div>
     </React.Fragment>
@@ -193,7 +256,10 @@ const PlasmicDescendants = {
     "assign",
     "myleave",
     "leaveist",
-    "reports"
+    "reports",
+    "optionGroup",
+    "rowWrapper",
+    "employeeName"
   ],
   sidebar: ["sidebar"],
   applyLeave: [
@@ -202,13 +268,19 @@ const PlasmicDescendants = {
     "assign",
     "myleave",
     "leaveist",
-    "reports"
+    "reports",
+    "optionGroup",
+    "rowWrapper",
+    "employeeName"
   ],
   applylink: ["applylink"],
   assign: ["assign"],
   myleave: ["myleave"],
   leaveist: ["leaveist"],
-  reports: ["reports"]
+  reports: ["reports"],
+  optionGroup: ["optionGroup"],
+  rowWrapper: ["rowWrapper", "employeeName"],
+  employeeName: ["employeeName"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -222,6 +294,9 @@ type NodeDefaultElementType = {
   myleave: "a";
   leaveist: "a";
   reports: "a";
+  optionGroup: typeof SelectBoxPrimary__OptionGroup;
+  rowWrapper: "div";
+  employeeName: "label";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -292,6 +367,9 @@ export const PlasmicAssignleave = Object.assign(
     myleave: makeNodeComponent("myleave"),
     leaveist: makeNodeComponent("leaveist"),
     reports: makeNodeComponent("reports"),
+    optionGroup: makeNodeComponent("optionGroup"),
+    rowWrapper: makeNodeComponent("rowWrapper"),
+    employeeName: makeNodeComponent("employeeName"),
 
     // Metadata about props expected for PlasmicAssignleave
     internalVariantProps: PlasmicAssignleave__VariantProps,
