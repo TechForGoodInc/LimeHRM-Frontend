@@ -56,28 +56,31 @@ export type PlasmicMyInfo__OverridesType = {
   mainContent1?: p.Flex<"div">;
   infoRow1?: p.Flex<"div">;
   firstName?: p.Flex<"input">;
-  middleName?: p.Flex<"input">;
   lastName?: p.Flex<"input">;
+  teamName?: p.Flex<"input">;
+  positionName?: p.Flex<"input">;
   infoRow2?: p.Flex<"div">;
   genderBox?: p.Flex<"div">;
   male?: p.Flex<typeof CheckboxPrimary>;
   female?: p.Flex<typeof CheckboxPrimary>;
   maritalStatus?: p.Flex<"input">;
+  salary?: p.Flex<"input">;
   infoRow3?: p.Flex<"div">;
-  street1?: p.Flex<"input">;
-  street2?: p.Flex<"input">;
+  homeAddress?: p.Flex<"input">;
+  department?: p.Flex<"input">;
+  jobStatus?: p.Flex<"input">;
   mainContent2?: p.Flex<"div">;
   infoRow42?: p.Flex<"div">;
   homePhone?: p.Flex<"input">;
   mobile?: p.Flex<"input">;
-  workPhone?: p.Flex<"input">;
   infoRow52?: p.Flex<"div">;
-  city?: p.Flex<"input">;
-  state?: p.Flex<"input">;
-  zip?: p.Flex<"input">;
+  birthDate?: p.Flex<"input">;
+  startDate?: p.Flex<"input">;
+  endDate?: p.Flex<"input">;
   infoRow62?: p.Flex<"div">;
   email?: p.Flex<"input">;
-  country?: p.Flex<"input">;
+  personalEmail?: p.Flex<"input">;
+  managerEmail?: p.Flex<"input">;
   saveButton?: p.Flex<typeof ButtonPrimary>;
 };
 
@@ -152,30 +155,58 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-name={"firstName"}
                   data-plasmic-override={overrides.firstName}
                   className={classNames(defaultcss.input, sty.firstName)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"First Name" as const}
-                />
-
-                <input
-                  data-plasmic-name={"middleName"}
-                  data-plasmic-override={overrides.middleName}
-                  className={classNames(defaultcss.input, sty.middleName)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
-                  type={"text" as const}
-                  value={"Middle Name" as const}
                 />
 
                 <input
                   data-plasmic-name={"lastName"}
                   data-plasmic-override={overrides.lastName}
                   className={classNames(defaultcss.input, sty.lastName)}
-                  placeholder={"Some placeholder" as const}
+                  placeholder={"" as const}
                   size={1 as const}
                   type={"text" as const}
-                  value={"Last Name" as const}
+                  value={"" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__mgTjj
+                  )}
+                >
+                  {"Team Name"}
+                </div>
+
+                <input
+                  data-plasmic-name={"teamName"}
+                  data-plasmic-override={overrides.teamName}
+                  className={classNames(defaultcss.input, sty.teamName)}
+                  placeholder={"" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__aizBo
+                  )}
+                >
+                  {"Position Name"}
+                </div>
+
+                <input
+                  data-plasmic-name={"positionName"}
+                  data-plasmic-override={overrides.positionName}
+                  className={classNames(defaultcss.input, sty.positionName)}
+                  placeholder={"" as const}
+                  size={1 as const}
+                  type={"text" as const}
+                  value={"" as const}
                 />
               </p.Stack>
 
@@ -234,10 +265,26 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-name={"maritalStatus"}
                   data-plasmic-override={overrides.maritalStatus}
                   className={classNames(defaultcss.input, sty.maritalStatus)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__sFv4G
+                  )}
+                >
+                  {"Salary"}
+                </div>
+
+                <input
+                  data-plasmic-name={"salary"}
+                  data-plasmic-override={overrides.salary}
+                  className={classNames(defaultcss.input, sty.salary)}
+                  placeholder={"" as const}
+                  type={"text" as const}
                 />
               </p.Stack>
 
@@ -255,37 +302,51 @@ function PlasmicMyInfo__RenderFunc(props: {
                     sty.freeBox__zvfin
                   )}
                 >
-                  {"Address Street #1"}
+                  {"Home Address"}
                 </div>
 
                 <input
-                  data-plasmic-name={"street1"}
-                  data-plasmic-override={overrides.street1}
-                  className={classNames(defaultcss.input, sty.street1)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"homeAddress"}
+                  data-plasmic-override={overrides.homeAddress}
+                  className={classNames(defaultcss.input, sty.homeAddress)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
 
                 <div
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__zQTz
+                    sty.freeBox__sfZ
                   )}
                 >
-                  {"Address Street #2"}
+                  {"Department"}
                 </div>
 
                 <input
-                  data-plasmic-name={"street2"}
-                  data-plasmic-override={overrides.street2}
-                  className={classNames(defaultcss.input, sty.street2)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"department"}
+                  data-plasmic-override={overrides.department}
+                  className={classNames(defaultcss.input, sty.department)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox___696U0
+                  )}
+                >
+                  {"Job Status"}
+                </div>
+
+                <input
+                  data-plasmic-name={"jobStatus"}
+                  data-plasmic-override={overrides.jobStatus}
+                  className={classNames(defaultcss.input, sty.jobStatus)}
+                  placeholder={"" as const}
+                  type={"text" as const}
                 />
               </p.Stack>
             </p.Stack>
@@ -318,10 +379,8 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-name={"homePhone"}
                   data-plasmic-override={overrides.homePhone}
                   className={classNames(defaultcss.input, sty.homePhone)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
 
                 <div
@@ -338,30 +397,8 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-name={"mobile"}
                   data-plasmic-override={overrides.mobile}
                   className={classNames(defaultcss.input, sty.mobile)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
-                />
-
-                <div
-                  className={classNames(
-                    defaultcss.all,
-                    defaultcss.__wab_text,
-                    sty.freeBox__sOeNn
-                  )}
-                >
-                  {"Work Telephone"}
-                </div>
-
-                <input
-                  data-plasmic-name={"workPhone"}
-                  data-plasmic-override={overrides.workPhone}
-                  className={classNames(defaultcss.input, sty.workPhone)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
-                  type={"text" as const}
-                  value={"Some Value" as const}
                 />
               </p.Stack>
 
@@ -379,57 +416,51 @@ function PlasmicMyInfo__RenderFunc(props: {
                     sty.freeBox__lBPje
                   )}
                 >
-                  {"City"}
+                  {"Birth Date"}
                 </div>
 
                 <input
-                  data-plasmic-name={"city"}
-                  data-plasmic-override={overrides.city}
-                  className={classNames(defaultcss.input, sty.city)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"birthDate"}
+                  data-plasmic-override={overrides.birthDate}
+                  className={classNames(defaultcss.input, sty.birthDate)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
 
                 <div
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__lXusJ
+                    sty.freeBox__o3ADg
                   )}
                 >
-                  {"State/Province"}
+                  {"Start Date"}
                 </div>
 
                 <input
-                  data-plasmic-name={"state"}
-                  data-plasmic-override={overrides.state}
-                  className={classNames(defaultcss.input, sty.state)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"startDate"}
+                  data-plasmic-override={overrides.startDate}
+                  className={classNames(defaultcss.input, sty.startDate)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
 
                 <div
                   className={classNames(
                     defaultcss.all,
                     defaultcss.__wab_text,
-                    sty.freeBox__xVbDy
+                    sty.freeBox__v9MEm
                   )}
                 >
-                  {"Zip/Postal Code"}
+                  {"End Date"}
                 </div>
 
                 <input
-                  data-plasmic-name={"zip"}
-                  data-plasmic-override={overrides.zip}
-                  className={classNames(defaultcss.input, sty.zip)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"endDate"}
+                  data-plasmic-override={overrides.endDate}
+                  className={classNames(defaultcss.input, sty.endDate)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
               </p.Stack>
 
@@ -447,17 +478,33 @@ function PlasmicMyInfo__RenderFunc(props: {
                     sty.freeBox__jgDtb
                   )}
                 >
-                  {"Work Email"}
+                  {"Email"}
                 </div>
 
                 <input
                   data-plasmic-name={"email"}
                   data-plasmic-override={overrides.email}
                   className={classNames(defaultcss.input, sty.email)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
+                />
+
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox__vDTi
+                  )}
+                >
+                  {"Personal Email"}
+                </div>
+
+                <input
+                  data-plasmic-name={"personalEmail"}
+                  data-plasmic-override={overrides.personalEmail}
+                  className={classNames(defaultcss.input, sty.personalEmail)}
+                  placeholder={"" as const}
+                  type={"text" as const}
                 />
 
                 <div
@@ -467,17 +514,15 @@ function PlasmicMyInfo__RenderFunc(props: {
                     sty.freeBox__oQzeB
                   )}
                 >
-                  {"Country"}
+                  {"Manager Email"}
                 </div>
 
                 <input
-                  data-plasmic-name={"country"}
-                  data-plasmic-override={overrides.country}
-                  className={classNames(defaultcss.input, sty.country)}
-                  placeholder={"Some placeholder" as const}
-                  size={1 as const}
+                  data-plasmic-name={"managerEmail"}
+                  data-plasmic-override={overrides.managerEmail}
+                  className={classNames(defaultcss.input, sty.managerEmail)}
+                  placeholder={"" as const}
                   type={"text" as const}
-                  value={"Some Value" as const}
                 />
 
                 <ButtonPrimary
@@ -503,28 +548,31 @@ const PlasmicDescendants = {
     "mainContent1",
     "infoRow1",
     "firstName",
-    "middleName",
     "lastName",
+    "teamName",
+    "positionName",
     "infoRow2",
     "genderBox",
     "male",
     "female",
     "maritalStatus",
+    "salary",
     "infoRow3",
-    "street1",
-    "street2",
+    "homeAddress",
+    "department",
+    "jobStatus",
     "mainContent2",
     "infoRow42",
     "homePhone",
     "mobile",
-    "workPhone",
     "infoRow52",
-    "city",
-    "state",
-    "zip",
+    "birthDate",
+    "startDate",
+    "endDate",
     "infoRow62",
     "email",
-    "country",
+    "personalEmail",
+    "managerEmail",
     "saveButton"
   ],
   sidebar: ["sidebar"],
@@ -533,83 +581,105 @@ const PlasmicDescendants = {
     "mainContent1",
     "infoRow1",
     "firstName",
-    "middleName",
     "lastName",
+    "teamName",
+    "positionName",
     "infoRow2",
     "genderBox",
     "male",
     "female",
     "maritalStatus",
+    "salary",
     "infoRow3",
-    "street1",
-    "street2",
+    "homeAddress",
+    "department",
+    "jobStatus",
     "mainContent2",
     "infoRow42",
     "homePhone",
     "mobile",
-    "workPhone",
     "infoRow52",
-    "city",
-    "state",
-    "zip",
+    "birthDate",
+    "startDate",
+    "endDate",
     "infoRow62",
     "email",
-    "country",
+    "personalEmail",
+    "managerEmail",
     "saveButton"
   ],
   mainContent1: [
     "mainContent1",
     "infoRow1",
     "firstName",
-    "middleName",
     "lastName",
+    "teamName",
+    "positionName",
     "infoRow2",
     "genderBox",
     "male",
     "female",
     "maritalStatus",
+    "salary",
     "infoRow3",
-    "street1",
-    "street2"
+    "homeAddress",
+    "department",
+    "jobStatus"
   ],
-  infoRow1: ["infoRow1", "firstName", "middleName", "lastName"],
+  infoRow1: ["infoRow1", "firstName", "lastName", "teamName", "positionName"],
   firstName: ["firstName"],
-  middleName: ["middleName"],
   lastName: ["lastName"],
-  infoRow2: ["infoRow2", "genderBox", "male", "female", "maritalStatus"],
+  teamName: ["teamName"],
+  positionName: ["positionName"],
+  infoRow2: [
+    "infoRow2",
+    "genderBox",
+    "male",
+    "female",
+    "maritalStatus",
+    "salary"
+  ],
   genderBox: ["genderBox", "male", "female"],
   male: ["male"],
   female: ["female"],
   maritalStatus: ["maritalStatus"],
-  infoRow3: ["infoRow3", "street1", "street2"],
-  street1: ["street1"],
-  street2: ["street2"],
+  salary: ["salary"],
+  infoRow3: ["infoRow3", "homeAddress", "department", "jobStatus"],
+  homeAddress: ["homeAddress"],
+  department: ["department"],
+  jobStatus: ["jobStatus"],
   mainContent2: [
     "mainContent2",
     "infoRow42",
     "homePhone",
     "mobile",
-    "workPhone",
     "infoRow52",
-    "city",
-    "state",
-    "zip",
+    "birthDate",
+    "startDate",
+    "endDate",
     "infoRow62",
     "email",
-    "country",
+    "personalEmail",
+    "managerEmail",
     "saveButton"
   ],
-  infoRow42: ["infoRow42", "homePhone", "mobile", "workPhone"],
+  infoRow42: ["infoRow42", "homePhone", "mobile"],
   homePhone: ["homePhone"],
   mobile: ["mobile"],
-  workPhone: ["workPhone"],
-  infoRow52: ["infoRow52", "city", "state", "zip"],
-  city: ["city"],
-  state: ["state"],
-  zip: ["zip"],
-  infoRow62: ["infoRow62", "email", "country", "saveButton"],
+  infoRow52: ["infoRow52", "birthDate", "startDate", "endDate"],
+  birthDate: ["birthDate"],
+  startDate: ["startDate"],
+  endDate: ["endDate"],
+  infoRow62: [
+    "infoRow62",
+    "email",
+    "personalEmail",
+    "managerEmail",
+    "saveButton"
+  ],
   email: ["email"],
-  country: ["country"],
+  personalEmail: ["personalEmail"],
+  managerEmail: ["managerEmail"],
   saveButton: ["saveButton"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -622,28 +692,31 @@ type NodeDefaultElementType = {
   mainContent1: "div";
   infoRow1: "div";
   firstName: "input";
-  middleName: "input";
   lastName: "input";
+  teamName: "input";
+  positionName: "input";
   infoRow2: "div";
   genderBox: "div";
   male: typeof CheckboxPrimary;
   female: typeof CheckboxPrimary;
   maritalStatus: "input";
+  salary: "input";
   infoRow3: "div";
-  street1: "input";
-  street2: "input";
+  homeAddress: "input";
+  department: "input";
+  jobStatus: "input";
   mainContent2: "div";
   infoRow42: "div";
   homePhone: "input";
   mobile: "input";
-  workPhone: "input";
   infoRow52: "div";
-  city: "input";
-  state: "input";
-  zip: "input";
+  birthDate: "input";
+  startDate: "input";
+  endDate: "input";
   infoRow62: "div";
   email: "input";
-  country: "input";
+  personalEmail: "input";
+  managerEmail: "input";
   saveButton: typeof ButtonPrimary;
 };
 
@@ -713,28 +786,31 @@ export const PlasmicMyInfo = Object.assign(
     mainContent1: makeNodeComponent("mainContent1"),
     infoRow1: makeNodeComponent("infoRow1"),
     firstName: makeNodeComponent("firstName"),
-    middleName: makeNodeComponent("middleName"),
     lastName: makeNodeComponent("lastName"),
+    teamName: makeNodeComponent("teamName"),
+    positionName: makeNodeComponent("positionName"),
     infoRow2: makeNodeComponent("infoRow2"),
     genderBox: makeNodeComponent("genderBox"),
     male: makeNodeComponent("male"),
     female: makeNodeComponent("female"),
     maritalStatus: makeNodeComponent("maritalStatus"),
+    salary: makeNodeComponent("salary"),
     infoRow3: makeNodeComponent("infoRow3"),
-    street1: makeNodeComponent("street1"),
-    street2: makeNodeComponent("street2"),
+    homeAddress: makeNodeComponent("homeAddress"),
+    department: makeNodeComponent("department"),
+    jobStatus: makeNodeComponent("jobStatus"),
     mainContent2: makeNodeComponent("mainContent2"),
     infoRow42: makeNodeComponent("infoRow42"),
     homePhone: makeNodeComponent("homePhone"),
     mobile: makeNodeComponent("mobile"),
-    workPhone: makeNodeComponent("workPhone"),
     infoRow52: makeNodeComponent("infoRow52"),
-    city: makeNodeComponent("city"),
-    state: makeNodeComponent("state"),
-    zip: makeNodeComponent("zip"),
+    birthDate: makeNodeComponent("birthDate"),
+    startDate: makeNodeComponent("startDate"),
+    endDate: makeNodeComponent("endDate"),
     infoRow62: makeNodeComponent("infoRow62"),
     email: makeNodeComponent("email"),
-    country: makeNodeComponent("country"),
+    personalEmail: makeNodeComponent("personalEmail"),
+    managerEmail: makeNodeComponent("managerEmail"),
     saveButton: makeNodeComponent("saveButton"),
 
     // Metadata about props expected for PlasmicMyInfo

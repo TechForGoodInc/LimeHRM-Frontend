@@ -80,7 +80,7 @@
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
   align-self: auto;
-  padding-top: 4%;
+  padding-top: 2%;
   min-width: 0;
   min-height: 0;
   border-style: solid;
@@ -90,8 +90,8 @@
   align-items: center;
   justify-content: flex-start;
   align-content: unset;
-  margin-top: calc(0px - 10%);
-  height: calc(100% + 10%);
+  margin-top: calc(0px - 5%);
+  height: calc(100% + 5%);
 }
 .infoRow1 > :global(.__wab_flex-container) > *,
 .infoRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > *,
@@ -101,30 +101,55 @@
   > :global(.__wab_slot)
   > picture
   > img {
-  margin-top: 10%;
+  margin-top: 5%;
 }
 .freeBox__u1Zkk {
   position: relative;
-  height: 24px;
-  width: 74px;
-  flex-shrink: 0;
+  height: auto;
+  width: auto;
+  font-size: 15px;
+  display: inline-block;
 }
 .firstName {
   position: relative;
-  width: 180px;
+  width: 65%;
   text-align: center;
-  border-radius: 5px;
-}
-.middleName {
-  position: relative;
-  width: 180px;
-  text-align: center;
+  font-size: 15px;
   border-radius: 5px;
 }
 .lastName {
   position: relative;
-  width: 180px;
+  width: 65%;
   text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.freeBox__mgTjj {
+  position: relative;
+  height: auto;
+  width: auto;
+  font-size: 15px;
+  display: inline-block;
+}
+.teamName {
+  position: relative;
+  width: 65%;
+  text-align: center;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.freeBox__aizBo {
+  position: relative;
+  height: auto;
+  width: auto;
+  font-size: 15px;
+  display: inline-block;
+}
+.positionName {
+  position: relative;
+  width: 65%;
+  text-align: center;
+  font-size: 15px;
   border-radius: 5px;
 }
 .infoRow2 {
@@ -135,7 +160,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
-  padding-top: 7%;
+  padding-top: 3%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -200,10 +225,20 @@
 }
 .maritalStatus {
   position: relative;
-  width: 175px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.freeBox__sFv4G {
+  position: relative;
+  height: auto;
+}
+.salary {
+  position: relative;
+  width: 65%;
+  text-align: center;
+  font-size: 15px;
   border-radius: 5px;
 }
 .infoRow3 {
@@ -214,7 +249,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
-  padding-top: 6.5%;
+  padding-top: 3%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -241,24 +276,33 @@
   position: relative;
   font-size: 16px;
 }
-.street1 {
+.homeAddress {
   position: relative;
-  width: 175px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
-.freeBox__zQTz {
+.freeBox__sfZ {
   position: relative;
   font-size: 16px;
 }
-.street2 {
+.department {
   position: relative;
-  width: 175px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.freeBox___696U0 {
+  position: relative;
+  font-size: 16px;
+}
+.jobStatus {
+  position: relative;
+  width: 65%;
+  text-align: center;
+  font-size: 15px;
   border-radius: 5px;
 }
 .mainContent2 {
@@ -296,7 +340,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
-  padding-top: 3%;
+  padding-top: 7%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -325,10 +369,9 @@
 }
 .homePhone {
   position: relative;
-  width: 146px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
 .freeBox__cuRb {
@@ -337,22 +380,9 @@
 }
 .mobile {
   position: relative;
-  width: 146px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
-  border-radius: 5px;
-}
-.freeBox__sOeNn {
-  position: relative;
-  font-size: 16px;
-}
-.workPhone {
-  position: relative;
-  width: 146px;
-  text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
 .infoRow52 {
@@ -390,36 +420,33 @@
   position: relative;
   font-size: 16px;
 }
-.city {
+.birthDate {
   position: relative;
-  width: 146px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
-.freeBox__lXusJ {
+.freeBox__o3ADg {
   position: relative;
   font-size: 16px;
 }
-.state {
+.startDate {
   position: relative;
-  width: 146px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
-.freeBox__xVbDy {
+.freeBox__v9MEm {
   position: relative;
   font-size: 16px;
 }
-.zip {
+.endDate {
   position: relative;
-  width: 146px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
 .infoRow62 {
@@ -432,7 +459,7 @@
   background: #ffffff;
   min-width: 0;
   min-height: 0;
-  padding: 5% 0% 0%;
+  padding: 1% 0% 0%;
   border-style: none;
 }
 .infoRow62 > :global(.__wab_flex-container) {
@@ -459,22 +486,31 @@
 }
 .email {
   position: relative;
-  width: 175px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
+  border-radius: 5px;
+}
+.freeBox__vDTi {
+  position: relative;
+  font-size: 16px;
+}
+.personalEmail {
+  position: relative;
+  width: 65%;
+  text-align: center;
+  font-size: 15px;
   border-radius: 5px;
 }
 .freeBox__oQzeB {
   position: relative;
   font-size: 16px;
 }
-.country {
+.managerEmail {
   position: relative;
-  width: 175px;
+  width: 65%;
   text-align: center;
-  height: 28px;
-  flex-shrink: 0;
+  font-size: 15px;
   border-radius: 5px;
 }
 .saveButton:global(.__wab_instance) {
