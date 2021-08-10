@@ -56,6 +56,8 @@ export type PlasmicAdministration__OverridesType = {
   sidebar?: p.Flex<typeof Sidebar>;
   filterEmployees?: p.Flex<"div">;
   searchButton?: p.Flex<typeof ButtonPrimary>;
+  usernameInput?: p.Flex<"input">;
+  employeeNameInput?: p.Flex<"input">;
   adminSection?: p.Flex<"div">;
   tableButtons?: p.Flex<"div">;
   deleteButton?: p.Flex<"button">;
@@ -115,21 +117,7 @@ function PlasmicAdministration__RenderFunc(props: {
               <SelectBoxPrimary
                 className={classNames(
                   "__wab_instance",
-                  sty.selectBoxPrimary__kiSb6
-                )}
-              />
-
-              <SelectBoxPrimary
-                className={classNames(
-                  "__wab_instance",
                   sty.selectBoxPrimary__x1J19
-                )}
-              />
-
-              <SelectBoxPrimary
-                className={classNames(
-                  "__wab_instance",
-                  sty.selectBoxPrimary__piE4A
                 )}
               />
 
@@ -138,6 +126,26 @@ function PlasmicAdministration__RenderFunc(props: {
                 data-plasmic-override={overrides.searchButton}
                 className={classNames("__wab_instance", sty.searchButton)}
                 prop={"Search"}
+              />
+
+              <input
+                data-plasmic-name={"usernameInput"}
+                data-plasmic-override={overrides.usernameInput}
+                className={classNames(defaultcss.input, sty.usernameInput)}
+                placeholder={"Some placeholder" as const}
+                size={1 as const}
+                type={"text" as const}
+                value={"Some value" as const}
+              />
+
+              <input
+                data-plasmic-name={"employeeNameInput"}
+                data-plasmic-override={overrides.employeeNameInput}
+                className={classNames(defaultcss.input, sty.employeeNameInput)}
+                placeholder={"Some placeholder" as const}
+                size={1 as const}
+                type={"text" as const}
+                value={"Some value" as const}
               />
 
               <div
@@ -242,6 +250,8 @@ const PlasmicDescendants = {
     "sidebar",
     "filterEmployees",
     "searchButton",
+    "usernameInput",
+    "employeeNameInput",
     "adminSection",
     "tableButtons",
     "deleteButton",
@@ -249,8 +259,15 @@ const PlasmicDescendants = {
     "adminTable"
   ],
   sidebar: ["sidebar"],
-  filterEmployees: ["filterEmployees", "searchButton"],
+  filterEmployees: [
+    "filterEmployees",
+    "searchButton",
+    "usernameInput",
+    "employeeNameInput"
+  ],
   searchButton: ["searchButton"],
+  usernameInput: ["usernameInput"],
+  employeeNameInput: ["employeeNameInput"],
   adminSection: [
     "adminSection",
     "tableButtons",
@@ -271,6 +288,8 @@ type NodeDefaultElementType = {
   sidebar: typeof Sidebar;
   filterEmployees: "div";
   searchButton: typeof ButtonPrimary;
+  usernameInput: "input";
+  employeeNameInput: "input";
   adminSection: "div";
   tableButtons: "div";
   deleteButton: "button";
@@ -342,6 +361,8 @@ export const PlasmicAdministration = Object.assign(
     sidebar: makeNodeComponent("sidebar"),
     filterEmployees: makeNodeComponent("filterEmployees"),
     searchButton: makeNodeComponent("searchButton"),
+    usernameInput: makeNodeComponent("usernameInput"),
+    employeeNameInput: makeNodeComponent("employeeNameInput"),
     adminSection: makeNodeComponent("adminSection"),
     tableButtons: makeNodeComponent("tableButtons"),
     deleteButton: makeNodeComponent("deleteButton"),

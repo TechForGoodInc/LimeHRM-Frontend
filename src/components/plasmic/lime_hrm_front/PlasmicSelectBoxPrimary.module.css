@@ -58,7 +58,11 @@
 .slotSelectedContent > *,
 .slotSelectedContent > .__wab_slot > *,
 .slotSelectedContent > .__wab_slot > .__wab_slot > *,
-.slotSelectedContent > .__wab_slot > .__wab_slot > .__wab_slot > * {
+.slotSelectedContent > .__wab_slot > .__wab_slot > .__wab_slot > *,
+.slotSelectedContent > picture > img,
+.slotSelectedContent > .__wab_slot > picture > img,
+.slotSelectedContent > .__wab_slot > .__wab_slot > picture > img,
+.slotSelectedContent > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
   text-overflow: ellipsis;
   overflow: hidden;
 }
@@ -70,7 +74,22 @@
   > .__wab_slot
   > .__wab_slot
   > .__wab_slot
-  > * {
+  > *,
+.root:focus-within .slotSelectedContent > picture > img,
+.root:focus-within .slotSelectedContent > .__wab_slot > picture > img,
+.root:focus-within
+  .slotSelectedContent
+  > .__wab_slot
+  > .__wab_slot
+  > picture
+  > img,
+.root:focus-within
+  .slotSelectedContent
+  > .__wab_slot
+  > .__wab_slot
+  > .__wab_slot
+  > picture
+  > img {
   outline: none;
 }
 .slotPlaceholder {
@@ -80,7 +99,11 @@
 .slotPlaceholder > *,
 .slotPlaceholder > .__wab_slot > *,
 .slotPlaceholder > .__wab_slot > .__wab_slot > *,
-.slotPlaceholder > .__wab_slot > .__wab_slot > .__wab_slot > * {
+.slotPlaceholder > .__wab_slot > .__wab_slot > .__wab_slot > *,
+.slotPlaceholder > picture > img,
+.slotPlaceholder > .__wab_slot > picture > img,
+.slotPlaceholder > .__wab_slot > .__wab_slot > picture > img,
+.slotPlaceholder > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
   text-overflow: ellipsis;
   overflow: hidden;
 }

@@ -29,7 +29,11 @@
 .slotChildren > *,
 .slotChildren > .__wab_slot > *,
 .slotChildren > .__wab_slot > .__wab_slot > *,
-.slotChildren > .__wab_slot > .__wab_slot > .__wab_slot > * {
+.slotChildren > .__wab_slot > .__wab_slot > .__wab_slot > *,
+.slotChildren > picture > img,
+.slotChildren > .__wab_slot > picture > img,
+.slotChildren > .__wab_slot > .__wab_slot > picture > img,
+.slotChildren > .__wab_slot > .__wab_slot > .__wab_slot > picture > img {
   text-overflow: ellipsis;
   overflow: hidden;
 }

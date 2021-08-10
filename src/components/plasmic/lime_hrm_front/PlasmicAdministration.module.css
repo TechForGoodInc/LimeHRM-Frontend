@@ -47,21 +47,6 @@
 .option__oMPjG:global(.__wab_instance) {
   position: relative;
 }
-.selectBoxPrimary__kiSb6:global(.__wab_instance) {
-  position: absolute;
-  width: 155px;
-  height: 33px;
-  left: 518px;
-  top: 103px;
-  bottom: auto;
-  flex-shrink: 0;
-}
-.option___5LuqB:global(.__wab_instance) {
-  position: relative;
-}
-.option__wan1:global(.__wab_instance) {
-  position: relative;
-}
 .selectBoxPrimary__x1J19:global(.__wab_instance) {
   position: absolute;
   width: 155px;
@@ -78,20 +63,6 @@
 .option___0Pxga:global(.__wab_instance) {
   position: relative;
 }
-.selectBoxPrimary__piE4A:global(.__wab_instance) {
-  position: absolute;
-  width: 155px;
-  height: 33px;
-  left: 30px;
-  top: 104px;
-  flex-shrink: 0;
-}
-.option__asv8:global(.__wab_instance) {
-  position: relative;
-}
-.option__tyq5V:global(.__wab_instance) {
-  position: relative;
-}
 .searchButton:global(.__wab_instance) {
   position: relative;
   width: 125px;
@@ -99,6 +70,23 @@
   bottom: auto;
   top: 188px;
   left: 20px;
+  flex-shrink: 0;
+}
+.usernameInput {
+  position: absolute;
+  width: 157px;
+  height: 31px;
+  left: 44px;
+  top: 99px;
+  flex-shrink: 0;
+}
+.employeeNameInput {
+  position: absolute;
+  width: 162px;
+  height: 36px;
+  align-self: center;
+  left: 511px;
+  top: 104px;
   flex-shrink: 0;
 }
 .freeBox__dgG1I {

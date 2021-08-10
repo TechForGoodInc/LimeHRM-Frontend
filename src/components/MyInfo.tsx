@@ -4,7 +4,7 @@ import {
   DefaultMyInfoProps
 } from "./plasmic/lime_hrm_front/PlasmicMyInfo";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
-import { getInfo, saveInfo } from "./../App";
+//import { getInfo, saveInfo } from "./../App";
 
 var firstName = "";
 var middleName = "";
@@ -137,8 +137,8 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
 const handleSave = (firstName: string, middleName: string, lastName: string, gender: string, maritalStatus: string, 
   street1: string, street2: string, city: string, state: string, zip: string, country: string, homePhone: string, 
   mobile: string, workPhone: string, email: string) => {
-  saveInfo(firstName, middleName, lastName, gender, maritalStatus, street1, street2, city, state,
-          zip, country, homePhone, mobile, workPhone, email);
+  /*saveInfo(firstName, middleName, lastName, gender, maritalStatus, street1, street2, city, state,
+          zip, country, homePhone, mobile, workPhone, email);*/
   alert("Your info has been saved.");
 }
 

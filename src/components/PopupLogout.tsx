@@ -6,39 +6,28 @@ import {
   DefaultPopupLogoutProps
 } from "./plasmic/lime_hrm_front/PlasmicPopupLogout";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
+import './PopupLogout.css';
+import { handleLogoutCancel, handleLogout } from "./../App"
 
-// Your component props start with props for variants and slots you defined
-// in Plasmic, but you can add more here, like event handlers that you can
-// attach to named nodes in your component.
-//
-// If you don't want to expose certain variants or slots as a prop, you can use
-// Omit to hide them:
-//
-// interface PopupLogoutProps extends Omit<DefaultPopupLogoutProps, "hideProps1"|"hideProp2"> {
-//   // etc.
-// }
-//
-// You can also stop extending from DefaultPopupLogoutProps altogether and have
-// total control over the props for your component.
-interface PopupLogoutProps extends DefaultPopupLogoutProps {}
+interface PopupLogoutProps extends DefaultPopupLogoutProps {
+  trigger: boolean
+}
 
 function PopupLogout_(props: PopupLogoutProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicPopupLogout to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicPopupLogout are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all PopupLogoutProps here, but feel free
-  // to do whatever works for you.
-
-  return <PlasmicPopupLogout popupLogout={{ ref }} {...props} />;
+  return (props.trigger) ? (
+    <PlasmicPopupLogout
+      className="popout-logout" 
+      popupLogout={{ ref }}
+      continueButton={{
+        className: "continueButton",
+        onClick: () => handleLogoutCancel()
+      }}
+      logoutButton={{
+        className: "logoutButton",
+        onClick: () => handleLogout()
+      }}
+    />
+  ) : <div/>;
 }
 
 const PopupLogout = React.forwardRef(PopupLogout_);

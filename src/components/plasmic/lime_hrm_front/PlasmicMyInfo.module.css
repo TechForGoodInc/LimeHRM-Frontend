@@ -67,6 +67,8 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
+  align-self: auto;
+  padding-top: 4%;
   min-width: 0;
   min-height: 0;
   border-style: solid;
@@ -76,12 +78,12 @@
   align-items: center;
   justify-content: flex-start;
   align-content: unset;
-  margin-top: calc(0px - 8%);
-  height: calc(100% + 8%);
+  margin-top: calc(0px - 10%);
+  height: calc(100% + 10%);
 }
 .infoRow1 > :global(.__wab_flex-container) > *,
 .infoRow1 > :global(.__wab_flex-container) > :global(.__wab_slot) > * {
-  margin-top: 8%;
+  margin-top: 10%;
 }
 .freeBox__u1Zkk {
   position: relative;
@@ -115,6 +117,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
+  padding-top: 7%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -181,6 +184,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
+  padding-top: 6.5%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -250,6 +254,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
+  padding-top: 3%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -310,6 +315,7 @@
   height: 100%;
   box-shadow: 0px 5px 8px 4px #0000001f /* plasmic-token: KNwN1sAgp */;
   background: #ffffff;
+  padding-top: 2.5%;
   min-width: 0;
   min-height: 0;
   border-style: none;
@@ -372,6 +378,7 @@
   background: #ffffff;
   min-width: 0;
   min-height: 0;
+  padding: 5% 0% 0%;
   border-style: none;
 }
 .infoRow62 > :global(.__wab_flex-container) {
