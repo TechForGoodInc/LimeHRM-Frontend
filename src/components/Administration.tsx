@@ -21,28 +21,40 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // You can also stop extending from DefaultAdministrationProps altogether and have
 // total control over the props for your component.
 interface AdministrationProps extends DefaultAdministrationProps {}
+var usernameInput = ""
 
 function Administration_(
   props: AdministrationProps,
   ref: HTMLElementRefOf<"div">
 ) {
-  // Use PlasmicAdministration to render this component as it was
-  // designed in Plasmic, by activating the appropriate variants,
-  // attaching the appropriate event handlers, etc.  You
-  // can also install whatever React hooks you need here to manage state or
-  // fetch data.
-  //
-  // Props you can pass into PlasmicAdministration are:
-  // 1. Variants you want to activate,
-  // 2. Contents for slots you want to fill,
-  // 3. Overrides for any named node in the component to attach behavior and data,
-  // 4. Props to set on the root node.
-  //
-  // By default, we are just piping all AdministrationProps here, but feel free
-  // to do whatever works for you.
+  return <PlasmicAdministration root={{ ref }} {...props} 
+  usernameInput = {{
+    className: "usernameInput",
+    onChange: (e: React.FormEvent<HTMLInputElement>) => handleUsernameInput(e)
+  }}
+  employeeNameInput = {{
+    className: "employeeNameInput",
+    onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmployeeNameInput(e)
+  }}
 
-  return <PlasmicAdministration root={{ ref }} {...props} />;
+  />;
 }
 
+// const handleSearch = (e: React.FormEvent<HTMLInputElement>) => {
+//   search = e.currentTarget.value;
+// }
+
+const handleUsernameInput = (e: React.FormEvent<HTMLInputElement>) => {
+  usernameInput = e.currentTarget.value;
+}
+
+const handleEmployeeNameInput = (e: React.FormEvent<HTMLInputElement>) => {
+  employeeNameInput = e.currentTarget.value;
+}
+
+const errorCheckBoxes = () => {
+ if (usernameInput === "") alert("Please enter an username");
+ if (employeeNameInput === "") alert("Please enter an employee name");
 const Administration = React.forwardRef(Administration_);
 export default Administration;
+}
