@@ -32,7 +32,6 @@ import {
 } from "@plasmicapp/react-web";
 import Sidebar from "../../Sidebar"; // plasmic-import: yoRVhunlI-d/component
 import ApplyLeave from "../../ApplyLeave"; // plasmic-import: exv2JUik8JK/component
-import Leaveassign from "../../Leaveassign"; // plasmic-import: tbP0Pl_WIe/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 import * as defaultcss from "../plasmic__default_style.module.css"; // plasmic-import: global/defaultcss
@@ -53,13 +52,13 @@ export type PlasmicLeave__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
   applyLeave?: p.Flex<typeof ApplyLeave>;
-  freeBox?: p.Flex<"div">;
+  nav?: p.Flex<"nav">;
   applylink?: p.Flex<"a">;
   assign?: p.Flex<"a">;
   myleave?: p.Flex<"a">;
   leaveist?: p.Flex<"a">;
   reports?: p.Flex<"a">;
-  leaveassign?: p.Flex<typeof Leaveassign>;
+  label?: p.Flex<"label">;
 };
 
 export interface DefaultLeaveProps {
@@ -103,22 +102,26 @@ function PlasmicLeave__RenderFunc(props: {
             data-plasmic-override={overrides.applyLeave}
             className={classNames("__wab_instance", sty.applyLeave)}
           >
-            <div
-              data-plasmic-name={"freeBox"}
-              data-plasmic-override={overrides.freeBox}
-              className={classNames(defaultcss.all, sty.freeBox)}
+            <nav
+              data-plasmic-name={"nav"}
+              data-plasmic-override={overrides.nav}
+              className={classNames(defaultcss.all, sty.nav)}
             >
               <a
                 data-plasmic-name={"applylink"}
                 data-plasmic-override={overrides.applylink}
-                className={classNames(
-                  defaultcss.all,
-                  defaultcss.__wab_text,
-                  sty.applylink
-                )}
+                className={classNames(defaultcss.all, sty.applylink)}
                 href={"/" as const}
               >
-                {"Apply"}
+                <div
+                  className={classNames(
+                    defaultcss.all,
+                    defaultcss.__wab_text,
+                    sty.freeBox___52FXw
+                  )}
+                >
+                  {"Apply"}
+                </div>
               </a>
 
               <a
@@ -171,13 +174,43 @@ function PlasmicLeave__RenderFunc(props: {
               >
                 {"Reports"}
               </a>
+            </nav>
+
+            <div className={classNames(defaultcss.all, sty.freeBox___2Vx0F)}>
+              <div
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.freeBox__gWJb
+                )}
+              >
+                {"Apply Leave"}
+              </div>
             </div>
 
-            <Leaveassign
-              data-plasmic-name={"leaveassign"}
-              data-plasmic-override={overrides.leaveassign}
-              className={classNames("__wab_instance", sty.leaveassign)}
-            />
+            <div
+              className={classNames(
+                defaultcss.all,
+                defaultcss.__wab_text,
+                sty.freeBox__anmNc
+              )}
+            >
+              {"Enter some text"}
+            </div>
+
+            <div className={classNames(defaultcss.all, sty.freeBox__rvRb0)}>
+              <label
+                data-plasmic-name={"label"}
+                data-plasmic-override={overrides.label}
+                className={classNames(
+                  defaultcss.all,
+                  defaultcss.__wab_text,
+                  sty.label
+                )}
+              >
+                {"Leave Type"}
+              </label>
+            </div>
           </ApplyLeave>
         </div>
       </div>
@@ -190,32 +223,32 @@ const PlasmicDescendants = {
     "root",
     "sidebar",
     "applyLeave",
-    "freeBox",
+    "nav",
     "applylink",
     "assign",
     "myleave",
     "leaveist",
     "reports",
-    "leaveassign"
+    "label"
   ],
   sidebar: ["sidebar"],
   applyLeave: [
     "applyLeave",
-    "freeBox",
+    "nav",
     "applylink",
     "assign",
     "myleave",
     "leaveist",
     "reports",
-    "leaveassign"
+    "label"
   ],
-  freeBox: ["freeBox", "applylink", "assign", "myleave", "leaveist", "reports"],
+  nav: ["nav", "applylink", "assign", "myleave", "leaveist", "reports"],
   applylink: ["applylink"],
   assign: ["assign"],
   myleave: ["myleave"],
   leaveist: ["leaveist"],
   reports: ["reports"],
-  leaveassign: ["leaveassign"]
+  label: ["label"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
@@ -224,13 +257,13 @@ type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
   applyLeave: typeof ApplyLeave;
-  freeBox: "div";
+  nav: "nav";
   applylink: "a";
   assign: "a";
   myleave: "a";
   leaveist: "a";
   reports: "a";
-  leaveassign: typeof Leaveassign;
+  label: "label";
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -296,13 +329,13 @@ export const PlasmicLeave = Object.assign(
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
     applyLeave: makeNodeComponent("applyLeave"),
-    freeBox: makeNodeComponent("freeBox"),
+    nav: makeNodeComponent("nav"),
     applylink: makeNodeComponent("applylink"),
     assign: makeNodeComponent("assign"),
     myleave: makeNodeComponent("myleave"),
     leaveist: makeNodeComponent("leaveist"),
     reports: makeNodeComponent("reports"),
-    leaveassign: makeNodeComponent("leaveassign"),
+    label: makeNodeComponent("label"),
 
     // Metadata about props expected for PlasmicLeave
     internalVariantProps: PlasmicLeave__VariantProps,

@@ -33,7 +33,7 @@
   border-bottom-width: 1px;
   min-width: 0;
 }
-.selectBoxPrimary__h3JUv:global(.__wab_instance) {
+.userRoleDropdown:global(.__wab_instance) {
   position: absolute;
   width: 160px;
   height: 33px;
@@ -47,7 +47,7 @@
 .option__oMPjG:global(.__wab_instance) {
   position: relative;
 }
-.selectBoxPrimary__x1J19:global(.__wab_instance) {
+.statusDropdown:global(.__wab_instance) {
   position: absolute;
   width: 155px;
   height: 33px;

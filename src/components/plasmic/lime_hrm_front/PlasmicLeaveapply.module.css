@@ -1,8 +1,0 @@
-.root {
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-  justify-content: flex-start;
-  height: 688px;
-  position: relative;
-}

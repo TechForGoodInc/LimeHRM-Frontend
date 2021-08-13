@@ -55,6 +55,8 @@ export type PlasmicAdministration__OverridesType = {
   root?: p.Flex<"div">;
   sidebar?: p.Flex<typeof Sidebar>;
   filterEmployees?: p.Flex<"div">;
+  userRoleDropdown?: p.Flex<typeof SelectBoxPrimary>;
+  statusDropdown?: p.Flex<typeof SelectBoxPrimary>;
   searchButton?: p.Flex<typeof ButtonPrimary>;
   usernameInput?: p.Flex<"input">;
   employeeNameInput?: p.Flex<"input">;
@@ -108,17 +110,15 @@ function PlasmicAdministration__RenderFunc(props: {
               className={classNames(defaultcss.all, sty.filterEmployees)}
             >
               <SelectBoxPrimary
-                className={classNames(
-                  "__wab_instance",
-                  sty.selectBoxPrimary__h3JUv
-                )}
+                data-plasmic-name={"userRoleDropdown"}
+                data-plasmic-override={overrides.userRoleDropdown}
+                className={classNames("__wab_instance", sty.userRoleDropdown)}
               />
 
               <SelectBoxPrimary
-                className={classNames(
-                  "__wab_instance",
-                  sty.selectBoxPrimary__x1J19
-                )}
+                data-plasmic-name={"statusDropdown"}
+                data-plasmic-override={overrides.statusDropdown}
+                className={classNames("__wab_instance", sty.statusDropdown)}
               />
 
               <ButtonPrimary
@@ -249,6 +249,8 @@ const PlasmicDescendants = {
     "root",
     "sidebar",
     "filterEmployees",
+    "userRoleDropdown",
+    "statusDropdown",
     "searchButton",
     "usernameInput",
     "employeeNameInput",
@@ -261,10 +263,14 @@ const PlasmicDescendants = {
   sidebar: ["sidebar"],
   filterEmployees: [
     "filterEmployees",
+    "userRoleDropdown",
+    "statusDropdown",
     "searchButton",
     "usernameInput",
     "employeeNameInput"
   ],
+  userRoleDropdown: ["userRoleDropdown"],
+  statusDropdown: ["statusDropdown"],
   searchButton: ["searchButton"],
   usernameInput: ["usernameInput"],
   employeeNameInput: ["employeeNameInput"],
@@ -287,6 +293,8 @@ type NodeDefaultElementType = {
   root: "div";
   sidebar: typeof Sidebar;
   filterEmployees: "div";
+  userRoleDropdown: typeof SelectBoxPrimary;
+  statusDropdown: typeof SelectBoxPrimary;
   searchButton: typeof ButtonPrimary;
   usernameInput: "input";
   employeeNameInput: "input";
@@ -360,6 +368,8 @@ export const PlasmicAdministration = Object.assign(
     // Helper components rendering sub-elements
     sidebar: makeNodeComponent("sidebar"),
     filterEmployees: makeNodeComponent("filterEmployees"),
+    userRoleDropdown: makeNodeComponent("userRoleDropdown"),
+    statusDropdown: makeNodeComponent("statusDropdown"),
     searchButton: makeNodeComponent("searchButton"),
     usernameInput: makeNodeComponent("usernameInput"),
     employeeNameInput: makeNodeComponent("employeeNameInput"),

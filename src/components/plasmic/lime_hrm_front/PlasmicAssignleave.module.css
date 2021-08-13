@@ -137,20 +137,6 @@
   padding-left: 16px;
   flex-shrink: 0;
 }
-.optionGroup:global(.__wab_instance) {
-  position: absolute;
-  left: 232px;
-  top: 148px;
-  width: 381px;
-  height: 66px;
-  flex-shrink: 0;
-}
-.option__dx4Kj:global(.__wab_instance) {
-  position: relative;
-}
-.option__s9Tx2:global(.__wab_instance) {
-  position: relative;
-}
 .rowWrapper {
   display: flex;
   position: absolute;
@@ -247,4 +233,18 @@
   text-align: center;
   width: 195px;
   flex-shrink: 0;
+}
+.optionGroup:global(.__wab_instance) {
+  position: relative;
+  left: auto;
+  top: auto;
+  width: 381px;
+  height: 66px;
+  flex-shrink: 0;
+}
+.option__dx4Kj:global(.__wab_instance) {
+  position: relative;
+}
+.option__s9Tx2:global(.__wab_instance) {
+  position: relative;
 }

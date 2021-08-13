@@ -70,14 +70,14 @@ export type PlasmicMyInfo__OverridesType = {
   department?: p.Flex<"input">;
   jobStatus?: p.Flex<"input">;
   mainContent2?: p.Flex<"div">;
-  infoRow42?: p.Flex<"div">;
+  infoRow4?: p.Flex<"div">;
   homePhone?: p.Flex<"input">;
   mobile?: p.Flex<"input">;
-  infoRow52?: p.Flex<"div">;
+  infoRow5?: p.Flex<"div">;
   birthDate?: p.Flex<"input">;
   startDate?: p.Flex<"input">;
   endDate?: p.Flex<"input">;
-  infoRow62?: p.Flex<"div">;
+  infoRow6?: p.Flex<"div">;
   email?: p.Flex<"input">;
   personalEmail?: p.Flex<"input">;
   managerEmail?: p.Flex<"input">;
@@ -164,9 +164,7 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-override={overrides.lastName}
                   className={classNames(defaultcss.input, sty.lastName)}
                   placeholder={"" as const}
-                  size={1 as const}
                   type={"text" as const}
-                  value={"" as const}
                 />
 
                 <div
@@ -184,9 +182,7 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-override={overrides.teamName}
                   className={classNames(defaultcss.input, sty.teamName)}
                   placeholder={"" as const}
-                  size={1 as const}
                   type={"text" as const}
-                  value={"" as const}
                 />
 
                 <div
@@ -204,9 +200,7 @@ function PlasmicMyInfo__RenderFunc(props: {
                   data-plasmic-override={overrides.positionName}
                   className={classNames(defaultcss.input, sty.positionName)}
                   placeholder={"" as const}
-                  size={1 as const}
                   type={"text" as const}
-                  value={"" as const}
                 />
               </p.Stack>
 
@@ -360,10 +354,10 @@ function PlasmicMyInfo__RenderFunc(props: {
             >
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"infoRow42"}
-                data-plasmic-override={overrides.infoRow42}
+                data-plasmic-name={"infoRow4"}
+                data-plasmic-override={overrides.infoRow4}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.infoRow42)}
+                className={classNames(defaultcss.all, sty.infoRow4)}
               >
                 <div
                   className={classNames(
@@ -404,10 +398,10 @@ function PlasmicMyInfo__RenderFunc(props: {
 
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"infoRow52"}
-                data-plasmic-override={overrides.infoRow52}
+                data-plasmic-name={"infoRow5"}
+                data-plasmic-override={overrides.infoRow5}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.infoRow52)}
+                className={classNames(defaultcss.all, sty.infoRow5)}
               >
                 <div
                   className={classNames(
@@ -466,10 +460,10 @@ function PlasmicMyInfo__RenderFunc(props: {
 
               <p.Stack
                 as={"div"}
-                data-plasmic-name={"infoRow62"}
-                data-plasmic-override={overrides.infoRow62}
+                data-plasmic-name={"infoRow6"}
+                data-plasmic-override={overrides.infoRow6}
                 hasGap={true}
-                className={classNames(defaultcss.all, sty.infoRow62)}
+                className={classNames(defaultcss.all, sty.infoRow6)}
               >
                 <div
                   className={classNames(
@@ -562,14 +556,14 @@ const PlasmicDescendants = {
     "department",
     "jobStatus",
     "mainContent2",
-    "infoRow42",
+    "infoRow4",
     "homePhone",
     "mobile",
-    "infoRow52",
+    "infoRow5",
     "birthDate",
     "startDate",
     "endDate",
-    "infoRow62",
+    "infoRow6",
     "email",
     "personalEmail",
     "managerEmail",
@@ -595,14 +589,14 @@ const PlasmicDescendants = {
     "department",
     "jobStatus",
     "mainContent2",
-    "infoRow42",
+    "infoRow4",
     "homePhone",
     "mobile",
-    "infoRow52",
+    "infoRow5",
     "birthDate",
     "startDate",
     "endDate",
-    "infoRow62",
+    "infoRow6",
     "email",
     "personalEmail",
     "managerEmail",
@@ -650,28 +644,28 @@ const PlasmicDescendants = {
   jobStatus: ["jobStatus"],
   mainContent2: [
     "mainContent2",
-    "infoRow42",
+    "infoRow4",
     "homePhone",
     "mobile",
-    "infoRow52",
+    "infoRow5",
     "birthDate",
     "startDate",
     "endDate",
-    "infoRow62",
+    "infoRow6",
     "email",
     "personalEmail",
     "managerEmail",
     "saveButton"
   ],
-  infoRow42: ["infoRow42", "homePhone", "mobile"],
+  infoRow4: ["infoRow4", "homePhone", "mobile"],
   homePhone: ["homePhone"],
   mobile: ["mobile"],
-  infoRow52: ["infoRow52", "birthDate", "startDate", "endDate"],
+  infoRow5: ["infoRow5", "birthDate", "startDate", "endDate"],
   birthDate: ["birthDate"],
   startDate: ["startDate"],
   endDate: ["endDate"],
-  infoRow62: [
-    "infoRow62",
+  infoRow6: [
+    "infoRow6",
     "email",
     "personalEmail",
     "managerEmail",
@@ -706,14 +700,14 @@ type NodeDefaultElementType = {
   department: "input";
   jobStatus: "input";
   mainContent2: "div";
-  infoRow42: "div";
+  infoRow4: "div";
   homePhone: "input";
   mobile: "input";
-  infoRow52: "div";
+  infoRow5: "div";
   birthDate: "input";
   startDate: "input";
   endDate: "input";
-  infoRow62: "div";
+  infoRow6: "div";
   email: "input";
   personalEmail: "input";
   managerEmail: "input";
@@ -800,14 +794,14 @@ export const PlasmicMyInfo = Object.assign(
     department: makeNodeComponent("department"),
     jobStatus: makeNodeComponent("jobStatus"),
     mainContent2: makeNodeComponent("mainContent2"),
-    infoRow42: makeNodeComponent("infoRow42"),
+    infoRow4: makeNodeComponent("infoRow4"),
     homePhone: makeNodeComponent("homePhone"),
     mobile: makeNodeComponent("mobile"),
-    infoRow52: makeNodeComponent("infoRow52"),
+    infoRow5: makeNodeComponent("infoRow5"),
     birthDate: makeNodeComponent("birthDate"),
     startDate: makeNodeComponent("startDate"),
     endDate: makeNodeComponent("endDate"),
-    infoRow62: makeNodeComponent("infoRow62"),
+    infoRow6: makeNodeComponent("infoRow6"),
     email: makeNodeComponent("email"),
     personalEmail: makeNodeComponent("personalEmail"),
     managerEmail: makeNodeComponent("managerEmail"),

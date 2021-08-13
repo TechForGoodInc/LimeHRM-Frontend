@@ -1,5 +1,3 @@
-//TODO: FIX SALARY TO MAKE IT BOOLEAN INSTEAD OF STRING, AND FIX DATES AS WELL!!!!!!!!!!!!!
-
 import * as React from "react";
 import {
   PlasmicMyInfo,
@@ -15,6 +13,7 @@ var positionName = "";
 
 var gender = "";
 var maritalStatus = "";
+var salaryB = false;
 var salary = "";
 
 var homeAddress = "";
@@ -42,28 +41,28 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       {...props} 
       saveButton={{
         className: "saveButton",
-        onClick: () => handleSave(firstName, lastName, teamName, positionName, gender, maritalStatus, salary,
+        onClick: () => handleSave(firstName, lastName, teamName, positionName, gender, maritalStatus, salaryB,
                                   homeAddress, department, jobStatus, homePhone, mobile, birthDate, 
                                   startDate, endDate, email, personalEmail, managerEmail)
       }}
       firstName={{
         className: "firstName",
-        placeholder: "Enter your first name",
+        placeholder: firstName,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleFirstNameChange(e)
       }}
       lastName={{
         className: "lastName",
-        placeholder: "Enter your last name",
+        placeholder: lastName,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleLastNameChange(e)
       }}
       teamName={{
         className: "teamName",
-        placeholder: "Enter your team name",
+        placeholder: teamName,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleTeamNameChange(e)
       }}
       positionName={{
         className: "positionName",
-        placeholder: "Enter your position name",
+        placeholder: positionName,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handlePositionNameChange(e)
       }}
       male={{
@@ -76,22 +75,22 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       }}
       maritalStatus={{
         className: "maritalStatus",
-        placeholder: "Enter your marital status",
+        placeholder: maritalStatus,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMaritalChange(e)
       }}
       salary={{
         className: "salary",
-        placeholder: "Enter your first street address",
-        onChange: (e: React.FormEvent<HTMLInputElement>) => handleSalaryChange(e)
+        placeholder: salary,
+        onChange: (e: React.FormEvent<HTMLInputElement>) => hasSalary()
       }}
       homeAddress={{
         className: "homeAddress",
-        placeholder: "Enter your home address",
+        placeholder: homeAddress,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleHomeAddressChange(e)
       }}
       department={{
         className: "department",
-        placeholder: "Enter your department",
+        placeholder: department,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleDepartmentChange(e)
       }}
       jobStatus={{
@@ -101,42 +100,42 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
       }}
       homePhone={{
         className: "homePhone",
-        placeholder: "Enter your home phone #",
+        placeholder: homePhone,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleHomePhoneChange(e)
       }}
       mobile={{
         className: "mobile",
-        placeholder: "Enter your mobile phone #",
+        placeholder: mobile,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleMobileChange(e)
       }}
       birthDate={{
         className: "birthDate",
-        placeholder: "Enter your birth date",
+        placeholder: birthDate,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleBirthDateChange(e)
       }}
       startDate={{
         className: "startDate",
-        placeholder: "Enter your start date",
+        placeholder: startDate,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleStartDateChange(e)
       }}
       endDate={{
         className: "endDate",
-        placeholder: "Enter your end date",
+        placeholder: endDate,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleEndDateChange(e)
       }}
       email={{
         className: "email",
-        placeholder: "Enter your email",
+        placeholder: email,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleEmailChange(e)
       }}
       personalEmail={{
         className: "personalEmail",
-        placeholder: "Enter your personal email",
+        placeholder: personalEmail,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handlePersonalEmailChange(e)
       }}
       managerEmail={{
         className: "managerEmail",
-        placeholder: "Enter your manager's email",
+        placeholder: managerEmail,
         onChange: (e: React.FormEvent<HTMLInputElement>) => handleManagerEmailChange(e)
       }}
     />
@@ -144,10 +143,10 @@ function MyInfo_(props: MyInfoProps, ref: HTMLElementRefOf<"div">) {
 }
 
 const handleSave = (firstName: string, lastName: string, teamName: string, positionName: string, 
-                    gender: string, maritalStatus: string, salary: string, homeAddress: string, department: string,
+                    gender: string, maritalStatus: string, salaryB: boolean, homeAddress: string, department: string,
                     jobStatus: string, homePhone: string, mobile: string, birthDate: string, startDate: string, 
                     endDate: string, email: string, personalEmail: string, managerEmail: string) => {
-  saveInfo(firstName, lastName, teamName, positionName, gender, maritalStatus, salary,
+  saveInfo(firstName, lastName, teamName, positionName, gender, maritalStatus, salaryB,
           homeAddress, department, jobStatus, homePhone, mobile, birthDate, 
           startDate, endDate, email, personalEmail, managerEmail);
   alert("Your info has been saved.");
@@ -177,8 +176,13 @@ const handleMaritalChange = (e: React.FormEvent<HTMLInputElement>) => {
   maritalStatus = e.currentTarget.value;
 }
 
-const handleSalaryChange = (e: React.FormEvent<HTMLInputElement>) => {
-  salary = e.currentTarget.value;
+const hasSalary = () => {
+  if(salary === "") {
+    salaryB = false;
+    return salaryB;
+  }
+  salaryB = true;
+  return salaryB;
 }
 
 const handleHomeAddressChange = (e: React.FormEvent<HTMLInputElement>) => {
@@ -250,8 +254,8 @@ export function setMaritalStatus(val: string) {
   maritalStatus = val;
 }
 
-export function setSalary(val: string) {
-  salary = val;
+export function setSalary(val: boolean) {
+  salaryB = val;
 }
 
 export function sethomeAddress(val: string) {
@@ -300,7 +304,7 @@ export function setManagerEmail(val: string) {
 
 
 export async function saveInfo(firstName: string, lastName: string, teamName: string, positionName: string, 
-                              gender: string, maritalStatus: string, salary: string, homeAddress: string, 
+                              gender: string, maritalStatus: string, salaryB: boolean, homeAddress: string, 
                               department: string, jobStatus: string, homePhone: string, mobile: string, 
                               birthDate: string, startDate: string, endDate: string, email: string, 
                               personalEmail: string, managerEmail: string){
@@ -310,7 +314,7 @@ export async function saveInfo(firstName: string, lastName: string, teamName: st
   setPositionName(positionName);
   setGender(gender);
   setMaritalStatus(maritalStatus);
-  setSalary(salary);
+  setSalary(salaryB);
   sethomeAddress(homeAddress);
   setDepartment(department);
   setJobStatus(jobStatus);
@@ -344,7 +348,7 @@ export async function saveInfo(firstName: string, lastName: string, teamName: st
   return response.json();
 }
 
-/*
+
 export async function getInfo(){
   const response = await fetch(
     ApiRoutes.Base + '/api/workers/:workerId="workers/1"?',
@@ -362,7 +366,7 @@ export async function getInfo(){
   );
   return response.json();
 }
-*/
+
 
 const MyInfo = React.forwardRef(MyInfo_);
 export default MyInfo;

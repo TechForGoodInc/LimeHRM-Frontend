@@ -358,32 +358,6 @@
           "componentType": "component"
         },
         {
-          "id": "PlxKiMP25T",
-          "name": "Leaveapply",
-          "type": "managed",
-          "projectId": "vQU939GjUi82K5u1iSBKF3",
-          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicLeaveapply.tsx",
-          "importSpec": {
-            "modulePath": "Leaveapply.tsx"
-          },
-          "cssFilePath": "plasmic/lime_hrm_front/PlasmicLeaveapply.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
-          "id": "tbP0Pl_WIe",
-          "name": "Leaveassign",
-          "type": "managed",
-          "projectId": "vQU939GjUi82K5u1iSBKF3",
-          "renderModuleFilePath": "plasmic/lime_hrm_front/PlasmicLeaveassign.tsx",
-          "importSpec": {
-            "modulePath": "Leaveassign.tsx"
-          },
-          "cssFilePath": "plasmic/lime_hrm_front/PlasmicLeaveassign.module.css",
-          "scheme": "blackbox",
-          "componentType": "component"
-        },
-        {
           "id": "9Of3WWIskv",
           "name": "Assignleave",
           "type": "managed",
